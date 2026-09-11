@@ -1,0 +1,632 @@
+{
+  "AutoWirx": {
+    "sections": {
+      "topbar": {
+        "variants": {
+          "AutoWirxTopbar1": {
+            "email": "info@example.com",
+            "phone": "+208-666-0112",
+            "socialLinks": [
+              {
+                "icon": "facebook",
+                "href": "https://facebook.com",
+                "label": "Facebook"
+              },
+              {
+                "icon": "twitter",
+                "href": "https://twitter.com",
+                "label": "Twitter"
+              },
+              {
+                "icon": "linkedin",
+                "href": "https://linkedin.com",
+                "label": "LinkedIn"
+              },
+              {
+                "icon": "youtube",
+                "href": "https://youtube.com",
+                "label": "YouTube"
+              }
+            ]
+          }
+        }
+      },
+      "navbar": {
+        "variants": {
+          "AutoWirxNavbar1": {
+            "logo": {
+              "src": "/logo/logo.png",
+              "alt": "AutoWirx Logo"
+            },
+            "navLinks": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "About",
+                "href": "/about"
+              },
+              {
+                "label": "Services",
+                "href": "#",
+                "subLinks": [
+                  {
+                    "label": "Phone Repair",
+                    "href": "/services/repair"
+                  },
+                  {
+                    "label": "Screen Replacement",
+                    "href": "/services/screen"
+                  },
+                  {
+                    "label": "Battery Service",
+                    "href": "/services/battery"
+                  }
+                ]
+              },
+              {
+                "label": "Gallery",
+                "href": "/gallery"
+              },
+              {
+                "label": "Blog",
+                "href": "/blog"
+              },
+              {
+                "label": "Contact Us",
+                "href": "/contact"
+              }
+            ],
+            "cta": {
+              "label": "Get A Quote",
+              "href": "/quote"
+            }
+          }
+        }
+      },
+      "footer": {
+        "variants": {
+          "AutoWirxFooter1": {
+            "logo": {
+              "src": "/logo/logo.png",
+              "alt": "AutoWirx Logo"
+            },
+            "description": "Auto Wirx is your trusted partner for professional car care and repair solutions. We combine expertise, technology and passion to keep your vehicle running at its best.",
+            "quickLinks": [
+              {
+                "name": "Home",
+                "href": "/"
+              },
+              {
+                "name": "About Us",
+                "href": "/about"
+              },
+              {
+                "name": "Services",
+                "href": "/services"
+              },
+              {
+                "name": "Our Team",
+                "href": "/team"
+              },
+              {
+                "name": "Blogs",
+                "href": "/blogs"
+              },
+              {
+                "name": "Locations",
+                "href": "/locations"
+              },
+              {
+                "name": "Pricing",
+                "href": "/pricing"
+              },
+              {
+                "name": "Contact Us",
+                "href": "/contact"
+              }
+            ],
+            "ourServices": [
+              {
+                "name": "Car Diagnostics",
+                "href": "/services/diagnostics"
+              },
+              {
+                "name": "General Repair",
+                "href": "/services/repair"
+              },
+              {
+                "name": "Brake Service",
+                "href": "/services/brakes"
+              },
+              {
+                "name": "Engine Repair",
+                "href": "/services/engine"
+              },
+              {
+                "name": "Battery Service",
+                "href": "/services/battery"
+              },
+              {
+                "name": "Oil Change",
+                "href": "/services/oil-change"
+              },
+              {
+                "name": "AC Repair",
+                "href": "/services/ac-repair"
+              },
+              {
+                "name": "Tire Service",
+                "href": "/services/tires"
+              }
+            ],
+            "companyLinks": [
+              {
+                "name": "About Us",
+                "href": "/about"
+              },
+              {
+                "name": "Our Work Process",
+                "href": "/process"
+              },
+              {
+                "name": "Why Choose Us",
+                "href": "/why-choose-us"
+              },
+              {
+                "name": "Testimonials",
+                "href": "/testimonials"
+              },
+              {
+                "name": "FAQs",
+                "href": "/faqs"
+              },
+              {
+                "name": "Careers",
+                "href": "/careers"
+              },
+              {
+                "name": "Terms & Conditions",
+                "href": "/terms"
+              },
+              {
+                "name": "Privacy Policy",
+                "href": "/privacy"
+              }
+            ],
+            "contactInfo": {
+              "address": "123 Auto Wirx Street, New York, NY 10001, USA",
+              "phone": "+1 (123) 456-7890",
+              "phoneRaw": "+11234567890",
+              "email": "info@autowirx.com",
+              "website": "www.autowirx.com",
+              "websiteUrl": "https://www.autowirx.com"
+            },
+            "bottomBar": {
+              "copyright": "© 2026 Auto Wirx. All Rights Reserved.",
+              "policyLinks": [
+                {
+                  "name": "Privacy Policy",
+                  "href": "/privacy"
+                },
+                {
+                  "name": "Terms & Conditions",
+                  "href": "/terms"
+                },
+                {
+                  "name": "Sitemap",
+                  "href": "/sitemap"
+                }
+              ],
+              "socialLinks": [
+                {
+                  "icon": "facebook",
+                  "href": "https://facebook.com",
+                  "label": "Facebook"
+                },
+                {
+                  "icon": "instagram",
+                  "href": "https://instagram.com",
+                  "label": "Instagram"
+                },
+                {
+                  "icon": "twitter",
+                  "href": "https://twitter.com",
+                  "label": "Twitter"
+                },
+                {
+                  "icon": "youtube",
+                  "href": "https://youtube.com",
+                  "label": "YouTube"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "hero": {
+        "variants": {
+          "AutoWirxHero1": {
+            "tagline": "Expert Care. Fast Repair. Trusted Service.",
+            "heading": {
+              "line1": "We Fix Your Phone",
+              "line2": "Like New ",
+              "highlight": "Again!"
+            },
+            "description": "From cracked screens to battery issues – we provide fast, reliable and affordable mobile repair services you can trust.",
+            "primaryCta": {
+              "label": "Repair Now",
+              "href": "/repair"
+            },
+            "secondaryCta": {
+              "label": "Our Services",
+              "href": "/services"
+            },
+            "trustBadges": [
+              {
+                "icon": "shield",
+                "title": "100%",
+                "subtitle": "Trusted Service"
+              },
+              {
+                "icon": "award",
+                "title": "Quality",
+                "subtitle": "Parts Used"
+              },
+              {
+                "icon": "clock",
+                "title": "Quick",
+                "subtitle": "Turnaround"
+              },
+              {
+                "icon": "checkCircle",
+                "title": "Warranty",
+                "subtitle": "on Repairs"
+              }
+            ],
+            "image": {
+              "src": "/images/hero-banner.png",
+              "alt": "We Fix Your Phone Like New Again - Mobile Phone Repair"
+            }
+          }
+        }
+      },
+      "services": {
+        "variants": {
+          "AutoWirxServices1": {
+            "header": {
+              "subtitle": "OUR SERVICES",
+              "titleLine1": "Reliable Solutions for",
+              "titleLine2": "All Your",
+              "titleHighlight": "Device Problems",
+              "description": "We provide a wide range of mobile repair services using quality parts and advanced tools to ensure the best results."
+            },
+            "servicesList": [
+              {
+                "icon": "phone",
+                "title": "Screen Repair",
+                "description": "Cracked or broken screen? We'll make it look new again.",
+                "href": "/services/screen-repair"
+              },
+              {
+                "icon": "battery",
+                "title": "Battery Replacement",
+                "description": "Fast battery drain? We'll power you up.",
+                "href": "/services/battery-replacement"
+              },
+              {
+                "icon": "water",
+                "title": "Water Damage",
+                "description": "Water in your device? We can help bring it back.",
+                "href": "/services/water-damage"
+              },
+              {
+                "icon": "settings",
+                "title": "All Brand Repairs",
+                "description": "iPhone, Samsung, OnePlus & more – we fix them all.",
+                "href": "/services/brand-repairs"
+              },
+              {
+                "icon": "chip",
+                "title": "Charging Port Repair",
+                "description": "Loose or not charging? We'll fix the connection.",
+                "href": "/services/charging-port"
+              },
+              {
+                "icon": "volume",
+                "title": "Speaker & Mic Repair",
+                "description": "Low sound or not clear? We'll make it crystal clear.",
+                "href": "/services/speaker-mic"
+              },
+              {
+                "icon": "camera",
+                "title": "Camera Repair",
+                "description": "Blurry photos or camera not working? We've got you covered.",
+                "href": "/services/camera-repair"
+              },
+              {
+                "icon": "construct",
+                "title": "Software Issues",
+                "description": "Phone slow or stuck? We fix software problems and bring it back to normal.",
+                "href": "/services/software-issues"
+              }
+            ]
+          }
+        }
+      },
+      "process": {
+        "variants": {
+          "AutoWirxProcess1": {
+            "header": {
+              "titleLine1": "Simple Process, ",
+              "titleHighlight": "Excellent Results",
+              "description": "We follow a clear and efficient process to provide the best care for your device and fast results.",
+              "subtitle": "Our Work Process"
+            },
+            "steps": [
+              {
+                "stepNumber": "01",
+                "icon": "clipboard",
+                "title": "Request & Diagnose",
+                "description": "Tell us your issue. Our experts will check your device and find the exact problem."
+              },
+              {
+                "stepNumber": "02",
+                "icon": "fileText",
+                "title": "Get Estimate",
+                "description": "We provide a clear and transparent repair estimate before we start."
+              },
+              {
+                "stepNumber": "03",
+                "icon": "settings",
+                "title": "Repair & Test",
+                "description": "Our skilled technicians repair your device using quality parts and test it thoroughly."
+              },
+              {
+                "stepNumber": "04",
+                "icon": "checkCircle",
+                "title": "Ready for You",
+                "description": "Your device is ready! We notify you for pickup or deliver it to your doorstep."
+              }
+            ]
+          }
+        }
+      },
+      "whyChooseUs": {
+        "variants": {
+          "AutoWirxWhyChooseUs1": {
+            "images": {
+              "main": "https://videocdn.cdnpk.net/videos/a101ad99-9a01-5af4-8412-9514b2f743bd/horizontal/thumbnails/large.jpg?semt=ais_hybrid&item_id=7437624&w=740&q=80",
+              "secondary": "https://images.unsplash.com/photo-1735875530804-d661ca2001da?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vYmlsZSUyMHJlcGFpcnxlbnwwfHwwfHx8MA%3D%3D"
+            },
+            "header": {
+              "subtitle": "WHY CHOOSE US",
+              "titleLine1": "Smart Repairs.",
+              "titleHighlight": "Trusted Service.",
+              "description": "At Auto Wirx, we combine expertise, advanced tools and genuine parts to deliver reliable and hassle-free mobile repair solutions."
+            },
+            "features": [
+              {
+                "icon": "shield",
+                "title": "Technicians",
+                "description": "Certified professionals with years of experience in mobile repairs."
+              },
+              {
+                "icon": "award",
+                "title": "Genuine Parts",
+                "description": "We use only high-quality and genuine parts for long-lasting performance."
+              },
+              {
+                "icon": "clock",
+                "title": "Fast Turnaround",
+                "description": "Quick diagnosis and efficient repairs to get you back on track clock."
+              },
+              {
+                "icon": "headphones",
+                "title": "Customer ",
+                "description": "Our priority is your satisfaction and we always deliver the best product Customer."
+              }
+            ],
+            "stats": [
+              {
+                "icon": "briefcase",
+                "count": "20.5k",
+                "label": "Projects Done"
+              },
+              {
+                "icon": "smile",
+                "count": "100.5k",
+                "label": "Happy Clients"
+              },
+              {
+                "icon": "users",
+                "count": "150.5k",
+                "label": "Team Members"
+              }
+            ]
+          }
+        }
+      },
+      "cta": {
+        "variants": {
+          "AutoWirxCta1": {
+            "image": {
+              "src": "/images/24x7.png",
+              "alt": "24/7 Expert Support"
+            },
+            "header": {
+              "subtitle": "CONTACT US",
+              "titleLine1": "24/7 Expert Support Our",
+              "titleLine2": "Customers Love"
+            },
+            "button": {
+              "text": "CONTACT US",
+              "href": "/contact"
+            }
+          }
+        }
+      },
+      "testimonials": {
+        "variants": {
+          "AutoWirxTestimonials1": {
+            "header": {
+              "subtitle": "TESTIMONIALS",
+              "titleLine1": "What Our",
+              "titleHighlight": "Clients Say",
+              "description": "We take pride in delivering exceptional phone repair solutions that keep you connected. Here is what our customers say about us."
+            },
+            "items": [
+              {
+                "quote": "Auto Wirx fixed my iPhone screen in less than 30 minutes! The display quality is just like the original and their customer service was top notch.",
+                "name": "Kristin Watson",
+                "role": "iPhone 14 Pro Owner",
+                "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+                "rating": 5,
+                "isDark": false
+              },
+              {
+                "quote": "My phone took a dive in water and wouldn't turn on. The technician at Auto Wirx recovered all my important photos and brought it back to life!",
+                "name": "Theresa Webb",
+                "role": "Samsung Galaxy S23 User",
+                "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&auto=format&fit=crop&q=80",
+                "rating": 5,
+                "isDark": true
+              },
+              {
+                "quote": "Fast battery replacement and honest diagnostics. They showed me the exact battery health before and after, and gave a 6-month warranty. Highly recommended!",
+                "name": "Ronald Richards",
+                "role": "Google Pixel User",
+                "avatar": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150&auto=format&fit=crop&q=80",
+                "rating": 5,
+                "isDark": false
+              },
+              {
+                "quote": "Brought my OnePlus with a damaged charging port and muffled speaker. Fixed both on the same afternoon at very reasonable prices. True professionals.",
+                "name": "Marcus Chen",
+                "role": "OnePlus 11 Owner",
+                "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+                "rating": 5,
+                "isDark": true
+              },
+              {
+                "quote": "Friendly technicians, genuine parts, and quick turnaround. It is rare to find a mobile repair service that is this transparent and trustworthy.",
+                "name": "Sarah Jenkins",
+                "role": "iPad & iPhone User",
+                "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
+                "rating": 5,
+                "isDark": false
+              },
+              {
+                "quote": "Their doorstep pickup and repair delivery saved my day when I was busy with work. My phone was returned looking brand new. 10/10 experience!",
+                "name": "David Miller",
+                "role": "Business Consultant",
+                "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+                "rating": 5,
+                "isDark": true
+              }
+            ]
+          }
+        }
+      },
+      "blog": {
+        "variants": {
+          "AutoWirxBlog1": {
+            "header": {
+              "subtitle": "OUR BLOGS",
+              "titleLine1": "Latest",
+              "titleHighlight": "Blogs",
+              "titleLine2": "& Insights",
+              "description": "Stay updated with our latest articles, tips and insights on technology, development and digital trends."
+            },
+            "items": [
+              {
+                "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&auto=format&fit=crop&q=80",
+                "category": "Development",
+                "date": "May 20, 2025",
+                "title": "How to Build Scalable Web Applications in 2025",
+                "description": "Discover the best practices and modern technologies to build fast, secure and scalable web applications.",
+                "href": "/blog/scalable-web-applications"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80",
+                "category": "Security",
+                "date": "May 18, 2025",
+                "title": "Website Security Best Practices You Should Follow",
+                "description": "Learn essential tips to protect your website from threats and keep your data safe from cyber attacks.",
+                "href": "/blog/website-security-best-practices"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600&auto=format&fit=crop&q=80",
+                "category": "Design",
+                "date": "May 15, 2025",
+                "title": "UI/UX Design Trends Shaping the Digital World",
+                "description": "Explore the latest UI/UX design trends that are enhancing user experience and driving engagement.",
+                "href": "/blog/ui-ux-design-trends"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=80",
+                "category": "Marketing",
+                "date": "May 12, 2025",
+                "title": "Digital Marketing Strategies That Deliver Results",
+                "description": "Boost your online presence and grow your business with proven digital marketing strategies that work.",
+                "href": "/blog/digital-marketing-strategies"
+              }
+            ]
+          }
+        }
+      },
+      "about": {
+        "variants": {
+          "AutoWirxAbout1": {
+            "header": {
+              "subtitle": "ABOUT US",
+              "titleLine1": "We're Here to Keep You",
+              "titleHighlight": "Connected",
+              "description1": "At Auto Wirx, we provide fast, reliable and affordable mobile repair services with a focus on quality and customer satisfaction.",
+              "description2": "From cracked screens to complex repairs, our expert technicians use advanced tools and genuine parts."
+            },
+            "features": [
+              {
+                "icon": "shield",
+                "title": "Trusted Service",
+                "description": "We value your trust and deliver quality you can rely on."
+              },
+              {
+                "icon": "settings",
+                "title": "Technicians",
+                "description": "Skilled professionals with years of hands-on experience."
+              },
+              {
+                "icon": "award",
+                "title": "Quality Parts",
+                "description": "We use genuine parts for long-lasting performance."
+              },
+              {
+                "icon": "clock",
+                "title": "Turnaround",
+                "description": "Quick diagnosis and repair to get you back on track."
+              }
+            ],
+            "button": {
+              "text": "Learn More About Us",
+              "href": "/about"
+            },
+            "image": {
+              "src": "https://www.prizminstitute.com/blog/wp-content/uploads/2025/12/mobile-phone-repairing-tools.jpg",
+              "alt": "Auto Wirx technician repairing a phone"
+            }
+          }
+        }
+      },
+      "pageHeader": {
+        "variants": {
+          "AutoWirxPageHeader1": {
+            "defaultBgImage": "https://www.allgsmtips.com/wp-content/uploads/2025/12/emmc-mobile-repairing-tools.jpg",
+            "homeLabel": "Home"
+          }
+        }
+      }
+    }
+  }
+}
