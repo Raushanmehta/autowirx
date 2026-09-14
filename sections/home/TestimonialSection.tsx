@@ -37,8 +37,8 @@ export default function TestimonialSection() {
     }, [api]);
 
     return (
-        <section className="w-full bg-slate-50 py-16 sm:py-20 lg:py-24 font-sans overflow-hidden">
-            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-12">
+        <section className="w-full bg-slate-50 py-10 sm:py-14 md:py-16 lg:py-16 font-sans overflow-hidden">
+            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-8">
                 <motion.div
                     variants={fadeUpVariants}
                     initial="hidden"

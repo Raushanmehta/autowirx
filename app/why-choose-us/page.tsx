@@ -1,15 +1,11 @@
 import CtaSection from "@/components/common/CtaSection";
 import PageTopSection from "@/components/common/PageTopSection";
-import AboutMissionSection from "@/sections/AboutMissionSection";
-import ProcessSection from "@/sections/home/ProcessSection";
 import WhyChooseUsSection from "@/sections/home/WhyChooseUsSection";
 
-export default function AboutPage() {
+export default function WhyChooseUs() {
     return (
         <main>
-            <PageTopSection title="About Us" />
-            <AboutMissionSection />
-            <ProcessSection />
+            <PageTopSection title="Why Choose Us" />
             <WhyChooseUsSection />
             <CtaSection />
         </main>

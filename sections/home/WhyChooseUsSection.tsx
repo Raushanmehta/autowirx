@@ -1,12 +1,35 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { FiShield, FiAward, FiClock, FiHeadphones, FiBriefcase, FiSmile, FiUsers } from "react-icons/fi";
 import { AiFillLike } from "react-icons/ai";
 import { site } from "../../data";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useTransform, animate, useInView } from "framer-motion";
 import { containerVariants, fadeUpVariants } from "../../utils/animations";
+
+function AnimatedCounter({ value }: { value: string }) {
+    const numMatch = value.match(/[\d\.]+/);
+    const num = numMatch ? parseFloat(numMatch[0]) : 0;
+    const suffix = value.replace(/[\d\.]+/, '');
+    
+    const ref = useRef(null);
+    const inView = useInView(ref, { once: true, margin: "-50px" });
+    const count = useMotionValue(0);
+    const displayValue = useTransform(count, (latest) => {
+        const hasDecimal = num.toString().includes('.');
+        const val = hasDecimal ? latest.toFixed(1) : Math.round(latest).toString();
+        return val + suffix;
+    });
+
+    useEffect(() => {
+        if (inView) {
+            animate(count, num, { duration: 2.5, ease: "easeOut" });
+        }
+    }, [inView, count, num]);
+
+    return <motion.span ref={ref}>{displayValue}</motion.span>;
+}
 
 const IconMap: Record<string, React.ElementType> = {
     shield: FiShield,
@@ -22,7 +45,7 @@ export default function WhyChooseUsSection() {
     const data = site.whyChooseUsData;
 
     return (
-        <section className="relative w-full bg-white py-20 font-sans overflow-hidden">
+        <section className="relative w-full bg-white py-10 sm:py-14 md:py-16 lg:py-16 font-sans overflow-hidden">
             <div className="absolute -bottom-32 left-1/2 transform -translate-x-1/2 w-[40rem] h-[20rem] bg-blue-100/40 rounded-full blur-[100px] pointer-events-none z-0"></div>
             <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -133,7 +156,7 @@ export default function WhyChooseUsSection() {
 
                                         <div className="flex flex-col items-center space-y-4">
                                             <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-50 to-white text-blue-600 flex items-center justify-center border border-blue-100/60 group-hover:from-blue-600 group-hover:to-blue-500 group-hover:text-white transition-all duration-500 shadow-[0_4px_15px_rgba(0,87,238,0.1)] relative z-10">
-                                                <Icon size={32} />
+                                                <Icon size={40} />
                                             </div>
                                             <h3 className="text-gray-900 font-bold text-base tracking-tight relative z-10">
                                                 {item.title}
@@ -164,7 +187,7 @@ export default function WhyChooseUsSection() {
                                         </div>
                                         <div>
                                             <h4 className="text-2xl sm:text-3xl font-black text-gray-900 tracking-tight">
-                                                {stat.count}
+                                                <AnimatedCounter value={stat.count} />
                                             </h4>
                                             <p className="text-gray-500 text-xs sm:text-sm font-medium">
                                                 {stat.label}

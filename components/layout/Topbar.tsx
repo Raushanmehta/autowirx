@@ -19,7 +19,7 @@ export default function TopBar() {
 
   return (
     <motion.div
-      className="w-full bg-[#0d1117] text-gray-300 border-b border-gray-800 text-sm"
+      className="hidden sm:block w-full bg-[#0d1117] text-gray-300 border-b border-gray-800 text-sm"
       variants={containerVariants}
       initial="hidden"
       animate="visible">

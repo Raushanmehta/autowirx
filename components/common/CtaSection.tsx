@@ -9,7 +9,7 @@ import { fadeUpVariants, containerVariants } from "@/utils/animations";
 export default function CtaSection() {
     const data = site.ctaData;
     return (
-        <section className="w-full bg-white pb-24 font-sans overflow-hidden">
+        <section className="w-full bg-white pb-16 font-sans overflow-hidden">
             <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <motion.div
                     variants={containerVariants}
@@ -18,9 +18,15 @@ export default function CtaSection() {
                     viewport={{ once: true, margin: "-50px" }}
                     className="relative bg-[#212529] rounded-3xl overflow-hidden px-8 sm:px-12 lg:px-16 py-12 lg:py-16 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-10">
                     <div className="absolute right-0 top-0 bottom-0 w-1/2 overflow-hidden pointer-events-none hidden lg:block">
-                        <div className="absolute right-[-10%] top-[-20%] w-96 h-96 bg-blue-600/20 rounded-full blur-[80px]"></div>
-                        <svg
-                            className="absolute right-0 top-1/2 transform -translate-y-1/2 h-[120%] opacity-40"
+                        <motion.div 
+                            animate={{ scale: [1, 1.1, 1], opacity: [0.6, 1, 0.6] }}
+                            transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+                            className="absolute right-[-10%] top-[-20%] w-96 h-96 bg-blue-600/20 rounded-full blur-[80px]">
+                        </motion.div>
+                        <motion.svg
+                            animate={{ y: ["-50%", "-55%", "-50%"], rotate: [0, 1, 0] }}
+                            transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
+                            className="absolute right-0 top-1/2 transform h-[120%] opacity-40"
                             width="500"
                             height="400"
                             viewBox="0 0 500 400"
@@ -36,7 +42,7 @@ export default function CtaSection() {
                             <circle cx="350" cy="150" r="6" fill="#60a5fa" />
                             <circle cx="400" cy="100" r="3" fill="#93c5fd" />
                             <circle cx="158" cy="265" r="4" fill="#3b82f6" />
-                        </svg>
+                        </motion.svg>
                     </div>
                     <div className="flex flex-col sm:flex-row items-center gap-8 z-10 text-center sm:text-left">
                         <motion.div variants={fadeUpVariants} className="relative w-32 h-32 sm:w-36 sm:h-36 shrink-0 drop-shadow-xl hover:scale-105 transition-transform duration-500">

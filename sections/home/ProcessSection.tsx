@@ -17,7 +17,7 @@ export default function ProcessSection() {
     const data = site.processData;
 
     return (
-        <section className="relative w-full bg-gradient-to-b from-blue-50/40 via-white to-white py-16 sm:py-20 lg:py-24 font-sans overflow-hidden">
+        <section className="relative w-full bg-gradient-to-b from-blue-50/40 via-white to-white py-10 sm:py-14 md:py-16 lg:py-16 font-sans overflow-hidden">
             {/* Subtle Background Graphics */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                 <div className="absolute -top-24 -left-24 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl opacity-50"></div>
@@ -33,7 +33,7 @@ export default function ProcessSection() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-100px" }}
-                    className="text-center max-w-2xl mx-auto space-y-3 mb-20">
+                    className="text-center max-w-2xl mx-auto space-y-3 mb-8">
                     <div className="flex items-center justify-center gap-2 text-blue-500 font-bold text-sm tracking-widest uppercase">
                         <span className="w-6 h-0.5 bg-blue-500"></span>
                         <span>{data.header.subtitle}</span>
@@ -59,7 +59,7 @@ export default function ProcessSection() {
                             <motion.div key={index} variants={fadeUpVariants} className="relative">
                                 <ProcessCard
                                     stepNumber={step.stepNumber}
-                                    icon={<Icon size={32} />}
+                                    icon={<Icon size={40} />}
                                     title={step.title}
                                     description={step.description}
                                 />

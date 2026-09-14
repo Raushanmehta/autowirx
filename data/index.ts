@@ -31,6 +31,7 @@ export type AutoWirxCtaData = AutoWirxSections["cta"]["variants"]["AutoWirxCta1"
 export type AutoWirxTestimonialsData = AutoWirxSections["testimonials"]["variants"]["AutoWirxTestimonials1"];
 export type AutoWirxBlogData = AutoWirxSections["blog"]["variants"]["AutoWirxBlog1"];
 export type AutoWirxAboutData = AutoWirxSections["about"]["variants"]["AutoWirxAbout1"];
+export type AutoWirxAboutMissionData = AutoWirxSections["about"]["variants"]["AutoWirxAboutMission1"];
 export type AutoWirxPageHeaderData = AutoWirxSections["pageHeader"]["variants"]["AutoWirxPageHeader1"];
 
 // ── Canonical Mapped Site Data Object ──
@@ -48,6 +49,7 @@ const siteMap = {
   testimonials: sec.testimonials.variants.AutoWirxTestimonials1,
   blog: sec.blog.variants.AutoWirxBlog1,
   about: sec.about.variants.AutoWirxAbout1,
+  aboutMission: sec.about.variants.AutoWirxAboutMission1,
   pageHeader: sec.pageHeader.variants.AutoWirxPageHeader1,
 
   // Compatibility section shortcuts
@@ -62,6 +64,7 @@ const siteMap = {
   testimonialsData: sec.testimonials.variants.AutoWirxTestimonials1,
   blogData: sec.blog.variants.AutoWirxBlog1,
   aboutData: sec.about.variants.AutoWirxAbout1,
+  aboutMissionData: sec.about.variants.AutoWirxAboutMission1,
   pageHeaderData: sec.pageHeader.variants.AutoWirxPageHeader1,
 
   // Root Tree

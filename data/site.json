@@ -204,7 +204,7 @@
               "websiteUrl": "https://www.autowirx.com"
             },
             "bottomBar": {
-              "copyright": "© 2026 Auto Wirx. All Rights Reserved.",
+              "copyright": "© 2026 Auto Wirx. All Rights Reserved. Powerd by Lestow",
               "policyLinks": [
                 {
                   "name": "Privacy Policy",
@@ -265,7 +265,7 @@
             },
             "trustBadges": [
               {
-                "icon": "shield",
+                "icon": "workspaceTrusted",
                 "title": "100%",
                 "subtitle": "Trusted Service"
               },
@@ -589,7 +589,7 @@
             "features": [
               {
                 "icon": "shield",
-                "title": "Trusted Service",
+                "title": "Trust Service",
                 "description": "We value your trust and deliver quality you can rely on."
               },
               {
@@ -615,6 +615,52 @@
             "image": {
               "src": "https://www.prizminstitute.com/blog/wp-content/uploads/2025/12/mobile-phone-repairing-tools.jpg",
               "alt": "Auto Wirx technician repairing a phone"
+            }
+          },
+          "AutoWirxAboutMission1": {
+            "image": {
+              "src": "https://i.pinimg.com/1200x/65/00/1c/65001cd848f1b1a7a7bfc36b5ddfa943.jpg",
+              "alt": "Technician repairing a mobile phone"
+            },
+            "trustCard": {
+              "icon": "shieldCheck",
+              "preTitle": "Trusted by",
+              "title": "100K+",
+              "subtitle": "Happy Customers",
+              "footer": "Quality Repairs.<br />Longer Connections."
+            },
+            "header": {
+              "subtitle": "About Us",
+              "titleLine1": "We're Here to Keep",
+              "titlePrefix": "You",
+              "titleHighlight": "Connected",
+              "description": "At Auto Wirx, we provide fast, reliable and affordable mobile repair services with a focus on quality and customer satisfaction. From cracked screens to battery issues, our expert technicians use advanced tools and genuine parts to get your device back in perfect working condition."
+            },
+            "features": [
+              {
+                "icon": "shieldCheck",
+                "title": "Technicians",
+                "desc": "Skill professional with in mobile repairs."
+              },
+              {
+                "icon": "settings",
+                "title": "Genuine Parts",
+                "desc": "We use high-quality original performance."
+              },
+              {
+                "icon": "clock",
+                "title": "Turnaround",
+                "desc": "Quick diagnosis get you back on track."
+              },
+              {
+                "icon": "users",
+                "title": "Customer ",
+                "desc": "Your satisfaction is the always our priority."
+              }
+            ],
+            "mission": {
+              "subtitle": "Our Mission",
+              "description": "To deliver reliable repair solutions and keep you connected to what matters most."
             }
           }
         }

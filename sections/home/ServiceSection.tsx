@@ -21,7 +21,7 @@ export default function ServiceSection() {
     const data = site.servicesData;
 
     return (
-        <section className="w-full bg-[#070b12] text-white py-16 sm:py-20 lg:py-24 font-sans overflow-hidden">
+        <section className="w-full bg-[#070b12] text-white py-10 sm:py-14 md:py-16 lg:py-16 font-sans overflow-hidden">
             <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-12">
                 {/* Section Header */}
                 <motion.div
@@ -29,7 +29,7 @@ export default function ServiceSection() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-100px" }}
-                    className="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                    className="text-center max-w-2xl mx-auto space-y-4 mb-8">
                     <div className="flex items-center justify-center gap-2 text-blue-500 font-bold text-sm tracking-widest uppercase">
                         <span className="w-6 h-0.5 bg-blue-500"></span>
                         <span>{data.header.subtitle}</span>
@@ -57,7 +57,7 @@ export default function ServiceSection() {
                         return (
                             <motion.div key={index} variants={fadeUpVariants}>
                                 <ServiceCard
-                                    icon={<Icon size={32} />}
+                                    icon={<Icon size={40} />}
                                     title={service.title}
                                     description={service.description}
                                     href={service.href}

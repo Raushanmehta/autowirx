@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaWrench } from "react-icons/fa6";
+import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { FiSmartphone, FiShield, FiAward, FiClock, FiCheckCircle, } from "react-icons/fi";
 import { Roboto } from "next/font/google";
 import { containerVariants, fadeUpVariants, badgeVariants } from "../../utils/animations";
@@ -19,13 +20,14 @@ const IconMap: Record<string, React.ElementType> = {
   award: FiAward,
   clock: FiClock,
   checkCircle: FiCheckCircle,
+  workspaceTrusted: VscWorkspaceTrusted,
 };
 
 export default function HeroSection() {
   const data = site.heroData;
 
   return (
-    <section className="relative w-full bg-[#F5F6FA] overflow-hidden flex items-center min-h-[100dvh] lg:min-h-[90vh]">
+    <section className="relative w-full overflow-hidden flex items-center min-h-[90dvh] lg:min-h-[90vh]">
       <div className="absolute inset-0 w-full h-full pointer-events-none z-0 overflow-hidden">
         <motion.div
           initial={{ opacity: 0, x: 80 }}
@@ -132,29 +134,29 @@ export default function HeroSection() {
           </svg>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: 50, }}
-          animate={{ opacity: 1, y: 0, }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], }}
-          className="lg:hidden absolute bottom-0 right-0 w-full h-[46%] sm:h-[50%] bg-[#0057ee] rounded-tl-[70px] sm:rounded-tl-[110px] z-0 overflow-hidden">
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="lg:hidden absolute inset-0 w-full h-full z-0 overflow-hidden"
+          style={{
+            backgroundImage: "url('https://i.pinimg.com/1200x/50/02/93/5002932cc68a3b514dce6a299fd7c96e.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          {/* Overlay to ensure text readability */}
+          <div className="absolute inset-0 bg-[#0057ee]/25 backdrop-blur-[1px]"></div>
+
           {/* Mobile Dot Grid */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8, }}
-            animate={{ opacity: 0.3, scale: 1, }}
-            transition={{ duration: 0.7, delay: 0.5, }}
-            className="absolute top-5 right-5 sm:top-8 sm:right-8 grid grid-cols-5 gap-2.5">
+          <div className="absolute top-5 right-5 sm:top-8 sm:right-8 grid grid-cols-5 gap-2.5 opacity-40">
             {Array.from({ length: 20 }).map((_, i) => (
-              <motion.div
-                key={i}
-                animate={{ opacity: [0.4, 1, 0.4], }}
-                transition={{ duration: 2.5, repeat: Infinity, delay: i * 0.05, ease: "easeInOut", }}
-                className="w-1.5 h-1.5 bg-white rounded-full"
-              />
+              <div key={i} className="w-1.5 h-1.5 bg-blue-600 rounded-full" />
             ))}
-          </motion.div>
+          </div>
         </motion.div>
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-16 md:py-24 lg:py-32">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-6 md:py-14 lg:py-20">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -167,17 +169,17 @@ export default function HeroSection() {
             {/* Tagline */}
             <motion.p
               variants={fadeUpVariants}
-              className="text-[#0057ee] font-semibold text-sm sm:text-base tracking-wide">
+              className="text-white lg:text-[#0057ee] font-semibold text-sm sm:text-lg tracking-wide">
               {data.tagline}
             </motion.p>
             {/* Main Heading */}
             <motion.h1
               variants={fadeUpVariants}
-              className="text-3xl sm:text-5xl lg:text-[66px] xl:text-[70px] font-black text-[#0f172a] tracking-tight leading-[1.12] sm:leading-[1.08]">
+              className="text-4xl sm:text-5xl lg:text-[66px] xl:text-[70px] font-black text-white lg:text-[#0f172a] tracking-tight leading-[1.12] sm:leading-[1.08]">
               {data.heading.line1} <br />
               {data.heading.line2}
               <motion.span
-                className="text-[#0057ee] inline-block"
+                className="text-white lg:text-[#0057ee] inline-block"
                 animate={{ y: [0, -4, 0] }}
                 transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", }}>
                 {data.heading.highlight}
@@ -186,7 +188,7 @@ export default function HeroSection() {
             {/* Description */}
             <motion.p
               variants={fadeUpVariants}
-              className={`text-gray-600 text-sm sm:text-base lg:text-lg max-w-xl leading-relaxed pt-1 ${roboto.className}`}>
+              className={`text-white lg:text-gray-600 text-sm sm:text-base lg:text-lg max-w-xl leading-relaxed pt-1 ${roboto.className}`}>
               {data.description}
             </motion.p>
 
@@ -228,7 +230,7 @@ export default function HeroSection() {
 
             <motion.div
               variants={containerVariants}
-              className="pt-8 sm:pt-10 grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-4 sm:gap-6 lg:gap-6">
+              className="pt-2 sm:pt-10 grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-4 sm:gap-6 lg:gap-6">
               {data.trustBadges.map((item, index) => {
                 const Icon = IconMap[item.icon];
 
@@ -249,7 +251,7 @@ export default function HeroSection() {
                   >
                     {/* Icon */}
                     <motion.div
-                      className="shrink-0 text-[#0057ee]"
+                      className="shrink-0 text-white lg:text-[#0057ee]"
                       whileHover={{
                         rotate: 8,
                         scale: 1.12,
@@ -264,11 +266,11 @@ export default function HeroSection() {
 
                     {/* Text */}
                     <div className="leading-tight">
-                      <h4 className="font-bold text-gray-900 text-sm sm:text-base">
+                      <h4 className="font-bold text-white lg:text-gray-900 text-sm sm:text-base">
                         {item.title}
                       </h4>
 
-                      <p className="text-gray-500 text-[11px] sm:text-xs">
+                      <p className="text-white/80 lg:text-gray-500 text-[11px] sm:text-xs">
                         {item.subtitle}
                       </p>
                     </div>
@@ -285,7 +287,7 @@ export default function HeroSection() {
 
           <motion.div
             variants={fadeUpVariants}
-            className="lg:col-span-6 relative flex justify-center lg:justify-start pt-4 lg:pt-0"
+            className="hidden lg:flex order-first lg:order-last lg:col-span-6 relative justify-center lg:justify-start pt-4 lg:pt-0"
           >
             <motion.div
               initial={{
