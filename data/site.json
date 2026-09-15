@@ -292,6 +292,103 @@
           }
         }
       },
+      "pageHeader": {
+        "variants": {
+          "AutoWirxPageHeader1": {
+            "defaultBgImage": "https://www.allgsmtips.com/wp-content/uploads/2025/12/emmc-mobile-repairing-tools.jpg",
+            "homeLabel": "Home"
+          }
+        }
+      },
+      "about": {
+        "variants": {
+          "AutoWirxAbout1": {
+            "header": {
+              "subtitle": "ABOUT US",
+              "titleLine1": "We're Here to Keep You",
+              "titleHighlight": "Connected",
+              "description1": "At Auto Wirx, we provide fast, reliable and affordable mobile repair services with a focus on quality and customer satisfaction.",
+              "description2": "From cracked screens to complex repairs, our expert technicians use advanced tools and genuine parts."
+            },
+            "features": [
+              {
+                "icon": "shield",
+                "title": "Trust Service",
+                "description": "We value your trust and deliver quality you can rely on."
+              },
+              {
+                "icon": "settings",
+                "title": "Technicians",
+                "description": "Skilled professionals with years of hands-on experience."
+              },
+              {
+                "icon": "award",
+                "title": "Quality Parts",
+                "description": "We use genuine parts for long-lasting performance."
+              },
+              {
+                "icon": "clock",
+                "title": "Turnaround",
+                "description": "Quick diagnosis and repair to get you back on track."
+              }
+            ],
+            "button": {
+              "text": "Learn More About Us",
+              "href": "/about"
+            },
+            "image": {
+              "src": "https://www.prizminstitute.com/blog/wp-content/uploads/2025/12/mobile-phone-repairing-tools.jpg",
+              "alt": "Auto Wirx technician repairing a phone"
+            }
+          },
+          "AutoWirxAboutMission1": {
+            "image": {
+              "src": "https://i.pinimg.com/1200x/65/00/1c/65001cd848f1b1a7a7bfc36b5ddfa943.jpg",
+              "alt": "Technician repairing a mobile phone"
+            },
+            "trustCard": {
+              "icon": "shieldCheck",
+              "preTitle": "Trusted by",
+              "title": "100K+",
+              "subtitle": "Happy Customers",
+              "footer": "Quality Repairs.<br />Longer Connections."
+            },
+            "header": {
+              "subtitle": "About Us",
+              "titleLine1": "We're Here to Keep",
+              "titlePrefix": "You",
+              "titleHighlight": "Connected",
+              "description": "At Auto Wirx, we provide fast, reliable and affordable mobile repair services with a focus on quality and customer satisfaction. From cracked screens to battery issues, our expert technicians use advanced tools and genuine parts to get your device back in perfect working condition."
+            },
+            "features": [
+              {
+                "icon": "shieldCheck",
+                "title": "Technicians",
+                "desc": "Skill professional with in mobile repairs."
+              },
+              {
+                "icon": "settings",
+                "title": "Genuine Parts",
+                "desc": "We use high-quality original performance."
+              },
+              {
+                "icon": "clock",
+                "title": "Turnaround",
+                "desc": "Quick diagnosis get you back on track."
+              },
+              {
+                "icon": "users",
+                "title": "Customer ",
+                "desc": "Your satisfaction is the always our priority."
+              }
+            ],
+            "mission": {
+              "subtitle": "Our Mission",
+              "description": "To deliver reliable repair solutions and keep you connected to what matters most."
+            }
+          }
+        }
+      },
       "services": {
         "variants": {
           "AutoWirxServices1": {
@@ -304,52 +401,850 @@
             },
             "servicesList": [
               {
-                "icon": "phone",
+                "id": "screen-repair",
+                "image": "https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=600&auto=format&fit=crop&q=80",
+                "icon": "smartphone",
                 "title": "Screen Repair",
-                "description": "Cracked or broken screen? We'll make it look new again.",
-                "href": "/services/screen-repair"
+                "description": "Cracked or broken screen? We'll make it look new again with high-quality replacements.",
+                "href": "/services/screen-repair",
+                "detailData": {
+                  "bulletPoints": [
+                    "Expert Screen Repair",
+                    "High-quality original or OEM parts",
+                    "Certified technicians",
+                    "Fast turnaround time",
+                    "Comprehensive warranty included"
+                  ],
+                  "whyChooseUs": [
+                    {
+                      "icon": "shield",
+                      "title": "Premium Quality Screens",
+                      "description": "Long-lasting and crystal clear display."
+                    },
+                    {
+                      "icon": "users",
+                      "title": "Expert Technicians",
+                      "description": "Trained professionals with years of experience."
+                    },
+                    {
+                      "icon": "clock",
+                      "title": "Fast Service",
+                      "description": "Most screen repairs completed the same day."
+                    },
+                    {
+                      "icon": "dollar-sign",
+                      "title": "Affordable Pricing",
+                      "description": "High-quality service at competitive rates."
+                    }
+                  ],
+                  "repairSteps": [
+                    {
+                      "step": "01",
+                      "icon": "search",
+                      "title": "Device Check",
+                      "description": "We inspect the damage and confirm the issue."
+                    },
+                    {
+                      "step": "02",
+                      "icon": "file-text",
+                      "title": "Get a Quote",
+                      "description": "Transparent and affordable pricing."
+                    },
+                    {
+                      "step": "03",
+                      "icon": "tool",
+                      "title": "Professional Repair",
+                      "description": "We replace the screen using quality parts."
+                    },
+                    {
+                      "step": "04",
+                      "icon": "check-circle",
+                      "title": "Device Ready",
+                      "description": "Your device is tested and ready to use."
+                    }
+                  ],
+                  "overview": {
+                    "imageSrc": "/images/services/screen-repair.png",
+                    "imageAlt": "Screen Repair",
+                    "fromText": [
+                      "From",
+                      "This",
+                      "To This"
+                    ],
+                    "tag": "Screen Repair",
+                    "title": "Screen Repair Services",
+                    "highlightTitle": "Screen Repair",
+                    "description": "Get professional and reliable screen repair from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
+                    "bottomBox": {
+                      "icon": "smartphone",
+                      "text": "Whether it's a minor crack or a completely broken screen, we've got you covered."
+                    }
+                  },
+                  "whyChooseUsHeader": {
+                    "tag": "WHY CHOOSE US",
+                    "title": "Why Choose Us for Screen Repair",
+                    "highlightTitle": "Safe Hands",
+                    "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
+                  },
+                  "repairProcessHeader": {
+                    "title": "Our Screen Repair Process",
+                    "subtitle": "Simple, ",
+                    "highlightSubtitle": "Fast & Reliable",
+                    "description": "We make screen repair easy with a hassle-free process."
+                  }
+                }
               },
               {
-                "icon": "battery",
+                "id": "battery-replacement",
+                "image": "https://images.unsplash.com/photo-1591337676887-a217a6970a8a?w=600&auto=format&fit=crop&q=80",
+                "icon": "battery-charging",
                 "title": "Battery Replacement",
-                "description": "Fast battery drain? We'll power you up.",
-                "href": "/services/battery-replacement"
+                "description": "Not holding charge? We'll replace your battery for longer usage and better performance.",
+                "href": "/services/battery-replacement",
+                "detailData": {
+                  "bulletPoints": [
+                    "Expert Battery Replacement",
+                    "High-quality original or OEM parts",
+                    "Certified technicians",
+                    "Fast turnaround time",
+                    "Comprehensive warranty included"
+                  ],
+                  "whyChooseUs": [
+                    {
+                      "icon": "shield",
+                      "title": "Premium Quality Screens",
+                      "description": "Long-lasting and crystal clear display."
+                    },
+                    {
+                      "icon": "users",
+                      "title": "Expert Technicians",
+                      "description": "Trained professionals with years of experience."
+                    },
+                    {
+                      "icon": "clock",
+                      "title": "Fast Service",
+                      "description": "Most screen repairs completed the same day."
+                    },
+                    {
+                      "icon": "dollar-sign",
+                      "title": "Affordable Pricing",
+                      "description": "High-quality service at competitive rates."
+                    }
+                  ],
+                  "repairSteps": [
+                    {
+                      "step": "01",
+                      "icon": "search",
+                      "title": "Device Check",
+                      "description": "We inspect the damage and confirm the issue."
+                    },
+                    {
+                      "step": "02",
+                      "icon": "file-text",
+                      "title": "Get a Quote",
+                      "description": "Transparent and affordable pricing."
+                    },
+                    {
+                      "step": "03",
+                      "icon": "tool",
+                      "title": "Professional Repair",
+                      "description": "We replace the screen using quality parts."
+                    },
+                    {
+                      "step": "04",
+                      "icon": "check-circle",
+                      "title": "Device Ready",
+                      "description": "Your device is tested and ready to use."
+                    }
+                  ],
+                  "overview": {
+                    "imageSrc": "/images/services/battery-replacement.png",
+                    "imageAlt": "Battery Replacement",
+                    "fromText": [
+                      "From",
+                      "This",
+                      "To This"
+                    ],
+                    "tag": "Battery Replacement",
+                    "title": "Battery Replacement Services",
+                    "highlightTitle": "Screen Repair",
+                    "description": "Get professional and reliable battery replacement from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
+                    "bottomBox": {
+                      "icon": "smartphone",
+                      "text": "Whether it's a minor crack or a completely broken screen, we've got you covered."
+                    }
+                  },
+                  "whyChooseUsHeader": {
+                    "tag": "WHY CHOOSE US",
+                    "title": "Why Choose Us for Battery Replacement",
+                    "highlightTitle": "Safe Hands",
+                    "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
+                  },
+                  "repairProcessHeader": {
+                    "title": "Our Battery Replacement Process",
+                    "subtitle": "Simple, ",
+                    "highlightSubtitle": "Fast & Reliable",
+                    "description": "We make screen repair easy with a hassle-free process."
+                  }
+                }
               },
               {
-                "icon": "water",
-                "title": "Water Damage",
-                "description": "Water in your device? We can help bring it back.",
-                "href": "/services/water-damage"
+                "id": "water-damage",
+                "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&auto=format&fit=crop&q=80",
+                "icon": "droplet",
+                "title": "Water Damage Repair",
+                "description": "Accidental water damage? We provide expert diagnostics and repair to bring your device back to life.",
+                "href": "/services/water-damage",
+                "detailData": {
+                  "bulletPoints": [
+                    "Expert Water Damage Repair",
+                    "High-quality original or OEM parts",
+                    "Certified technicians",
+                    "Fast turnaround time",
+                    "Comprehensive warranty included"
+                  ],
+                  "whyChooseUs": [
+                    {
+                      "icon": "shield",
+                      "title": "Premium Quality Screens",
+                      "description": "Long-lasting and crystal clear display."
+                    },
+                    {
+                      "icon": "users",
+                      "title": "Expert Technicians",
+                      "description": "Trained professionals with years of experience."
+                    },
+                    {
+                      "icon": "clock",
+                      "title": "Fast Service",
+                      "description": "Most screen repairs completed the same day."
+                    },
+                    {
+                      "icon": "dollar-sign",
+                      "title": "Affordable Pricing",
+                      "description": "High-quality service at competitive rates."
+                    }
+                  ],
+                  "repairSteps": [
+                    {
+                      "step": "01",
+                      "icon": "search",
+                      "title": "Device Check",
+                      "description": "We inspect the damage and confirm the issue."
+                    },
+                    {
+                      "step": "02",
+                      "icon": "file-text",
+                      "title": "Get a Quote",
+                      "description": "Transparent and affordable pricing."
+                    },
+                    {
+                      "step": "03",
+                      "icon": "tool",
+                      "title": "Professional Repair",
+                      "description": "We replace the screen using quality parts."
+                    },
+                    {
+                      "step": "04",
+                      "icon": "check-circle",
+                      "title": "Device Ready",
+                      "description": "Your device is tested and ready to use."
+                    }
+                  ],
+                  "overview": {
+                    "imageSrc": "/images/services/water-damage.png",
+                    "imageAlt": "Water Damage Repair",
+                    "fromText": [
+                      "From",
+                      "This",
+                      "To This"
+                    ],
+                    "tag": "Water Damage Repair",
+                    "title": "Water Damage Repair Services",
+                    "highlightTitle": "Screen Repair",
+                    "description": "Get professional and reliable water damage repair from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
+                    "bottomBox": {
+                      "icon": "smartphone",
+                      "text": "Whether it's a minor crack or a completely broken screen, we've got you covered."
+                    }
+                  },
+                  "whyChooseUsHeader": {
+                    "tag": "WHY CHOOSE US",
+                    "title": "Why Choose Us for Water Damage Repair",
+                    "highlightTitle": "Safe Hands",
+                    "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
+                  },
+                  "repairProcessHeader": {
+                    "title": "Our Water Damage Repair Process",
+                    "subtitle": "Simple, ",
+                    "highlightSubtitle": "Fast & Reliable",
+                    "description": "We make screen repair easy with a hassle-free process."
+                  }
+                }
               },
               {
-                "icon": "settings",
-                "title": "All Brand Repairs",
-                "description": "iPhone, Samsung, OnePlus & more – we fix them all.",
-                "href": "/services/brand-repairs"
-              },
-              {
-                "icon": "chip",
+                "id": "charging-port",
+                "image": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=600&auto=format&fit=crop&q=80",
+                "icon": "zap",
                 "title": "Charging Port Repair",
-                "description": "Loose or not charging? We'll fix the connection.",
-                "href": "/services/charging-port"
+                "description": "Loose or not charging? We'll fix the charging port so you can stay connected without any hassle.",
+                "href": "/services/charging-port",
+                "detailData": {
+                  "bulletPoints": [
+                    "Expert Charging Port Repair",
+                    "High-quality original or OEM parts",
+                    "Certified technicians",
+                    "Fast turnaround time",
+                    "Comprehensive warranty included"
+                  ],
+                  "whyChooseUs": [
+                    {
+                      "icon": "shield",
+                      "title": "Premium Quality Screens",
+                      "description": "Long-lasting and crystal clear display."
+                    },
+                    {
+                      "icon": "users",
+                      "title": "Expert Technicians",
+                      "description": "Trained professionals with years of experience."
+                    },
+                    {
+                      "icon": "clock",
+                      "title": "Fast Service",
+                      "description": "Most screen repairs completed the same day."
+                    },
+                    {
+                      "icon": "dollar-sign",
+                      "title": "Affordable Pricing",
+                      "description": "High-quality service at competitive rates."
+                    }
+                  ],
+                  "repairSteps": [
+                    {
+                      "step": "01",
+                      "icon": "search",
+                      "title": "Device Check",
+                      "description": "We inspect the damage and confirm the issue."
+                    },
+                    {
+                      "step": "02",
+                      "icon": "file-text",
+                      "title": "Get a Quote",
+                      "description": "Transparent and affordable pricing."
+                    },
+                    {
+                      "step": "03",
+                      "icon": "tool",
+                      "title": "Professional Repair",
+                      "description": "We replace the screen using quality parts."
+                    },
+                    {
+                      "step": "04",
+                      "icon": "check-circle",
+                      "title": "Device Ready",
+                      "description": "Your device is tested and ready to use."
+                    }
+                  ],
+                  "overview": {
+                    "imageSrc": "/images/services/charging-port.png",
+                    "imageAlt": "Charging Port Repair",
+                    "fromText": [
+                      "From",
+                      "This",
+                      "To This"
+                    ],
+                    "tag": "Charging Port Repair",
+                    "title": "Charging Port Repair Services",
+                    "highlightTitle": "Screen Repair",
+                    "description": "Get professional and reliable charging port repair from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
+                    "bottomBox": {
+                      "icon": "smartphone",
+                      "text": "Whether it's a minor crack or a completely broken screen, we've got you covered."
+                    }
+                  },
+                  "whyChooseUsHeader": {
+                    "tag": "WHY CHOOSE US",
+                    "title": "Why Choose Us for Charging Port Repair",
+                    "highlightTitle": "Safe Hands",
+                    "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
+                  },
+                  "repairProcessHeader": {
+                    "title": "Our Charging Port Repair Process",
+                    "subtitle": "Simple, ",
+                    "highlightSubtitle": "Fast & Reliable",
+                    "description": "We make screen repair easy with a hassle-free process."
+                  }
+                }
               },
               {
-                "icon": "volume",
+                "id": "speaker-mic",
+                "image": "https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=600&auto=format&fit=crop&q=80",
+                "icon": "volume-2",
                 "title": "Speaker & Mic Repair",
-                "description": "Low sound or not clear? We'll make it crystal clear.",
-                "href": "/services/speaker-mic"
+                "description": "Low sound or can't be heard? We'll repair or replace faulty speakers and microphones to restore clear sound.",
+                "href": "/services/speaker-mic",
+                "detailData": {
+                  "bulletPoints": [
+                    "Expert Speaker & Mic Repair",
+                    "High-quality original or OEM parts",
+                    "Certified technicians",
+                    "Fast turnaround time",
+                    "Comprehensive warranty included"
+                  ],
+                  "whyChooseUs": [
+                    {
+                      "icon": "shield",
+                      "title": "Premium Quality Screens",
+                      "description": "Long-lasting and crystal clear display."
+                    },
+                    {
+                      "icon": "users",
+                      "title": "Expert Technicians",
+                      "description": "Trained professionals with years of experience."
+                    },
+                    {
+                      "icon": "clock",
+                      "title": "Fast Service",
+                      "description": "Most screen repairs completed the same day."
+                    },
+                    {
+                      "icon": "dollar-sign",
+                      "title": "Affordable Pricing",
+                      "description": "High-quality service at competitive rates."
+                    }
+                  ],
+                  "repairSteps": [
+                    {
+                      "step": "01",
+                      "icon": "search",
+                      "title": "Device Check",
+                      "description": "We inspect the damage and confirm the issue."
+                    },
+                    {
+                      "step": "02",
+                      "icon": "file-text",
+                      "title": "Get a Quote",
+                      "description": "Transparent and affordable pricing."
+                    },
+                    {
+                      "step": "03",
+                      "icon": "tool",
+                      "title": "Professional Repair",
+                      "description": "We replace the screen using quality parts."
+                    },
+                    {
+                      "step": "04",
+                      "icon": "check-circle",
+                      "title": "Device Ready",
+                      "description": "Your device is tested and ready to use."
+                    }
+                  ],
+                  "overview": {
+                    "imageSrc": "/images/services/speaker-mic.png",
+                    "imageAlt": "Speaker & Mic Repair",
+                    "fromText": [
+                      "From",
+                      "This",
+                      "To This"
+                    ],
+                    "tag": "Speaker & Mic Repair",
+                    "title": "Speaker & Mic Repair Services",
+                    "highlightTitle": "Screen Repair",
+                    "description": "Get professional and reliable speaker & mic repair from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
+                    "bottomBox": {
+                      "icon": "smartphone",
+                      "text": "Whether it's a minor crack or a completely broken screen, we've got you covered."
+                    }
+                  },
+                  "whyChooseUsHeader": {
+                    "tag": "WHY CHOOSE US",
+                    "title": "Why Choose Us for Speaker & Mic Repair",
+                    "highlightTitle": "Safe Hands",
+                    "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
+                  },
+                  "repairProcessHeader": {
+                    "title": "Our Speaker & Mic Repair Process",
+                    "subtitle": "Simple, ",
+                    "highlightSubtitle": "Fast & Reliable",
+                    "description": "We make screen repair easy with a hassle-free process."
+                  }
+                }
               },
               {
+                "id": "camera-repair",
+                "image": "https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?w=600&auto=format&fit=crop&q=80",
                 "icon": "camera",
                 "title": "Camera Repair",
-                "description": "Blurry photos or camera not working? We've got you covered.",
-                "href": "/services/camera-repair"
+                "description": "Blurry photos or camera not working? We'll fix it with precision so you can capture every moment clearly.",
+                "href": "/services/camera-repair",
+                "detailData": {
+                  "bulletPoints": [
+                    "Expert Camera Repair",
+                    "High-quality original or OEM parts",
+                    "Certified technicians",
+                    "Fast turnaround time",
+                    "Comprehensive warranty included"
+                  ],
+                  "whyChooseUs": [
+                    {
+                      "icon": "shield",
+                      "title": "Premium Quality Screens",
+                      "description": "Long-lasting and crystal clear display."
+                    },
+                    {
+                      "icon": "users",
+                      "title": "Expert Technicians",
+                      "description": "Trained professionals with years of experience."
+                    },
+                    {
+                      "icon": "clock",
+                      "title": "Fast Service",
+                      "description": "Most screen repairs completed the same day."
+                    },
+                    {
+                      "icon": "dollar-sign",
+                      "title": "Affordable Pricing",
+                      "description": "High-quality service at competitive rates."
+                    }
+                  ],
+                  "repairSteps": [
+                    {
+                      "step": "01",
+                      "icon": "search",
+                      "title": "Device Check",
+                      "description": "We inspect the damage and confirm the issue."
+                    },
+                    {
+                      "step": "02",
+                      "icon": "file-text",
+                      "title": "Get a Quote",
+                      "description": "Transparent and affordable pricing."
+                    },
+                    {
+                      "step": "03",
+                      "icon": "tool",
+                      "title": "Professional Repair",
+                      "description": "We replace the screen using quality parts."
+                    },
+                    {
+                      "step": "04",
+                      "icon": "check-circle",
+                      "title": "Device Ready",
+                      "description": "Your device is tested and ready to use."
+                    }
+                  ],
+                  "overview": {
+                    "imageSrc": "/images/services/camera-repair.png",
+                    "imageAlt": "Camera Repair",
+                    "fromText": [
+                      "From",
+                      "This",
+                      "To This"
+                    ],
+                    "tag": "Camera Repair",
+                    "title": "Camera Repair Services",
+                    "highlightTitle": "Screen Repair",
+                    "description": "Get professional and reliable camera repair from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
+                    "bottomBox": {
+                      "icon": "smartphone",
+                      "text": "Whether it's a minor crack or a completely broken screen, we've got you covered."
+                    }
+                  },
+                  "whyChooseUsHeader": {
+                    "tag": "WHY CHOOSE US",
+                    "title": "Why Choose Us for Camera Repair",
+                    "highlightTitle": "Safe Hands",
+                    "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
+                  },
+                  "repairProcessHeader": {
+                    "title": "Our Camera Repair Process",
+                    "subtitle": "Simple, ",
+                    "highlightSubtitle": "Fast & Reliable",
+                    "description": "We make screen repair easy with a hassle-free process."
+                  }
+                }
               },
               {
-                "icon": "construct",
+                "id": "software-issues",
+                "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80",
+                "icon": "cpu",
                 "title": "Software Issues",
-                "description": "Phone slow or stuck? We fix software problems and bring it back to normal.",
-                "href": "/services/software-issues"
+                "description": "Facing software glitches, boot loops or performance issues? We'll diagnose and fix all software related problems.",
+                "href": "/services/software-issues",
+                "detailData": {
+                  "bulletPoints": [
+                    "Expert Software Issues",
+                    "High-quality original or OEM parts",
+                    "Certified technicians",
+                    "Fast turnaround time",
+                    "Comprehensive warranty included"
+                  ],
+                  "whyChooseUs": [
+                    {
+                      "icon": "shield",
+                      "title": "Premium Quality Screens",
+                      "description": "Long-lasting and crystal clear display."
+                    },
+                    {
+                      "icon": "users",
+                      "title": "Expert Technicians",
+                      "description": "Trained professionals with years of experience."
+                    },
+                    {
+                      "icon": "clock",
+                      "title": "Fast Service",
+                      "description": "Most screen repairs completed the same day."
+                    },
+                    {
+                      "icon": "dollar-sign",
+                      "title": "Affordable Pricing",
+                      "description": "High-quality service at competitive rates."
+                    }
+                  ],
+                  "repairSteps": [
+                    {
+                      "step": "01",
+                      "icon": "search",
+                      "title": "Device Check",
+                      "description": "We inspect the damage and confirm the issue."
+                    },
+                    {
+                      "step": "02",
+                      "icon": "file-text",
+                      "title": "Get a Quote",
+                      "description": "Transparent and affordable pricing."
+                    },
+                    {
+                      "step": "03",
+                      "icon": "tool",
+                      "title": "Professional Repair",
+                      "description": "We replace the screen using quality parts."
+                    },
+                    {
+                      "step": "04",
+                      "icon": "check-circle",
+                      "title": "Device Ready",
+                      "description": "Your device is tested and ready to use."
+                    }
+                  ],
+                  "overview": {
+                    "imageSrc": "/images/services/software-issues.png",
+                    "imageAlt": "Software Issues",
+                    "fromText": [
+                      "From",
+                      "This",
+                      "To This"
+                    ],
+                    "tag": "Software Issues",
+                    "title": "Software Issues Services",
+                    "highlightTitle": "Screen Repair",
+                    "description": "Get professional and reliable software issues from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
+                    "bottomBox": {
+                      "icon": "smartphone",
+                      "text": "Whether it's a minor crack or a completely broken screen, we've got you covered."
+                    }
+                  },
+                  "whyChooseUsHeader": {
+                    "tag": "WHY CHOOSE US",
+                    "title": "Why Choose Us for Software Issues",
+                    "highlightTitle": "Safe Hands",
+                    "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
+                  },
+                  "repairProcessHeader": {
+                    "title": "Our Software Issues Process",
+                    "subtitle": "Simple, ",
+                    "highlightSubtitle": "Fast & Reliable",
+                    "description": "We make screen repair easy with a hassle-free process."
+                  }
+                }
+              },
+              {
+                "id": "brand-repairs",
+                "image": "https://images.unsplash.com/photo-1526738549149-8e07eca6c147?w=600&auto=format&fit=crop&q=80",
+                "icon": "settings",
+                "title": "All Brand Repairs",
+                "description": "We repair all major brands including iPhone, Samsung, OnePlus, Xiaomi, Vivo, Oppo and more.",
+                "href": "/services/brand-repairs",
+                "detailData": {
+                  "bulletPoints": [
+                    "Expert All Brand Repairs",
+                    "High-quality original or OEM parts",
+                    "Certified technicians",
+                    "Fast turnaround time",
+                    "Comprehensive warranty included"
+                  ],
+                  "whyChooseUs": [
+                    {
+                      "icon": "shield",
+                      "title": "Premium Quality Screens",
+                      "description": "Long-lasting and crystal clear display."
+                    },
+                    {
+                      "icon": "users",
+                      "title": "Expert Technicians",
+                      "description": "Trained professionals with years of experience."
+                    },
+                    {
+                      "icon": "clock",
+                      "title": "Fast Service",
+                      "description": "Most screen repairs completed the same day."
+                    },
+                    {
+                      "icon": "dollar-sign",
+                      "title": "Affordable Pricing",
+                      "description": "High-quality service at competitive rates."
+                    }
+                  ],
+                  "repairSteps": [
+                    {
+                      "step": "01",
+                      "icon": "search",
+                      "title": "Device Check",
+                      "description": "We inspect the damage and confirm the issue."
+                    },
+                    {
+                      "step": "02",
+                      "icon": "file-text",
+                      "title": "Get a Quote",
+                      "description": "Transparent and affordable pricing."
+                    },
+                    {
+                      "step": "03",
+                      "icon": "tool",
+                      "title": "Professional Repair",
+                      "description": "We replace the screen using quality parts."
+                    },
+                    {
+                      "step": "04",
+                      "icon": "check-circle",
+                      "title": "Device Ready",
+                      "description": "Your device is tested and ready to use."
+                    }
+                  ],
+                  "overview": {
+                    "imageSrc": "/images/services/brand-repairs.png",
+                    "imageAlt": "All Brand Repairs",
+                    "fromText": [
+                      "From",
+                      "This",
+                      "To This"
+                    ],
+                    "tag": "All Brand Repairs",
+                    "title": "All Brand Repairs Services",
+                    "highlightTitle": "Screen Repair",
+                    "description": "Get professional and reliable all brand repairs from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
+                    "bottomBox": {
+                      "icon": "smartphone",
+                      "text": "Whether it's a minor crack or a completely broken screen, we've got you covered."
+                    }
+                  },
+                  "whyChooseUsHeader": {
+                    "tag": "WHY CHOOSE US",
+                    "title": "Why Choose Us for All Brand Repairs",
+                    "highlightTitle": "Safe Hands",
+                    "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
+                  },
+                  "repairProcessHeader": {
+                    "title": "Our All Brand Repairs Process",
+                    "subtitle": "Simple, ",
+                    "highlightSubtitle": "Fast & Reliable",
+                    "description": "We make screen repair easy with a hassle-free process."
+                  }
+                }
+              },
+              {
+                "id": "genuine-parts",
+                "image": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?w=600&auto=format&fit=crop&q=80",
+                "icon": "tool",
+                "title": "Genuine Parts",
+                "description": "We use high-quality and genuine parts to ensure long-lasting performance and reliability.",
+                "href": "/services/genuine-parts",
+                "detailData": {
+                  "bulletPoints": [
+                    "Expert Genuine Parts",
+                    "High-quality original or OEM parts",
+                    "Certified technicians",
+                    "Fast turnaround time",
+                    "Comprehensive warranty included"
+                  ],
+                  "whyChooseUs": [
+                    {
+                      "icon": "shield",
+                      "title": "Premium Quality Screens",
+                      "description": "Long-lasting and crystal clear display."
+                    },
+                    {
+                      "icon": "users",
+                      "title": "Expert Technicians",
+                      "description": "Trained professionals with years of experience."
+                    },
+                    {
+                      "icon": "clock",
+                      "title": "Fast Service",
+                      "description": "Most screen repairs completed the same day."
+                    },
+                    {
+                      "icon": "dollar-sign",
+                      "title": "Affordable Pricing",
+                      "description": "High-quality service at competitive rates."
+                    }
+                  ],
+                  "repairSteps": [
+                    {
+                      "step": "01",
+                      "icon": "search",
+                      "title": "Device Check",
+                      "description": "We inspect the damage and confirm the issue."
+                    },
+                    {
+                      "step": "02",
+                      "icon": "file-text",
+                      "title": "Get a Quote",
+                      "description": "Transparent and affordable pricing."
+                    },
+                    {
+                      "step": "03",
+                      "icon": "tool",
+                      "title": "Professional Repair",
+                      "description": "We replace the screen using quality parts."
+                    },
+                    {
+                      "step": "04",
+                      "icon": "check-circle",
+                      "title": "Device Ready",
+                      "description": "Your device is tested and ready to use."
+                    }
+                  ],
+                  "overview": {
+                    "imageSrc": "/images/services/genuine-parts.png",
+                    "imageAlt": "Genuine Parts",
+                    "fromText": [
+                      "From",
+                      "This",
+                      "To This"
+                    ],
+                    "tag": "Genuine Parts",
+                    "title": "Genuine Parts Services",
+                    "highlightTitle": "Screen Repair",
+                    "description": "Get professional and reliable genuine parts from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
+                    "bottomBox": {
+                      "icon": "smartphone",
+                      "text": "Whether it's a minor crack or a completely broken screen, we've got you covered."
+                    }
+                  },
+                  "whyChooseUsHeader": {
+                    "tag": "WHY CHOOSE US",
+                    "title": "Why Choose Us for Genuine Parts",
+                    "highlightTitle": "Safe Hands",
+                    "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
+                  },
+                  "repairProcessHeader": {
+                    "title": "Our Genuine Parts Process",
+                    "subtitle": "Simple, ",
+                    "highlightSubtitle": "Fast & Reliable",
+                    "description": "We make screen repair easy with a hassle-free process."
+                  }
+                }
               }
             ]
           }
@@ -576,100 +1471,395 @@
           }
         }
       },
-      "about": {
+      "team": {
         "variants": {
-          "AutoWirxAbout1": {
+          "AutoWirxTeam1": {
             "header": {
-              "subtitle": "ABOUT US",
-              "titleLine1": "We're Here to Keep You",
-              "titleHighlight": "Connected",
-              "description1": "At Auto Wirx, we provide fast, reliable and affordable mobile repair services with a focus on quality and customer satisfaction.",
-              "description2": "From cracked screens to complex repairs, our expert technicians use advanced tools and genuine parts."
+              "subtitle": "OUR TEAM",
+              "titleLine1": "Meet Our",
+              "titleHighlight": "Expert Team",
+              "description": "Our skilled and dedicated professionals work together to deliver the best mobile repair experience. With expertise, passion and a customer-first approach, our team is always ready to help you."
             },
-            "features": [
+            "members": [
               {
-                "icon": "shield",
-                "title": "Trust Service",
-                "description": "We value your trust and deliver quality you can rely on."
+                "slug": "armaan-khan",
+                "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=80",
+                "name": "Armaan Khan",
+                "role": "FOUNDER & TECHNICAL HEAD",
+                "bio": "Leads our team with a vision to deliver reliable and high-quality mobile repair solutions for everyone.",
+                "description": "Armaan leads our team with a vision to deliver reliable and high-quality mobile repair solutions. He ensures every device is restored to perfect working condition with care and expertise.",
+                "experience": "10+ Years",
+                "availability": "Mon – Sat (10:00 AM – 7:00 PM)",
+                "specialization": "Business Strategy & Technical Architecture",
+                "location": "Auto Wirx Service Center, New York, USA",
+                "about": {
+                  "paragraphs": [
+                    "Armaan is a visionary leader with over 10 years of experience in the mobile repair industry. He built Auto Wirx from the ground up, focusing on quality and customer satisfaction.",
+                    "Under his leadership, the team has successfully repaired thousands of devices, setting a new standard for repair services in the region."
+                  ],
+                  "stats": [
+                    {
+                      "count": "10k+",
+                      "label": "Happy Customers"
+                    },
+                    {
+                      "count": "100%",
+                      "label": "Commitment"
+                    },
+                    {
+                      "count": "5.0/5",
+                      "label": "Leadership Rating"
+                    }
+                  ]
+                },
+                "expertise": [
+                  {
+                    "icon": "cpu",
+                    "title": "Advanced Diagnostics",
+                    "description": "Diagnosing and fixing precision and expertise."
+                  },
+                  {
+                    "icon": "checkCircle",
+                    "title": "Screen Repair",
+                    "description": "Expert screen replacement with premium parts"
+                  },
+                  {
+                    "icon": "checkCircle",
+                    "title": "Motherboard Repair",
+                    "description": "Advanced motherboard repairs for all phone models"
+                  },
+                  {
+                    "icon": "checkCircle",
+                    "title": "Quality Testing",
+                    "description": "Rigorous quality checks on every device"
+                  }
+                ],
+                "timeline": [
+                  {
+                    "step": "01",
+                    "year": "2015",
+                    "text": "Started his journey in the mobile repair industry."
+                  },
+                  {
+                    "step": "02",
+                    "year": "2018",
+                    "text": "Founded Auto Wirx to provide reliable repair solutions."
+                  },
+                  {
+                    "step": "03",
+                    "year": "2023",
+                    "text": "Expanded services across multiple locations."
+                  }
+                ],
+                "socialLinks": [
+                  {
+                    "icon": "linkedin",
+                    "href": "https://linkedin.com"
+                  },
+                  {
+                    "icon": "instagram",
+                    "href": "https://instagram.com"
+                  },
+                  {
+                    "icon": "facebook",
+                    "href": "https://facebook.com"
+                  },
+                  {
+                    "icon": "email",
+                    "href": "mailto:armaan@autowirx.com"
+                  },
+                  {
+                    "icon": "phone",
+                    "href": "tel:+11234567890"
+                  }
+                ]
               },
               {
-                "icon": "settings",
-                "title": "Technicians",
-                "description": "Skilled professionals with years of hands-on experience."
+                "slug": "sara-ali",
+                "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600&auto=format&fit=crop&q=80",
+                "name": "Sara Ali",
+                "role": "CUSTOMER SUPPORT MANAGER",
+                "bio": "Ensures every customer gets the right support, clear information and a smooth repair experience.",
+                "description": "Sara ensures every customer gets the right support, clear information and a smooth repair experience from start to finish.",
+                "experience": "6+ Years",
+                "availability": "Mon – Fri (9:00 AM – 6:00 PM)",
+                "specialization": "Customer Relations & Support",
+                "location": "Auto Wirx Service Center, New York, USA",
+                "about": {
+                  "paragraphs": [
+                    "Sara is dedicated to providing exceptional customer service. She understands the frustration of a broken device and works hard to make the repair process as smooth as possible.",
+                    "Her empathetic approach and clear communication have earned her the trust and appreciation of countless customers."
+                  ],
+                  "stats": [
+                    {
+                      "count": "20k+",
+                      "label": "Queries Resolved"
+                    },
+                    {
+                      "count": "99%",
+                      "label": "Satisfaction Rate"
+                    },
+                    {
+                      "count": "4.8/5",
+                      "label": "Customer Rating"
+                    }
+                  ]
+                },
+                "expertise": [
+                  {
+                    "icon": "smartphone",
+                    "title": "Customer Communication",
+                    "description": "Clear and timely updates"
+                  },
+                  {
+                    "icon": "checkCircle",
+                    "title": "Issue Resolution",
+                    "description": "Quick and effective solutions"
+                  }
+                ],
+                "timeline": [
+                  {
+                    "step": "01",
+                    "year": "2018",
+                    "text": "Started career in customer support."
+                  },
+                  {
+                    "step": "02",
+                    "year": "2020",
+                    "text": "Joined Auto Wirx as Support Executive."
+                  },
+                  {
+                    "step": "03",
+                    "year": "2022",
+                    "text": "Promoted to Customer Support Manager."
+                  }
+                ],
+                "socialLinks": [
+                  {
+                    "icon": "linkedin",
+                    "href": "https://linkedin.com"
+                  },
+                  {
+                    "icon": "instagram",
+                    "href": "https://instagram.com"
+                  },
+                  {
+                    "icon": "facebook",
+                    "href": "https://facebook.com"
+                  },
+                  {
+                    "icon": "email",
+                    "href": "mailto:sara@autowirx.com"
+                  },
+                  {
+                    "icon": "phone",
+                    "href": "tel:+11234567891"
+                  }
+                ]
               },
               {
-                "icon": "award",
-                "title": "Quality Parts",
-                "description": "We use genuine parts for long-lasting performance."
+                "slug": "rohit-verma",
+                "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&auto=format&fit=crop&q=80",
+                "name": "Rohit Verma",
+                "role": "SENIOR REPAIR TECHNICIAN",
+                "bio": "Specializes in complex repairs with precision and care, ensuring your device is in safe hands.",
+                "description": "With a passion for precision and a commitment to quality, Rohit specializes in advanced mobile repairs. He ensures every device is restored to perfect working condition with care and expertise.",
+                "experience": "5+ Years",
+                "availability": "Mon – Sat (10:00 AM – 7:00 PM)",
+                "specialization": "Complex Repairs & Motherboard Fixes",
+                "location": "Auto Wirx Service Center, New York, USA",
+                "about": {
+                  "paragraphs": [
+                    "Rohit is a highly skilled repair technician with over 5 years of hands-on experience in mobile device repair. He is known for his attention to detail, problem-solving skills, and dedication to delivering the highest quality repairs.",
+                    "From cracked screens to complex motherboard issues, Rohit has successfully repaired thousands of devices, ensuring customers get reliable and long-lasting solutions."
+                  ],
+                  "stats": [
+                    {
+                      "count": "5,000+",
+                      "label": "Devices Repaired"
+                    },
+                    {
+                      "count": "98%",
+                      "label": "Repair Accuracy"
+                    },
+                    {
+                      "count": "4.9/5",
+                      "label": "Customer Rating"
+                    }
+                  ]
+                },
+                "expertise": [
+                  {
+                    "icon": "smartphone",
+                    "title": "Advanced Diagnostics",
+                    "description": "Quick & accurate issue detection"
+                  },
+                  {
+                    "icon": "smartphone",
+                    "title": "Screen Repair",
+                    "description": "Cracked screen specialist"
+                  },
+                  {
+                    "icon": "cpu",
+                    "title": "Motherboard Repair",
+                    "description": "Complex board level solutions"
+                  },
+                  {
+                    "icon": "checkCircle",
+                    "title": "Quality Testing",
+                    "description": "Multi-point testing for perfection"
+                  }
+                ],
+                "timeline": [
+                  {
+                    "step": "01",
+                    "year": "2019",
+                    "text": "Started his journey as a mobile repair technician and quickly mastered the basics of hardware and diagnostics."
+                  },
+                  {
+                    "step": "02",
+                    "year": "2021",
+                    "text": "Specialized in complex repairs and motherboard micro-soldering, earning recognition for precision."
+                  },
+                  {
+                    "step": "03",
+                    "year": "2023",
+                    "text": "Joined Auto Wirx as Senior Repair Technician and has been delivering outstanding results ever since."
+                  }
+                ],
+                "socialLinks": [
+                  {
+                    "icon": "linkedin",
+                    "href": "https://linkedin.com"
+                  },
+                  {
+                    "icon": "instagram",
+                    "href": "https://instagram.com"
+                  },
+                  {
+                    "icon": "facebook",
+                    "href": "https://facebook.com"
+                  },
+                  {
+                    "icon": "email",
+                    "href": "mailto:rohit@autowirx.com"
+                  },
+                  {
+                    "icon": "phone",
+                    "href": "tel:+11234567890"
+                  }
+                ]
               },
               {
-                "icon": "clock",
-                "title": "Turnaround",
-                "description": "Quick diagnosis and repair to get you back on track."
+                "slug": "kunal-mehta",
+                "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&auto=format&fit=crop&q=80",
+                "name": "Kunal Mehta",
+                "role": "OPERATIONS MANAGER",
+                "bio": "Keeps our services running smoothly and ensures the highest standards in every repair process.",
+                "description": "Kunal keeps our services running smoothly and ensures the highest standards in every repair process.",
+                "experience": "8+ Years",
+                "availability": "Mon – Fri (9:00 AM – 6:00 PM)",
+                "specialization": "Operations & Process Optimization",
+                "location": "Auto Wirx Service Center, New York, USA",
+                "about": {
+                  "paragraphs": [
+                    "Kunal is an experienced operations manager who ensures that the repair center runs efficiently. He oversees the entire process from device intake to final delivery.",
+                    "His focus on continuous improvement has significantly reduced repair turnaround times while maintaining high quality standards."
+                  ],
+                  "stats": [
+                    {
+                      "count": "15k+",
+                      "label": "Operations Managed"
+                    },
+                    {
+                      "count": "95%",
+                      "label": "Efficiency Rate"
+                    },
+                    {
+                      "count": "4.7/5",
+                      "label": "Team Rating"
+                    }
+                  ]
+                },
+                "expertise": [
+                  {
+                    "icon": "cpu",
+                    "title": "Process Optimization",
+                    "description": "Streamlining repair workflows"
+                  },
+                  {
+                    "icon": "checkCircle",
+                    "title": "Quality Control",
+                    "description": "Maintaining high service standards"
+                  }
+                ],
+                "timeline": [
+                  {
+                    "step": "01",
+                    "year": "2016",
+                    "text": "Started career in operations management."
+                  },
+                  {
+                    "step": "02",
+                    "year": "2019",
+                    "text": "Joined Auto Wirx as Operations Executive."
+                  },
+                  {
+                    "step": "03",
+                    "year": "2021",
+                    "text": "Promoted to Operations Manager."
+                  }
+                ],
+                "socialLinks": [
+                  {
+                    "icon": "linkedin",
+                    "href": "https://linkedin.com"
+                  },
+                  {
+                    "icon": "instagram",
+                    "href": "https://instagram.com"
+                  },
+                  {
+                    "icon": "facebook",
+                    "href": "https://facebook.com"
+                  },
+                  {
+                    "icon": "email",
+                    "href": "mailto:kunal@autowirx.com"
+                  },
+                  {
+                    "icon": "phone",
+                    "href": "tel:+11234567892"
+                  }
+                ]
               }
-            ],
-            "button": {
-              "text": "Learn More About Us",
-              "href": "/about"
-            },
-            "image": {
-              "src": "https://www.prizminstitute.com/blog/wp-content/uploads/2025/12/mobile-phone-repairing-tools.jpg",
-              "alt": "Auto Wirx technician repairing a phone"
-            }
-          },
-          "AutoWirxAboutMission1": {
-            "image": {
-              "src": "https://i.pinimg.com/1200x/65/00/1c/65001cd848f1b1a7a7bfc36b5ddfa943.jpg",
-              "alt": "Technician repairing a mobile phone"
-            },
-            "trustCard": {
-              "icon": "shieldCheck",
-              "preTitle": "Trusted by",
-              "title": "100K+",
-              "subtitle": "Happy Customers",
-              "footer": "Quality Repairs.<br />Longer Connections."
-            },
-            "header": {
-              "subtitle": "About Us",
-              "titleLine1": "We're Here to Keep",
-              "titlePrefix": "You",
-              "titleHighlight": "Connected",
-              "description": "At Auto Wirx, we provide fast, reliable and affordable mobile repair services with a focus on quality and customer satisfaction. From cracked screens to battery issues, our expert technicians use advanced tools and genuine parts to get your device back in perfect working condition."
-            },
-            "features": [
-              {
-                "icon": "shieldCheck",
-                "title": "Technicians",
-                "desc": "Skill professional with in mobile repairs."
-              },
-              {
-                "icon": "settings",
-                "title": "Genuine Parts",
-                "desc": "We use high-quality original performance."
-              },
-              {
-                "icon": "clock",
-                "title": "Turnaround",
-                "desc": "Quick diagnosis get you back on track."
-              },
-              {
-                "icon": "users",
-                "title": "Customer ",
-                "desc": "Your satisfaction is the always our priority."
-              }
-            ],
-            "mission": {
-              "subtitle": "Our Mission",
-              "description": "To deliver reliable repair solutions and keep you connected to what matters most."
-            }
+            ]
           }
         }
       },
-      "pageHeader": {
+      "brandsWeRepair": {
         "variants": {
-          "AutoWirxPageHeader1": {
-            "defaultBgImage": "https://www.allgsmtips.com/wp-content/uploads/2025/12/emmc-mobile-repairing-tools.jpg",
-            "homeLabel": "Home"
+          "AutoWirxBrands1": {
+            "header": {
+              "tag": "BRANDS WE REPAIR",
+              "title": "All Major Brands,",
+              "highlightTitle": "One Trusted Team",
+              "description": "We provide expert repair services for a wide range of smartphone brands, using quality parts and advanced tools to get your device back in perfect working condition."
+            },
+            "brands": [
+              { "name": "Apple", "imagePath": "/images/brands/apple.png" },
+              { "name": "Samsung", "imagePath": "/images/brands/samsung.jpg" },
+              { "name": "Xiaomi", "imagePath": "/images/brands/xiaomi.jpg" },
+              { "name": "OnePlus", "imagePath": "/images/brands/oneplus.png" },
+              { "name": "Oppo", "imagePath": "/images/brands/oppo.png" },
+              { "name": "Vivo", "imagePath": "/images/brands/vivo.png" },
+              { "name": "Realme", "imagePath": "/images/brands/realme.png" },
+              { "name": "Motorola", "imagePath": "/images/brands/motorola.png" },
+              { "name": "Google", "imagePath": "/images/brands/google.png" },
+              { "name": "Nothing", "imagePath": "/images/brands/nothing.jpg" },
+              { "name": "Asus", "imagePath": "/images/brands/asus.png" },
+              { "name": "iQOO", "imagePath": "/images/brands/iqoo.png" }
+            ]
           }
         }
       }

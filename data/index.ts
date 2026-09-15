@@ -24,7 +24,7 @@ export type AutoWirxTopbarData = AutoWirxSections["topbar"]["variants"]["AutoWir
 export type AutoWirxNavbarData = AutoWirxSections["navbar"]["variants"]["AutoWirxNavbar1"];
 export type AutoWirxFooterData = AutoWirxSections["footer"]["variants"]["AutoWirxFooter1"];
 export type AutoWirxHeroData = AutoWirxSections["hero"]["variants"]["AutoWirxHero1"];
-export type AutoWirxServicesData = AutoWirxSections["services"]["variants"]["AutoWirxServices1"];
+
 export type AutoWirxProcessData = AutoWirxSections["process"]["variants"]["AutoWirxProcess1"];
 export type AutoWirxWhyChooseUsData = AutoWirxSections["whyChooseUs"]["variants"]["AutoWirxWhyChooseUs1"];
 export type AutoWirxCtaData = AutoWirxSections["cta"]["variants"]["AutoWirxCta1"];
@@ -33,11 +33,14 @@ export type AutoWirxBlogData = AutoWirxSections["blog"]["variants"]["AutoWirxBlo
 export type AutoWirxAboutData = AutoWirxSections["about"]["variants"]["AutoWirxAbout1"];
 export type AutoWirxAboutMissionData = AutoWirxSections["about"]["variants"]["AutoWirxAboutMission1"];
 export type AutoWirxPageHeaderData = AutoWirxSections["pageHeader"]["variants"]["AutoWirxPageHeader1"];
+export type AutoWirxTeamData = AutoWirxSections["team"]["variants"]["AutoWirxTeam1"];
+export type AutoWirxServicesData = AutoWirxSections["services"]["variants"]["AutoWirxServices1"];
+export type AutoWirxBrandsWeRepairData = AutoWirxSections["brandsWeRepair"]["variants"]["AutoWirxBrands1"];
 
 // ── Canonical Mapped Site Data Object ──
 const sec = siteData.AutoWirx.sections;
-
-const siteMap = {
+export const siteMap = {
+  // Compatibility section shortcuts
   topbar: sec.topbar.variants.AutoWirxTopbar1,
   navbar: sec.navbar.variants.AutoWirxNavbar1,
   footer: sec.footer.variants.AutoWirxFooter1,
@@ -51,6 +54,8 @@ const siteMap = {
   about: sec.about.variants.AutoWirxAbout1,
   aboutMission: sec.about.variants.AutoWirxAboutMission1,
   pageHeader: sec.pageHeader.variants.AutoWirxPageHeader1,
+  team: sec.team.variants.AutoWirxTeam1,
+  brandsWeRepair: sec.brandsWeRepair.variants.AutoWirxBrands1,
 
   // Compatibility section shortcuts
   topbarData: sec.topbar.variants.AutoWirxTopbar1,
@@ -66,6 +71,8 @@ const siteMap = {
   aboutData: sec.about.variants.AutoWirxAbout1,
   aboutMissionData: sec.about.variants.AutoWirxAboutMission1,
   pageHeaderData: sec.pageHeader.variants.AutoWirxPageHeader1,
+  teamData: sec.team.variants.AutoWirxTeam1,
+  brandsWeRepairData: sec.brandsWeRepair.variants.AutoWirxBrands1,
 
   // Root Tree
   AutoWirx: siteData.AutoWirx,

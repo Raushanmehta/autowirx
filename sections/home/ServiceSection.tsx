@@ -15,6 +15,13 @@ const IconMap: Record<string, React.ElementType> = {
     volume: IoVolumeHighOutline,
     camera: IoCameraOutline,
     construct: IoConstructOutline,
+    smartphone: IoPhonePortraitOutline,
+    "battery-charging": IoBatteryChargingOutline,
+    droplet: IoWaterOutline,
+    zap: IoHardwareChipOutline,
+    "volume-2": IoVolumeHighOutline,
+    cpu: IoHardwareChipOutline,
+    tool: IoConstructOutline,
 };
 
 export default function ServiceSection() {
@@ -52,12 +59,12 @@ export default function ServiceSection() {
                     viewport={{ once: true, margin: "-100px" }}
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
                 >
-                    {data.servicesList.map((service, index) => {
+                    {data.servicesList.slice(0, 8).map((service, index) => {
                         const Icon = IconMap[service.icon];
                         return (
                             <motion.div key={index} variants={fadeUpVariants}>
                                 <ServiceCard
-                                    icon={<Icon size={40} />}
+                                    icon={Icon ? <Icon size={40} /> : null}
                                     title={service.title}
                                     description={service.description}
                                     href={service.href}
