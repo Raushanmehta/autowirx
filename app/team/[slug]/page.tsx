@@ -1,5 +1,5 @@
 import PageTopSection from "@/components/common/PageTopSection";
-import TeamDetailPage from "@/pages/TeamDetailPage";
+import TeamDetailPage from "@/sections/TeamDetailPage";
 import { site } from "@/data";
 
 export default function TeamDetail({ params }: { params: { slug: string } }) {

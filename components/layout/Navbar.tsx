@@ -5,7 +5,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { navbarVariants, logoVariants, navContainerVariants, navItemVariants, mobileMenuVariants, mobileItemsVariants } from "../../utils/animations";
-import { FiChevronDown, FiArrowRight, FiMenu, FiX, FiSmartphone, FiBatteryCharging, FiMonitor } from "react-icons/fi";
+import {
+  FiChevronDown, FiArrowRight, FiMenu, FiX,
+  FiSmartphone, FiBatteryCharging, FiMonitor,
+  FiDroplet, FiZap, FiVolume2, FiCamera, FiSettings
+} from "react-icons/fi";
 import { site } from "../../data";
 
 export default function Navbar() {
@@ -67,26 +71,51 @@ export default function Navbar() {
                     <AnimatePresence>
                       {isServicesOpen && (
                         <motion.div
-                          initial={{ opacity: 0, y: 10, scale: 0.96 }}
-                          animate={{ opacity: 1, y: 0, scale: 1 }}
-                          exit={{ opacity: 0, y: 10, scale: 0.96 }}
-                          transition={{ duration: 0.2, ease: "easeOut" }}
-                          className="absolute top-full left-0 w-60 bg-white shadow-xl rounded-xl py-2 border border-gray-100 origin-top">
+                          initial="hidden"
+                          animate="visible"
+                          exit="hidden"
+                          variants={{
+                            hidden: { opacity: 0, y: 10, scale: 0.96 },
+                            visible: {
+                              opacity: 1,
+                              y: 0,
+                              scale: 1,
+                              transition: {
+                                duration: 0.2,
+                                ease: "easeOut",
+                                staggerChildren: 0.05
+                              }
+                            }
+                          }}
+                          className="absolute top-full left-0 w-70 mt-5 bg-white shadow-xl  py-2 border border-gray-100 origin-top">
                           {link.subLinks.map((sub, subIdx) => {
                             const getIcon = () => {
-                              if (sub.label.toLowerCase().includes("battery")) return <FiBatteryCharging className="text-blue-500 text-lg shrink-0" />;
-                              if (sub.label.toLowerCase().includes("screen")) return <FiMonitor className="text-blue-500 text-lg shrink-0" />;
-                              return <FiSmartphone className="text-blue-500 text-lg shrink-0" />;
+                              const lbl = sub.label.toLowerCase();
+                              if (lbl.includes("battery")) return <FiBatteryCharging className="text-blue-500 text-xl shrink-0" />;
+                              if (lbl.includes("screen")) return <FiMonitor className="text-blue-500 text-xl shrink-0" />;
+                              if (lbl.includes("water")) return <FiDroplet className="text-blue-500 text-xl shrink-0" />;
+                              if (lbl.includes("charging") || lbl.includes("port")) return <FiZap className="text-blue-500 text-xl shrink-0" />;
+                              if (lbl.includes("speaker") || lbl.includes("mic")) return <FiVolume2 className="text-blue-500 text-xl shrink-0" />;
+                              if (lbl.includes("camera")) return <FiCamera className="text-blue-500 text-xl shrink-0" />;
+                              if (lbl.includes("software")) return <FiSettings className="text-blue-500 text-xl shrink-0" />;
+                              return <FiSmartphone className="text-blue-500 text-xl shrink-0" />;
                             };
                             return (
-                              <Link
+                              <motion.div
                                 key={subIdx}
-                                href={sub.href}
-                                className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                                variants={{
+                                  hidden: { opacity: 0, x: -10 },
+                                  visible: { opacity: 1, x: 0, transition: { type: "spring", stiffness: 300, damping: 24 } }
+                                }}
                               >
-                                {getIcon()}
-                                {sub.label}
-                              </Link>
+                                <Link
+                                  href={sub.href}
+                                  className="flex items-center gap-3 px-5 py-3 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                                >
+                                  {getIcon()}
+                                  {sub.label}
+                                </Link>
+                              </motion.div>
                             );
                           })}
                         </motion.div>
@@ -188,7 +217,7 @@ export default function Navbar() {
                 if (link.subLinks) {
                   return (
                     <motion.div key={idx} variants={mobileItemsVariants}>
-                      <button 
+                      <button
                         onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
                         className="flex items-center justify-between w-full py-2 text-gray-800 font-medium">
                         <span>{link.label}</span>
@@ -198,10 +227,10 @@ export default function Navbar() {
                           <FiChevronDown className="text-lg text-blue-600" />
                         </motion.span>
                       </button>
-                      
+
                       <AnimatePresence>
                         {isMobileServicesOpen && (
-                          <motion.div 
+                          <motion.div
                             initial={{ height: 0, opacity: 0 }}
                             animate={{ height: "auto", opacity: 1 }}
                             exit={{ height: 0, opacity: 0 }}
@@ -210,8 +239,14 @@ export default function Navbar() {
                             <div className="pl-4 space-y-2 border-l-2 border-blue-100 ml-2 mt-1 py-1">
                               {link.subLinks.map((sub, subIdx) => {
                                 const getIcon = () => {
-                                  if (sub.label.toLowerCase().includes("battery")) return <FiBatteryCharging className="text-blue-500 text-lg shrink-0" />;
-                                  if (sub.label.toLowerCase().includes("screen")) return <FiMonitor className="text-blue-500 text-lg shrink-0" />;
+                                  const lbl = sub.label.toLowerCase();
+                                  if (lbl.includes("battery")) return <FiBatteryCharging className="text-blue-500 text-lg shrink-0" />;
+                                  if (lbl.includes("screen")) return <FiMonitor className="text-blue-500 text-lg shrink-0" />;
+                                  if (lbl.includes("water")) return <FiDroplet className="text-blue-500 text-lg shrink-0" />;
+                                  if (lbl.includes("charging") || lbl.includes("port")) return <FiZap className="text-blue-500 text-lg shrink-0" />;
+                                  if (lbl.includes("speaker") || lbl.includes("mic")) return <FiVolume2 className="text-blue-500 text-lg shrink-0" />;
+                                  if (lbl.includes("camera")) return <FiCamera className="text-blue-500 text-lg shrink-0" />;
+                                  if (lbl.includes("software")) return <FiSettings className="text-blue-500 text-lg shrink-0" />;
                                   return <FiSmartphone className="text-blue-500 text-lg shrink-0" />;
                                 };
                                 return (

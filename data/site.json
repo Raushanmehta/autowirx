@@ -52,16 +52,32 @@
                 "href": "#",
                 "subLinks": [
                   {
-                    "label": "Phone Repair",
-                    "href": "/services/repair"
+                    "label": "Screen Repair",
+                    "href": "/services/screen-repair"
                   },
                   {
-                    "label": "Screen Replacement",
-                    "href": "/services/screen"
+                    "label": "Battery Replacement",
+                    "href": "/services/battery-replacement"
                   },
                   {
-                    "label": "Battery Service",
-                    "href": "/services/battery"
+                    "label": "Water Damage Repair",
+                    "href": "/services/water-damage"
+                  },
+                  {
+                    "label": "Charging Port Repair",
+                    "href": "/services/charging-port"
+                  },
+                  {
+                    "label": "Speaker & Mic Repair",
+                    "href": "/services/speaker-mic"
+                  },
+                  {
+                    "label": "Camera Repair",
+                    "href": "/services/camera-repair"
+                  },
+                  {
+                    "label": "Software Issues",
+                    "href": "/services/software-issues"
                   }
                 ]
               },
@@ -107,58 +123,54 @@
                 "href": "/services"
               },
               {
+                "name": "Brands We Repair",
+                "href": "/brands-we-repair"
+              },
+              {
+                "name": "Gallery",
+                "href": "/gallery"
+              },
+              {
                 "name": "Our Team",
                 "href": "/team"
               },
               {
-                "name": "Blogs",
-                "href": "/blogs"
-              },
-              {
-                "name": "Locations",
-                "href": "/locations"
-              },
-              {
-                "name": "Pricing",
-                "href": "/pricing"
-              },
-              {
-                "name": "Contact Us",
-                "href": "/contact"
+                "name": "Why Choose Us",
+                "href": "/why-choose-us"
               }
             ],
             "ourServices": [
               {
-                "name": "Car Diagnostics",
-                "href": "/services/diagnostics"
+                "name": "Screen Repair",
+                "href": "/services/screen-repair"
               },
               {
-                "name": "General Repair",
-                "href": "/services/repair"
+                "name": "Battery Replacement",
+                "href": "/services/battery-replacement"
               },
               {
-                "name": "Brake Service",
-                "href": "/services/brakes"
+                "name": "Water Damage Repair",
+                "href": "/services/water-damage"
               },
               {
-                "name": "Engine Repair",
-                "href": "/services/engine"
+                "name": "Charging Port Repair",
+                "href": "/services/charging-port"
               },
               {
-                "name": "Battery Service",
-                "href": "/services/battery"
+                "name": "Speaker & Mic Repair",
+                "href": "/services/speaker-mic"
               },
               {
-                "name": "Oil Change",
-                "href": "/services/oil-change"
+                "name": "Camera Repair",
+                "href": "/services/camera-repair"
               },
               {
-                "name": "AC Repair",
-                "href": "/services/ac-repair"
+                "name": "Software Issues",
+                "href": "/services/software-issues"
               },
               {
-                "name": "Tire Service",
-                "href": "/services/tires"
+                "name": "All Brand Repairs",
+                "href": "/services/brand-repairs"
               }
             ],
             "companyLinks": [
@@ -1434,40 +1446,378 @@
               "titleLine2": "& Insights",
               "description": "Stay updated with our latest articles, tips and insights on technology, development and digital trends."
             },
-            "items": [
+            "blogPosts": [
               {
-                "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&auto=format&fit=crop&q=80",
-                "category": "Development",
-                "date": "May 20, 2025",
-                "title": "How to Build Scalable Web Applications in 2025",
-                "description": "Discover the best practices and modern technologies to build fast, secure and scalable web applications.",
-                "href": "/blog/scalable-web-applications"
+                "category": "Screen Repair",
+                "title": "5 Signs It's Time to Replace Your Phone Screen",
+                "description": "A cracked screen isn't just a cosmetic issue. Here are the top signs that you should replace your screen for better performance and safety.",
+                "date": "Aug 20, 2026",
+                "readTime": "5 min read",
+                "image": "https://i.pinimg.com/1200x/8c/38/4d/8c384d7e8fbba8349c752238fd92b6b5.jpg",
+                "href": "/blog/5-signs-it-s-time-to-replace-your-phone-screen",
+                "author": "Auto Wirx Team",
+                "intro": "A cracked screen isn't just a cosmetic issue. It can affect your phone's performance, safety and usability. If you're unsure whether it's time for a replacement, here are the top signs to look for.",
+                "contentBlocks": [
+                  {
+                    "title": "1. Visible Cracks or Shattered Glass",
+                    "content": "The most obvious sign is visible damage. Even small cracks can spread over time and make the screen more fragile. A shattered screen can also cause injury, so it's best to get it replaced as soon as possible."
+                  },
+                  {
+                    "title": "2. Unresponsive Touchscreen",
+                    "content": "If your screen doesn't respond to touch or you notice delayed response, it could be due to internal damage. This can make it difficult to use your phone and may get worse with time."
+                  },
+                  {
+                    "title": "3. Display Issues",
+                    "content": "Lines, flickering, dead pixels or black spots on your screen are clear indicators of screen damage. These issues can affect your viewing experience and may eventually make the screen unusable."
+                  },
+                  {
+                    "title": "4. Discoloration or Dark Patches",
+                    "content": "If you notice yellow spots, dark patches or uneven colors, it's a sign that your screen is compromised. This usually happens due to physical impact or pressure."
+                  },
+                  {
+                    "title": "5. Glass Feeling Rough or Sharp",
+                    "content": "If the glass surface feels rough or you can feel sharp edges, it's not safe to continue using the device. A replacement will restore the smooth and safe surface of your phone."
+                  }
+                ]
               },
               {
-                "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80",
-                "category": "Security",
-                "date": "May 18, 2025",
-                "title": "Website Security Best Practices You Should Follow",
-                "description": "Learn essential tips to protect your website from threats and keep your data safe from cyber attacks.",
-                "href": "/blog/website-security-best-practices"
+                "category": "Battery Tips",
+                "title": "How to Extend Your Smartphone Battery Life",
+                "description": "Simple tips and proven practices to make your battery last longer and keep your device running smoothly.",
+                "date": "Aug 18, 2026",
+                "readTime": "6 min read",
+                "image": "https://i.pinimg.com/1200x/80/1c/e4/801ce4d475c4ac0a7d56198e1e6f21de.jpg",
+                "href": "/blog/how-to-extend-your-smartphone-battery-life",
+                "author": "Auto Wirx Team",
+                "intro": "Simple tips and proven practices to make your battery last longer and keep your device running smoothly.",
+                "contentBlocks": [
+                  {
+                    "title": "1. Adjust Screen Brightness",
+                    "content": "Lowering your screen brightness or using auto-brightness can significantly reduce battery consumption."
+                  },
+                  {
+                    "title": "2. Disable Background Apps",
+                    "content": "Apps running in the background can silently drain your battery. Close them or restrict their background activity."
+                  },
+                  {
+                    "title": "3. Turn Off Location Services",
+                    "content": "GPS and location tracking use a lot of power. Only enable location for apps that truly need it."
+                  },
+                  {
+                    "title": "4. Keep Your Software Updated",
+                    "content": "Software updates often include performance improvements and battery optimization features."
+                  },
+                  {
+                    "title": "5. Avoid Extreme Temperatures",
+                    "content": "Heat and cold can permanently degrade your battery. Keep your phone in moderate temperature environments."
+                  }
+                ]
               },
               {
-                "image": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600&auto=format&fit=crop&q=80",
-                "category": "Design",
-                "date": "May 15, 2025",
-                "title": "UI/UX Design Trends Shaping the Digital World",
-                "description": "Explore the latest UI/UX design trends that are enhancing user experience and driving engagement.",
-                "href": "/blog/ui-ux-design-trends"
+                "category": "Charging Issues",
+                "title": "Charging Port Not Working? Here's What You Can Do",
+                "description": "If your phone isn't charging properly, it could be a port issue. Learn the causes, fixes and when to visit a professional.",
+                "date": "Aug 15, 2026",
+                "readTime": "4 min read",
+                "image": "https://i.pinimg.com/1200x/f3/ab/c9/f3abc9cadb97b3462c9194df98987a2a.jpg",
+                "href": "/blog/charging-port-not-working-here-s-what-you-can-do",
+                "author": "Auto Wirx Team",
+                "intro": "If your phone isn't charging properly, it could be a port issue. Learn the causes, fixes and when to visit a professional.",
+                "contentBlocks": [
+                  {
+                    "title": "1. Check for Lint and Debris",
+                    "content": "Dust and lint from pockets can clog the port. Use a wooden toothpick to gently clean it out."
+                  },
+                  {
+                    "title": "2. Try a Different Cable",
+                    "content": "Often, the charging cable is the culprit. Swap it out to see if the issue resolves."
+                  },
+                  {
+                    "title": "3. Inspect the Wall Adapter",
+                    "content": "Faulty adapters can stop power flow. Try plugging your phone into a computer or different adapter."
+                  },
+                  {
+                    "title": "4. Restart Your Phone",
+                    "content": "A simple reboot can fix software glitches that prevent the phone from recognizing the charger."
+                  },
+                  {
+                    "title": "5. Seek Professional Repair",
+                    "content": "If hardware damage is present, a professional technician will need to replace the charging port."
+                  }
+                ]
               },
               {
-                "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=80",
-                "category": "Marketing",
-                "date": "May 12, 2025",
-                "title": "Digital Marketing Strategies That Deliver Results",
-                "description": "Boost your online presence and grow your business with proven digital marketing strategies that work.",
-                "href": "/blog/digital-marketing-strategies"
+                "category": "Camera Repair",
+                "title": "Blurred Photos? Common Camera Problems and Fixes",
+                "description": "From blurry images to focus issues, here's everything you need to know about smartphone camera repairs.",
+                "date": "Aug 12, 2026",
+                "readTime": "5 min read",
+                "image": "https://i.pinimg.com/1200x/d6/57/c2/d657c26571a8b349fd7502b245873d7c.jpg",
+                "href": "/blog/blurred-photos-common-camera-problems-and-fixes",
+                "author": "Auto Wirx Team",
+                "intro": "From blurry images to focus issues, here's everything you need to know about smartphone camera repairs.",
+                "contentBlocks": [
+                  {
+                    "title": "1. Clean the Lens",
+                    "content": "Smudges and fingerprints are the number one cause of blurry photos. Wipe the lens with a microfiber cloth."
+                  },
+                  {
+                    "title": "2. Check for Scratches",
+                    "content": "Deep scratches on the camera glass can permanently distort images. The lens cover may need replacement."
+                  },
+                  {
+                    "title": "3. Tap to Focus",
+                    "content": "Sometimes the autofocus gets confused. Tap the screen to manually focus on your subject."
+                  },
+                  {
+                    "title": "4. Clear Camera Cache",
+                    "content": "Software bugs can cause camera lag or focus issues. Clearing the app cache might resolve it."
+                  },
+                  {
+                    "title": "5. Hardware Failure",
+                    "content": "If the internal camera module is damaged from a drop, it will need to be physically replaced."
+                  }
+                ]
+              },
+              {
+                "category": "Water Damage",
+                "title": "What to Do If Your Phone Gets Water Damaged",
+                "description": "Act fast! Follow these essential steps to minimize damage and improve the chances of recovery.",
+                "date": "Aug 10, 2026",
+                "readTime": "6 min read",
+                "image": "https://i.pinimg.com/1200x/13/f2/74/13f274fedeed93f4636a4a151d800976.jpg",
+                "href": "/blog/what-to-do-if-your-phone-gets-water-damaged",
+                "author": "Auto Wirx Team",
+                "intro": "Act fast! Follow these essential steps to minimize damage and improve the chances of recovery.",
+                "contentBlocks": [
+                  {
+                    "title": "1. Power It Off Immediately",
+                    "content": "Do not try to use it or charge it. Turning it off prevents short circuits that cause permanent damage."
+                  },
+                  {
+                    "title": "2. Remove the Case and SIM",
+                    "content": "Take off any protective cases and remove the SIM and SD card trays to allow air to flow inside."
+                  },
+                  {
+                    "title": "3. Dry the Exterior",
+                    "content": "Use an absorbent towel to carefully dab away any visible moisture from the outside of the device."
+                  },
+                  {
+                    "title": "4. Skip the Rice Trick",
+                    "content": "Rice is inefficient and leaves dust. Use silica gel packets or let it air dry in a well-ventilated area."
+                  },
+                  {
+                    "title": "5. Take It to an Expert",
+                    "content": "Water damage can cause corrosion over time. A professional ultrasonic cleaning is the best way to save it."
+                  }
+                ]
+              },
+              {
+                "category": "Repair Tips",
+                "title": "Why Professional Repair Matters",
+                "description": "DIY fixes can be risky. Here's why choosing certified professionals ensures long-lasting results and device safety.",
+                "date": "Aug 08, 2026",
+                "readTime": "4 min read",
+                "image": "https://i.pinimg.com/736x/9e/b4/2b/9eb42b7cfc4512490be00d895a340624.jpg",
+                "href": "/blog/why-professional-repair-matters",
+                "author": "Auto Wirx Team",
+                "intro": "DIY fixes can be risky. Here's why choosing certified professionals ensures long-lasting results and device safety.",
+                "contentBlocks": [
+                  {
+                    "title": "1. High-Quality Parts",
+                    "content": "Professionals use OEM or premium aftermarket parts that ensure your device works like new."
+                  },
+                  {
+                    "title": "2. Expert Knowledge",
+                    "content": "Trained technicians know how to properly disassemble and reassemble devices without causing secondary damage."
+                  },
+                  {
+                    "title": "3. Data Security",
+                    "content": "A reputable shop guarantees your personal data remains private and secure during the repair process."
+                  },
+                  {
+                    "title": "4. Warranty Protection",
+                    "content": "Professional repairs usually come with a warranty, giving you peace of mind if the part fails."
+                  },
+                  {
+                    "title": "5. Time and Cost Efficiency",
+                    "content": "DIY repairs often take longer and can lead to costly mistakes. Professionals get it done fast and right."
+                  }
+                ]
+              },
+              {
+                "category": "Software Support",
+                "title": "Common Software Issues and How to Fix Them",
+                "description": "From slow performance to app crashes, here are quick solutions to the most common software problems.",
+                "date": "Aug 05, 2026",
+                "readTime": "5 min read",
+                "image": "https://i.pinimg.com/1200x/2b/2e/44/2b2e44338cb39ba66e9f55fd76a33497.jpg",
+                "href": "/blog/common-software-issues-and-how-to-fix-them",
+                "author": "Auto Wirx Team",
+                "intro": "From slow performance to app crashes, here are quick solutions to the most common software problems.",
+                "contentBlocks": [
+                  {
+                    "title": "1. App Crashes",
+                    "content": "If apps keep crashing, try updating them or clearing their cache data in the settings."
+                  },
+                  {
+                    "title": "2. Phone Freezing",
+                    "content": "A hard reboot can unfreeze a stuck device. If it persists, you may need to free up storage space."
+                  },
+                  {
+                    "title": "3. Wi-Fi Disconnects",
+                    "content": "Forget the network and reconnect, or reset your network settings to solve persistent connectivity bugs."
+                  },
+                  {
+                    "title": "4. Rapid Battery Drain",
+                    "content": "Check battery usage stats to identify rogue apps that are draining power in the background."
+                  },
+                  {
+                    "title": "5. Factory Reset",
+                    "content": "If all else fails, back up your data and perform a factory reset to restore the phone to a clean slate."
+                  }
+                ]
+              },
+              {
+                "category": "Device Guide",
+                "title": "iPhone vs Android: Repair Differences Explained",
+                "description": "Explore the key differences in repair processes, parts availability and costs between iPhone and Android devices.",
+                "date": "Aug 02, 2026",
+                "readTime": "6 min read",
+                "image": "https://i.pinimg.com/1200x/6f/d2/85/6fd285a97743c2ad299145360ff72b81.jpg",
+                "href": "/blog/iphone-vs-android-repair-differences-explained",
+                "author": "Auto Wirx Team",
+                "intro": "Explore the key differences in repair processes, parts availability and costs between iPhone and Android devices.",
+                "contentBlocks": [
+                  {
+                    "title": "1. Component Availability",
+                    "content": "iPhone parts are standardized, while Android parts vary wildly across hundreds of different models."
+                  },
+                  {
+                    "title": "2. Repair Difficulty",
+                    "content": "Apple devices often feature complex adhesive seals and proprietary screws, requiring specialized tools."
+                  },
+                  {
+                    "title": "3. Software Pairing",
+                    "content": "iPhones use serialized parts. Replacing a screen or battery without specialized programming can trigger warning messages."
+                  },
+                  {
+                    "title": "4. Cost of Parts",
+                    "content": "Premium Android flagships (like folding phones) can have much higher screen replacement costs than iPhones."
+                  },
+                  {
+                    "title": "5. Third-Party Support",
+                    "content": "Both ecosystems have strong third-party repair support, but finding parts for niche Android brands can be tough."
+                  }
+                ]
+              },
+              {
+                "category": "Maintenance Tips",
+                "title": "How to Keep Your Device in Top Condition",
+                "description": "A few simple habits can help you avoid major repairs. Here's how to maintain your device for the long run.",
+                "date": "Jul 30, 2026",
+                "readTime": "4 min read",
+                "image": "https://i.pinimg.com/1200x/50/80/5e/50805e0eda650a3544d301dd8c9ef0cc.jpg",
+                "href": "/blog/how-to-keep-your-device-in-top-condition",
+                "author": "Auto Wirx Team",
+                "intro": "A few simple habits can help you avoid major repairs. Here's how to maintain your device for the long run.",
+                "contentBlocks": [
+                  {
+                    "title": "1. Use a Good Case",
+                    "content": "A shock-absorbent case is your first line of defense against drops and daily wear and tear."
+                  },
+                  {
+                    "title": "2. Apply a Screen Protector",
+                    "content": "Tempered glass protectors prevent scratches and can absorb the impact of a direct screen hit."
+                  },
+                  {
+                    "title": "3. Clean It Regularly",
+                    "content": "Wipe your phone down with a tech-safe disinfectant to keep it hygienic and looking fresh."
+                  },
+                  {
+                    "title": "4. Manage Storage",
+                    "content": "Keep at least 10% of your storage free to ensure the operating system runs smoothly without lagging."
+                  },
+                  {
+                    "title": "5. Optimize Charging",
+                    "content": "Try to keep your battery between 20% and 80% to prolong its overall lifespan."
+                  }
+                ]
               }
-            ]
+            ],
+            "sidebar": {
+              "categories": [
+                {
+                  "name": "Screen Repair",
+                  "count": 12,
+                  "active": true
+                },
+                {
+                  "name": "Battery Tips",
+                  "count": 10
+                },
+                {
+                  "name": "Charging Issues",
+                  "count": 8
+                },
+                {
+                  "name": "Camera Repair",
+                  "count": 6
+                },
+                {
+                  "name": "Water Damage",
+                  "count": 7
+                },
+                {
+                  "name": "Software Support",
+                  "count": 9
+                },
+                {
+                  "name": "Device Guide",
+                  "count": 11
+                },
+                {
+                  "name": "Maintenance Tips",
+                  "count": 8
+                },
+                {
+                  "name": "Repair Tips",
+                  "count": 14
+                }
+              ],
+              "popularPosts": [
+                {
+                  "title": "How to Extend Your Smartphone Battery Life",
+                  "date": "Aug 18, 2026",
+                  "image": "https://i.pinimg.com/1200x/80/1c/e4/801ce4d475c4ac0a7d56198e1e6f21de.jpg",
+                  "link": "#"
+                },
+                {
+                  "title": "Charging Port Not Working? Here's What You Can Do",
+                  "date": "Aug 15, 2026",
+                  "image": "https://i.pinimg.com/1200x/f3/ab/c9/f3abc9cadb97b3462c9194df98987a2a.jpg",
+                  "link": "#"
+                },
+                {
+                  "title": "Blurred Photos? Common Camera Problems and Fixes",
+                  "date": "Aug 12, 2026",
+                  "image": "https://i.pinimg.com/1200x/d6/57/c2/d657c26571a8b349fd7502b245873d7c.jpg",
+                  "link": "#"
+                },
+                {
+                  "title": "What to Do If Your Phone Gets Water Damaged",
+                  "date": "Aug 10, 2026",
+                  "image": "https://i.pinimg.com/1200x/13/f2/74/13f274fedeed93f4636a4a151d800976.jpg",
+                  "link": "#"
+                },
+                {
+                  "title": "iPhone vs Android: Repair Differences Explained",
+                  "date": "Aug 02, 2026",
+                  "image": "https://i.pinimg.com/1200x/6f/d2/85/6fd285a97743c2ad299145360ff72b81.jpg",
+                  "link": "#"
+                }
+              ]
+            }
           }
         }
       },
@@ -1847,18 +2197,295 @@
               "description": "We provide expert repair services for a wide range of smartphone brands, using quality parts and advanced tools to get your device back in perfect working condition."
             },
             "brands": [
-              { "name": "Apple", "imagePath": "/images/brands/apple.png" },
-              { "name": "Samsung", "imagePath": "/images/brands/samsung.jpg" },
-              { "name": "Xiaomi", "imagePath": "/images/brands/xiaomi.jpg" },
-              { "name": "OnePlus", "imagePath": "/images/brands/oneplus.png" },
-              { "name": "Oppo", "imagePath": "/images/brands/oppo.png" },
-              { "name": "Vivo", "imagePath": "/images/brands/vivo.png" },
-              { "name": "Realme", "imagePath": "/images/brands/realme.png" },
-              { "name": "Motorola", "imagePath": "/images/brands/motorola.png" },
-              { "name": "Google", "imagePath": "/images/brands/google.png" },
-              { "name": "Nothing", "imagePath": "/images/brands/nothing.jpg" },
-              { "name": "Asus", "imagePath": "/images/brands/asus.png" },
-              { "name": "iQOO", "imagePath": "/images/brands/iqoo.png" }
+              {
+                "name": "Apple",
+                "imagePath": "/images/brands/apple.png"
+              },
+              {
+                "name": "Samsung",
+                "imagePath": "/images/brands/samsung.jpg"
+              },
+              {
+                "name": "Xiaomi",
+                "imagePath": "/images/brands/xiaomi.jpg"
+              },
+              {
+                "name": "OnePlus",
+                "imagePath": "/images/brands/oneplus.png"
+              },
+              {
+                "name": "Oppo",
+                "imagePath": "/images/brands/oppo.png"
+              },
+              {
+                "name": "Vivo",
+                "imagePath": "/images/brands/vivo.png"
+              },
+              {
+                "name": "Realme",
+                "imagePath": "/images/brands/realme.png"
+              },
+              {
+                "name": "Motorola",
+                "imagePath": "/images/brands/motorola.png"
+              },
+              {
+                "name": "Google",
+                "imagePath": "/images/brands/google.png"
+              },
+              {
+                "name": "Nothing",
+                "imagePath": "/images/brands/nothing.jpg"
+              },
+              {
+                "name": "Asus",
+                "imagePath": "/images/brands/asus.png"
+              },
+              {
+                "name": "iQOO",
+                "imagePath": "/images/brands/iqoo.png"
+              }
+            ]
+          }
+        }
+      },
+      "gallery": {
+        "variants": {
+          "AutoWirxGallery1": {
+            "header": {
+              "titleLine1": "Moments from ",
+              "titleHighlight": "Our Workshop",
+              "description": "A closer look at our repair process, workspace and the care we put into every device.",
+              "tag": "OUR GALLERY"
+            },
+            "images": [
+              {
+                "src": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&auto=format&fit=crop&q=80",
+                "alt": "Technician repairing smartphone motherboard"
+              },
+              {
+                "src": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&auto=format&fit=crop&q=80",
+                "alt": "Sleek smartphones on workshop table"
+              },
+              {
+                "src": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?w=800&auto=format&fit=crop&q=80",
+                "alt": "Assembling phone components"
+              },
+              {
+                "src": "https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=800&auto=format&fit=crop&q=80",
+                "alt": "Cracked phone screen display"
+              },
+              {
+                "src": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=800&auto=format&fit=crop&q=80",
+                "alt": "Auto Wirx Professional Repair Workshop Setup"
+              },
+              {
+                "src": "https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?w=800&auto=format&fit=crop&q=80",
+                "alt": "Row of repaired phones on stands"
+              },
+              {
+                "src": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&auto=format&fit=crop&q=80",
+                "alt": "Micro-soldering repair process"
+              },
+              {
+                "src": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop&q=80",
+                "alt": "Professional repair tools and screwdrivers"
+              },
+              {
+                "src": "https://images.unsplash.com/photo-1591337676887-a217a6970a8a?w=800&auto=format&fit=crop&q=80",
+                "alt": "Internal phone parts and battery replacement"
+              }
+            ]
+          }
+        }
+      },
+      "pricing": {
+        "variants": {
+          "AutoWirxPricing1": {
+            "header": {
+              "tag": "Our Pricing",
+              "titleLine1": "Clear Prices for ",
+              "titleHighlight": "Every Repair",
+              "description": "We offer reliable mobile repair services at honest and competitive prices. Choose the service you need and get your device fixed by our experts."
+            },
+            "ctaBanner": {
+              "title": "Prices may vary depending on your device model and condition.",
+              "description": "For an exact quote, feel free to contact us.",
+              "buttonText": "Get a Custom Quote →",
+              "buttonLink": "/contact",
+              "image": "https://i.pinimg.com/1200x/cd/cc/84/cdcc841b3d1f4c47995c2c4b2e15cba2.jpg"
+            },
+            "whyPricingWorks": {
+              "tag": "Why Our Pricing works",
+              "title": "Honest Pricing. Reliable Service.",
+              "features": [
+                {
+                  "icon": "FaCheckCircle",
+                  "title": "Quality Service",
+                  "description": "We use genuine parts and follow industry best practices."
+                },
+                {
+                  "icon": "FaShieldAlt",
+                  "title": "Transparent Pricing",
+                  "description": "No hidden fees, what you see is what you pay."
+                },
+                {
+                  "icon": "FaTools",
+                  "title": "All Device Support",
+                  "description": "Service available for all major brands and models."
+                }
+              ]
+            },
+            "pricingData": [
+              {
+                "service": "Screen Replacement",
+                "description": "Cracked or damaged screen",
+                "premium": "₹12,999",
+                "standard": "₹8,499",
+                "budget": "₹6,499",
+                "basic": "₹4,499"
+              },
+              {
+                "service": "Battery Replacement",
+                "description": "Battery draining fast or not charging",
+                "premium": "₹3,499",
+                "standard": "₹2,499",
+                "budget": "₹2,299",
+                "basic": "₹1,899"
+              },
+              {
+                "service": "Charging Port Repair",
+                "description": "Charging port loose or not working",
+                "premium": "₹2,499",
+                "standard": "₹1,799",
+                "budget": "₹1,699",
+                "basic": "₹1,499"
+              },
+              {
+                "service": "Camera Replacement",
+                "description": "Blurry or not working camera",
+                "premium": "₹4,999",
+                "standard": "₹3,499",
+                "budget": "₹2,999",
+                "basic": "₹2,499"
+              },
+              {
+                "service": "Speaker Repair",
+                "description": "Low or no sound issues",
+                "premium": "₹2,299",
+                "standard": "₹1,499",
+                "budget": "₹1,299",
+                "basic": "₹999"
+              },
+              {
+                "service": "Water Damage Repair",
+                "description": "Water damage diagnosis & repair",
+                "premium": "₹2,999",
+                "standard": "₹2,999",
+                "budget": "₹2,999",
+                "basic": "₹2,999"
+              },
+              {
+                "service": "Software Issue Fixing",
+                "description": "Software update, hang or lag issues",
+                "premium": "₹999",
+                "standard": "₹999",
+                "budget": "₹999",
+                "basic": "₹999"
+              }
+            ]
+          }
+        }
+      },
+      "faqs": {
+        "variants": {
+          "AutoWirxFaqs1": {
+            "header": {
+              "tag": "FAQs",
+              "titleLine1": "Quick Answers for a ",
+              "titleHighlight": "Better Experience",
+              "description": "Find answers to common questions about our services, repairs, pricing, turnaround time and more. If you still need assistance, our team is always here to help."
+            },
+            "image": "https://i.pinimg.com/736x/d1/0c/3f/d10c3f1834429c82ee3618c7667694fe.jpg",
+            "supportCard": {
+              "title": "Still Have a Question?",
+              "description": "Can't find the answer you're looking for? Feel free to contact our support team.",
+              "buttonText": "Contact Us",
+              "buttonLink": "/contact",
+              "highlights": [
+                {
+                  "icon": "FaClock",
+                  "title": "Quick Response",
+                  "description": "We reply as soon as possible"
+                },
+                {
+                  "icon": "FaHeadset",
+                  "title": "Expert Support",
+                  "description": "Get help from our specialists"
+                },
+                {
+                  "icon": "FaComments",
+                  "title": "Multiple Channels",
+                  "description": "Chat, email or visit our store"
+                }
+              ]
+            },
+            "faqs": [
+              {
+                "id": "01",
+                "question": "How long does a typical repair take?",
+                "answer": "Most repairs are completed within the same day, depending on the issue and device model. Some complex repairs may take a little longer, but we'll always keep you informed."
+              },
+              {
+                "id": "02",
+                "question": "Do you use original parts?",
+                "answer": "Yes, we use high-quality replacement parts that meet industry standards to ensure your device functions like new."
+              },
+              {
+                "id": "03",
+                "question": "Will I lose my data after the repair?",
+                "answer": "Normally, your personal data remains safe during standard hardware repairs like screen or battery replacements. However, we always recommend backing up your data before any service."
+              },
+              {
+                "id": "04",
+                "question": "How much does a screen replacement cost?",
+                "answer": "Screen replacement costs vary depending on your device brand and model. You can check our pricing table above or contact us for an exact quote."
+              },
+              {
+                "id": "05",
+                "question": "Do you offer a warranty on repairs?",
+                "answer": "Yes, we provide a warranty on all our repairs and replaced parts to give you complete peace of mind."
+              },
+              {
+                "id": "06",
+                "question": "Can you fix water damaged devices?",
+                "answer": "Yes, we offer specialized water damage diagnosis and repair services. Bring your device in as soon as possible to increase recovery chances."
+              },
+              {
+                "id": "07",
+                "question": "Do I need to book an appointment?",
+                "answer": "Appointments are not strictly required, but booking in advance helps us serve you faster and ensures priority support."
+              },
+              {
+                "id": "08",
+                "question": "Which brands and models do you service?",
+                "answer": "We service all major smartphone brands including Apple, Samsung, Xiaomi, OnePlus, Oppo, Vivo, Realme, Motorola, Google, and more."
+              },
+              {
+                "id": "09",
+                "question": "How can I get a quote for my device?",
+                "answer": "You can request a custom quote through our website form, call our support line, or visit our store directly."
+              },
+              {
+                "id": "10",
+                "question": "Do you offer software support as well?",
+                "answer": "Yes, we handle software updates, bug fixes, lag issues, and operating system restorations."
+              },
+              {
+                "id": "11",
+                "question": "What if my issue is not listed here?",
+                "answer": "If your specific issue isn't listed, feel free to reach out to our team. We handle a wide variety of custom electronic repairs."
+              }
             ]
           }
         }
