@@ -46,12 +46,13 @@ export default function CtaSection() {
                     </div>
                     <div className="flex flex-col sm:flex-row items-center gap-8 z-10 text-center sm:text-left">
                         <motion.div variants={fadeUpVariants} className="relative w-32 h-32 sm:w-36 sm:h-36 shrink-0 drop-shadow-xl hover:scale-105 transition-transform duration-500">
-                            <Image
-                                src={data.image.src}
-                                alt={data.image.alt}
-                                fill
-                                className="object-contain"
-                            />
+                                <Image
+                                    src={data.image.src}
+                                    alt={data.image.alt}
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    className="object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-90"
+                                />
                         </motion.div>
                         <motion.div variants={fadeUpVariants} className="space-y-3">
                             <div className="flex items-center justify-center sm:justify-start gap-2 text-blue-500 font-bold text-sm tracking-widest uppercase">

@@ -69,6 +69,7 @@ export default function BlogDetailsSection({ data }: { data: any }) {
                                 src={article.image}
                                 alt={article.title}
                                 fill
+                                sizes="(max-width: 1024px) 100vw, 66vw"
                                 className="object-cover object-center opacity-90"
                             />
                         </div>
@@ -134,6 +135,7 @@ export default function BlogDetailsSection({ data }: { data: any }) {
                                                 src={post.image}
                                                 alt={post.title}
                                                 fill
+                                                sizes="64px"
                                                 className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
                                             />
                                         </div>

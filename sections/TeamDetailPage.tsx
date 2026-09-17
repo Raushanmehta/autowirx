@@ -37,6 +37,7 @@ export default function TeamDetailPage({ member }: { member: any }) {
                             src={member.image}
                             alt={member.name}
                             fill
+                            sizes="(max-width: 1024px) 100vw, 50vw"
                             className="object-cover"
                         />
                         {/* Blue corner ribbon */}

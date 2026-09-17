@@ -21,13 +21,13 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-[#070b12] text-gray-400 font-sans overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-16 pb-8 sm:pb-12">
         <motion.div
           variants={footerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.15 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-gray-800">
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 pb-10 sm:pb-16 border-b border-gray-800">
           <motion.div
             variants={footerColumn}
             className="lg:col-span-1 space-y-6">

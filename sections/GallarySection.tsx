@@ -13,7 +13,7 @@ interface GallarySectionProps {
 
 export default function GallarySection({ data }: GallarySectionProps) {
     return (
-        <section className="w-full bg-white sm:py-14 md:py-16 lg:py-16 font-sans">
+        <section className="w-full bg-white py-10 sm:py-14 md:py-16 lg:py-16 font-sans">
             <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
 
                 {/* Section Header */}
@@ -66,6 +66,7 @@ export default function GallarySection({ data }: GallarySectionProps) {
                                             src={image.src}
                                             alt={image.alt}
                                             fill
+                                            sizes="100vw"
                                             className="object-cover"
                                             priority
                                         />

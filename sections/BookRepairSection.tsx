@@ -32,8 +32,8 @@ export default function BookRepairSection() {
     };
 
     return (
-        <section className="relative bg-white py-20 px-6 sm:px-10 lg:px-16 overflow-hidden">
-            <div className="mx-auto max-w-7xl space-y-24">
+        <section className="relative bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+            <div className="mx-auto max-w-[1400px] space-y-16 sm:space-y-24">
 
                 {/* ================= PART 1: QUICK REPAIR INFO BANNER ================= */}
                 <div className="relative rounded-3xl bg-gradient-to-r from-sky-50 via-blue-50/40 to-white border border-sky-100 p-8 sm:p-12 overflow-hidden shadow-sm">
@@ -90,6 +90,7 @@ export default function BookRepairSection() {
                                 src="/images/repair-bench.jpg"
                                 alt="Repair Expert at Workbench"
                                 fill
+                                sizes="(max-width: 1024px) 100vw, 50vw"
                                 className="object-cover object-center opacity-85"
                             />
                         </div>

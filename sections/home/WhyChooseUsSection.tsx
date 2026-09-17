@@ -12,7 +12,7 @@ function AnimatedCounter({ value }: { value: string }) {
     const numMatch = value.match(/[\d\.]+/);
     const num = numMatch ? parseFloat(numMatch[0]) : 0;
     const suffix = value.replace(/[\d\.]+/, '');
-    
+
     const ref = useRef(null);
     const inView = useInView(ref, { once: true, margin: "-50px" });
     const count = useMotionValue(0);
@@ -61,12 +61,13 @@ export default function WhyChooseUsSection() {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, margin: "-100px" }}
-                            className="relative w-full h-[640px] rounded-3xl overflow-hidden z-10">
+                            className="relative w-full h-[500px] md:h-[640px] rounded-3xl overflow-hidden z-10">
                             <Image
                                 src={data.images.main}
                                 alt="Main image"
                                 fill
-                                className="object-cover"
+                                sizes="(max-width: 1024px) 100vw, 50vw"
+                                className="object-cover object-center"
                             />
                             <div className="absolute inset-0 bg-blue-950/20"></div>
                         </motion.div>
@@ -103,7 +104,7 @@ export default function WhyChooseUsSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="lg:col-span-7 space-y-6">
+                    <div className="lg:col-span-7 space-y-6 mt-12 md:mt-0">
                         <motion.div
                             variants={fadeUpVariants}
                             initial="hidden"
@@ -141,7 +142,7 @@ export default function WhyChooseUsSection() {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, margin: "-100px" }}
-                            className="grid grid-cols-1 sm:grid-cols-4 gap-5">
+                            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
                             {data.features.map((item, index) => {
                                 const Icon = IconMap[item.icon];
                                 return (

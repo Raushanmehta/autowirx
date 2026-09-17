@@ -5,11 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { navbarVariants, logoVariants, navContainerVariants, navItemVariants, mobileMenuVariants, mobileItemsVariants } from "../../utils/animations";
-import {
-  FiChevronDown, FiArrowRight, FiMenu, FiX,
-  FiSmartphone, FiBatteryCharging, FiMonitor,
-  FiDroplet, FiZap, FiVolume2, FiCamera, FiSettings
-} from "react-icons/fi";
+import { FiChevronDown, FiArrowRight, FiMenu, FiX, FiSmartphone, FiBatteryCharging, FiMonitor, FiDroplet, FiZap, FiVolume2, FiCamera, FiSettings } from "react-icons/fi";
 import { site } from "../../data";
 
 export default function Navbar() {
@@ -20,7 +16,7 @@ export default function Navbar() {
 
   return (
     <motion.header
-      className="w-full bg-white shadow-sm sticky top-0 z-50"
+      className="w-full bg-white  sticky top-0 z-50"
       variants={navbarVariants}
       initial="hidden"
       animate="visible">

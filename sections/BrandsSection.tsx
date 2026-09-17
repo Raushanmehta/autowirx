@@ -67,6 +67,7 @@ export default function BrandsSection({ data }: { data: AutoWirxBrandsWeRepairDa
                                     src={brand.imagePath}
                                     alt={`${brand.name} logo`}
                                     fill
+                                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 16vw"
                                     className="object-contain mix-blend-multiply"
                                 />
                             </div>
