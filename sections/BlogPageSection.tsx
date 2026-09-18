@@ -15,16 +15,16 @@ export default function BlogPageSection({ data }: { data: any }) {
 
     // Filter items based on category if present
     const postsList = data.blogPosts || (data as any).items || [];
-    const filteredItems = categoryQuery 
+    const filteredItems = categoryQuery
         ? postsList.filter((item: any) => item.category === categoryQuery)
         : postsList;
 
     const postsPerPage = 9;
     const totalPages = Math.ceil(filteredItems.length / postsPerPage) || 1;
-    
+
     // Ensure current page is valid when filtering changes
     const validCurrentPage = Math.min(currentPage, totalPages);
-    
+
     const startIndex = (validCurrentPage - 1) * postsPerPage;
     const currentPosts = filteredItems.slice(startIndex, startIndex + postsPerPage);
 
@@ -40,9 +40,9 @@ export default function BlogPageSection({ data }: { data: any }) {
                     className="text-center max-w-2xl mx-auto space-y-3"
                 >
                     <div className="flex items-center justify-center gap-2 text-blue-600 font-bold text-sm tracking-widest uppercase">
-                        <span>―</span>
+                        <span className="w-6 h-0.5 bg-blue-500"></span>
                         <span>{data.header.subtitle}</span>
-                        <span>―</span>
+                        <span className="w-6 h-0.5 bg-blue-500"></span>
                     </div>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight">
                         {data.header.titleLine1} <span className="text-blue-600">{data.header.titleHighlight}</span> {data.header.titleLine2}
@@ -52,7 +52,7 @@ export default function BlogPageSection({ data }: { data: any }) {
                     </p>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"

@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <motion.header
-      className="w-full bg-white  sticky top-0 z-50"
+      className="w-full   sticky top-0 z-50"
       variants={navbarVariants}
       initial="hidden"
       animate="visible">

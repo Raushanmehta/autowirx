@@ -46,9 +46,9 @@ export default function TestimonialSection() {
                     viewport={{ once: true, margin: "-100px" }}
                     className="text-center max-w-2xl mx-auto space-y-3">
                     <div className="flex items-center justify-center gap-2 text-blue-600 font-bold text-sm tracking-widest uppercase">
-                        <span>―</span>
+                        <span className="w-6 h-0.5 bg-blue-500"></span>
                         <span>{data.header.subtitle}</span>
-                        <span>―</span>
+                        <span className="w-6 h-0.5 bg-blue-500"></span>
                     </div>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight">
                         {data.header.titleLine1} <span className="text-blue-600">{data.header.titleHighlight}</span>

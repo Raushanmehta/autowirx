@@ -1,5 +1,119 @@
 {
   "AutoWirx": {
+    "templateComponents": {
+      "template-1": {
+        "shared": {
+          "navbar": "AutoWirxNavbar1",
+          "footer": "AutoWirxFooter1"
+        },
+        "pages": {
+          "home": {
+            "components": [
+              {
+                "key": "hero",
+                "component": "AutoWirxHero1"
+              },
+              {
+                "key": "about",
+                "component": "AutoWirxAbout1"
+              },
+              {
+                "key": "services",
+                "component": "AutoWirxServices1"
+              },
+              {
+                "key": "process",
+                "component": "AutoWirxProcess1"
+              },
+              {
+                "key": "whyChooseUs",
+                "component": "AutoWirxWhyChooseUs1"
+              },
+              {
+                "key": "cta",
+                "component": "AutoWirxCta1"
+              },
+              {
+                "key": "testimonials",
+                "component": "AutoWirxTestimonials1"
+              },
+              {
+                "key": "blog",
+                "component": "AutoWirxBlog1"
+              }
+            ]
+          },
+          "about": {
+            "components": [
+              {
+                "key": "about",
+                "component": "AutoWirxAbout1"
+              },
+              {
+                "key": "whyChooseUs",
+                "component": "AutoWirxWhyChooseUs1"
+              },
+              {
+                "key": "team",
+                "component": "AutoWirxTeam1"
+              }
+            ]
+          },
+          "services": {
+            "components": [
+              {
+                "key": "services",
+                "component": "AutoWirxServices1"
+              },
+              {
+                "key": "brandsWeRepair",
+                "component": "AutoWirxBrandsWeRepair1"
+              }
+            ]
+          },
+          "contactUs": {
+            "components": [
+              {
+                "key": "contact",
+                "component": "AutoWirxContact1"
+              }
+            ]
+          },
+          "faqs": {
+            "components": [
+              {
+                "key": "faqs",
+                "component": "AutoWirxFaqs1"
+              }
+            ]
+          },
+          "pricing": {
+            "components": [
+              {
+                "key": "pricing",
+                "component": "AutoWirxPricing1"
+              }
+            ]
+          },
+          "gallery": {
+            "components": [
+              {
+                "key": "gallery",
+                "component": "AutoWirxGallery1"
+              }
+            ]
+          },
+          "bookARepair": {
+            "components": [
+              {
+                "key": "bookARepair",
+                "component": "AutoWirxBookRepair1"
+              }
+            ]
+          }
+        }
+      }
+    },
     "sections": {
       "topbar": {
         "variants": {
@@ -35,7 +149,7 @@
         "variants": {
           "AutoWirxNavbar1": {
             "logo": {
-              "src": "/logo/logo.png",
+              "src": "/logo/logo-black.png",
               "alt": "AutoWirx Logo"
             },
             "navLinks": [
@@ -105,7 +219,7 @@
         "variants": {
           "AutoWirxFooter1": {
             "logo": {
-              "src": "/logo/logo.png",
+              "src": "/logo/logo-white.png",
               "alt": "AutoWirx Logo"
             },
             "description": "Auto Wirx is your trusted partner for professional car care and repair solutions. We combine expertise, technology and passion to keep your vehicle running at its best.",
@@ -425,11 +539,11 @@
                 "href": "/services/screen-repair",
                 "detailData": {
                   "bulletPoints": [
-                    "Expert Screen Repair",
-                    "High-quality original or OEM parts",
-                    "Certified technicians",
-                    "Fast turnaround time",
-                    "Comprehensive warranty included"
+                    "Expert Screen Repair services for every device",
+                    "High-quality original or OEM parts guaranteed",
+                    "Certified technicians with years of experience",
+                    "Fast turnaround time without compromising quality",
+                    "Comprehensive warranty included for complete peace"
                   ],
                   "whyChooseUs": [
                     {
@@ -488,8 +602,8 @@
                       "To This"
                     ],
                     "tag": "Screen Repair",
-                    "title": "Screen Repair Services",
-                    "highlightTitle": "Screen Repair",
+                    "title": "Screen Repair ",
+                    "highlightTitle": " Services",
                     "description": "Get professional and reliable screen repair from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
                     "bottomBox": {
                       "icon": "smartphone",
@@ -498,14 +612,14 @@
                   },
                   "whyChooseUsHeader": {
                     "tag": "WHY CHOOSE US",
-                    "title": "Why Choose Us for Screen Repair",
+                    "title": "Screen Repair",
                     "highlightTitle": "Safe Hands",
                     "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
                   },
                   "repairProcessHeader": {
-                    "title": "Our Screen Repair Process",
-                    "subtitle": "Simple, ",
-                    "highlightSubtitle": "Fast & Reliable",
+                    "title": "Screen Repair Process",
+                    "subtitle": "Simple ",
+                    "highlightSubtitle": " & Reliable",
                     "description": "We make screen repair easy with a hassle-free process."
                   }
                 }
@@ -519,11 +633,11 @@
                 "href": "/services/battery-replacement",
                 "detailData": {
                   "bulletPoints": [
-                    "Expert Battery Replacement",
-                    "High-quality original or OEM parts",
-                    "Certified technicians",
-                    "Fast turnaround time",
-                    "Comprehensive warranty included"
+                    "Expert Battery Replacement for all major devices",
+                    "High-quality original or OEM parts for reliable performance",
+                    "Certified technicians with extensive repair experience",
+                    "Fast turnaround time with professional service",
+                    "Comprehensive warranty included for complete peace of mind"
                   ],
                   "whyChooseUs": [
                     {
@@ -582,8 +696,8 @@
                       "To This"
                     ],
                     "tag": "Battery Replacement",
-                    "title": "Battery Replacement Services",
-                    "highlightTitle": "Screen Repair",
+                    "title": "Battery Replacement",
+                    "highlightTitle": " Services",
                     "description": "Get professional and reliable battery replacement from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
                     "bottomBox": {
                       "icon": "smartphone",
@@ -592,13 +706,13 @@
                   },
                   "whyChooseUsHeader": {
                     "tag": "WHY CHOOSE US",
-                    "title": "Why Choose Us for Battery Replacement",
+                    "title": "Battery Replacement",
                     "highlightTitle": "Safe Hands",
                     "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
                   },
                   "repairProcessHeader": {
-                    "title": "Our Battery Replacement Process",
-                    "subtitle": "Simple, ",
+                    "title": "Battery Replacement",
+                    "subtitle": " Process ",
                     "highlightSubtitle": "Fast & Reliable",
                     "description": "We make screen repair easy with a hassle-free process."
                   }
@@ -676,8 +790,8 @@
                       "To This"
                     ],
                     "tag": "Water Damage Repair",
-                    "title": "Water Damage Repair Services",
-                    "highlightTitle": "Screen Repair",
+                    "title": "Water Damage Repair",
+                    "highlightTitle": "Services",
                     "description": "Get professional and reliable water damage repair from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
                     "bottomBox": {
                       "icon": "smartphone",
@@ -686,12 +800,12 @@
                   },
                   "whyChooseUsHeader": {
                     "tag": "WHY CHOOSE US",
-                    "title": "Why Choose Us for Water Damage Repair",
+                    "title": "Water Damage Repair",
                     "highlightTitle": "Safe Hands",
                     "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
                   },
                   "repairProcessHeader": {
-                    "title": "Our Water Damage Repair Process",
+                    "title": "Water Damage Repair ",
                     "subtitle": "Simple, ",
                     "highlightSubtitle": "Fast & Reliable",
                     "description": "We make screen repair easy with a hassle-free process."
@@ -707,11 +821,11 @@
                 "href": "/services/charging-port",
                 "detailData": {
                   "bulletPoints": [
-                    "Expert Charging Port Repair",
-                    "High-quality original or OEM parts",
-                    "Certified technicians",
-                    "Fast turnaround time",
-                    "Comprehensive warranty included"
+                    "Expert Charging Port Repair for all major devices",
+                    "High-quality original or OEM parts for lasting performance",
+                    "Certified technicians with extensive repair experience",
+                    "Fast turnaround time with professional service",
+                    "Comprehensive warranty included for complete peace of mind"
                   ],
                   "whyChooseUs": [
                     {
@@ -770,8 +884,8 @@
                       "To This"
                     ],
                     "tag": "Charging Port Repair",
-                    "title": "Charging Port Repair Services",
-                    "highlightTitle": "Screen Repair",
+                    "title": "Charging Port ",
+                    "highlightTitle": "Repair Services",
                     "description": "Get professional and reliable charging port repair from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
                     "bottomBox": {
                       "icon": "smartphone",
@@ -780,13 +894,13 @@
                   },
                   "whyChooseUsHeader": {
                     "tag": "WHY CHOOSE US",
-                    "title": "Why Choose Us for Charging Port Repair",
+                    "title": " Charging Port Repair",
                     "highlightTitle": "Safe Hands",
                     "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
                   },
                   "repairProcessHeader": {
-                    "title": "Our Charging Port Repair Process",
-                    "subtitle": "Simple, ",
+                    "title": "Charging Port Repair ",
+                    "subtitle": "Process, ",
                     "highlightSubtitle": "Fast & Reliable",
                     "description": "We make screen repair easy with a hassle-free process."
                   }
@@ -801,11 +915,11 @@
                 "href": "/services/speaker-mic",
                 "detailData": {
                   "bulletPoints": [
-                    "Expert Speaker & Mic Repair",
-                    "High-quality original or OEM parts",
-                    "Certified technicians",
-                    "Fast turnaround time",
-                    "Comprehensive warranty included"
+                    "Expert Speaker & Mic Repair for all major devices",
+                    "High-quality original or OEM parts for lasting performance",
+                    "Certified technicians with extensive repair experience",
+                    "Fast turnaround time with professional service",
+                    "Comprehensive warranty included for complete peace of mind"
                   ],
                   "whyChooseUs": [
                     {
@@ -864,8 +978,8 @@
                       "To This"
                     ],
                     "tag": "Speaker & Mic Repair",
-                    "title": "Speaker & Mic Repair Services",
-                    "highlightTitle": "Screen Repair",
+                    "title": "Speaker & Mic ",
+                    "highlightTitle": "Repair Services",
                     "description": "Get professional and reliable speaker & mic repair from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
                     "bottomBox": {
                       "icon": "smartphone",
@@ -874,13 +988,13 @@
                   },
                   "whyChooseUsHeader": {
                     "tag": "WHY CHOOSE US",
-                    "title": "Why Choose Us for Speaker & Mic Repair",
+                    "title": "Speaker & Mic Repair",
                     "highlightTitle": "Safe Hands",
                     "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
                   },
                   "repairProcessHeader": {
-                    "title": "Our Speaker & Mic Repair Process",
-                    "subtitle": "Simple, ",
+                    "title": "Speaker & Mic Repair ",
+                    "subtitle": "Process, ",
                     "highlightSubtitle": "Fast & Reliable",
                     "description": "We make screen repair easy with a hassle-free process."
                   }
@@ -895,11 +1009,11 @@
                 "href": "/services/camera-repair",
                 "detailData": {
                   "bulletPoints": [
-                    "Expert Camera Repair",
-                    "High-quality original or OEM parts",
-                    "Certified technicians",
-                    "Fast turnaround time",
-                    "Comprehensive warranty included"
+                    "Expert Camera Repair for all major devices",
+                    "High-quality original or OEM parts for lasting performance",
+                    "Certified technicians with extensive repair experience",
+                    "Fast turnaround time with professional service",
+                    "Comprehensive warranty included for complete peace of mind"
                   ],
                   "whyChooseUs": [
                     {
@@ -958,8 +1072,8 @@
                       "To This"
                     ],
                     "tag": "Camera Repair",
-                    "title": "Camera Repair Services",
-                    "highlightTitle": "Screen Repair",
+                    "title": "Camera Repair ",
+                    "highlightTitle": "Services",
                     "description": "Get professional and reliable camera repair from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
                     "bottomBox": {
                       "icon": "smartphone",
@@ -968,13 +1082,13 @@
                   },
                   "whyChooseUsHeader": {
                     "tag": "WHY CHOOSE US",
-                    "title": "Why Choose Us for Camera Repair",
+                    "title": "Camera Repair",
                     "highlightTitle": "Safe Hands",
                     "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
                   },
                   "repairProcessHeader": {
-                    "title": "Our Camera Repair Process",
-                    "subtitle": "Simple, ",
+                    "title": "Camera Repair ",
+                    "subtitle": "Process, ",
                     "highlightSubtitle": "Fast & Reliable",
                     "description": "We make screen repair easy with a hassle-free process."
                   }
@@ -989,11 +1103,11 @@
                 "href": "/services/software-issues",
                 "detailData": {
                   "bulletPoints": [
-                    "Expert Software Issues",
-                    "High-quality original or OEM parts",
-                    "Certified technicians",
-                    "Fast turnaround time",
-                    "Comprehensive warranty included"
+                    "Expert Software Issues for all major devices",
+                    "High-quality original or OEM parts for lasting performance",
+                    "Certified technicians with extensive repair experience",
+                    "Fast turnaround time with professional service",
+                    "Comprehensive warranty included for complete peace of mind"
                   ],
                   "whyChooseUs": [
                     {
@@ -1052,8 +1166,8 @@
                       "To This"
                     ],
                     "tag": "Software Issues",
-                    "title": "Software Issues Services",
-                    "highlightTitle": "Screen Repair",
+                    "title": "Software Issues ",
+                    "highlightTitle": "Services",
                     "description": "Get professional and reliable software issues from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
                     "bottomBox": {
                       "icon": "smartphone",
@@ -1062,12 +1176,12 @@
                   },
                   "whyChooseUsHeader": {
                     "tag": "WHY CHOOSE US",
-                    "title": "Why Choose Us for Software Issues",
+                    "title": "Software Issues",
                     "highlightTitle": "Safe Hands",
                     "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
                   },
                   "repairProcessHeader": {
-                    "title": "Our Software Issues Process",
+                    "title": "Software Issues ",
                     "subtitle": "Simple, ",
                     "highlightSubtitle": "Fast & Reliable",
                     "description": "We make screen repair easy with a hassle-free process."
@@ -1083,11 +1197,11 @@
                 "href": "/services/brand-repairs",
                 "detailData": {
                   "bulletPoints": [
-                    "Expert All Brand Repairs",
-                    "High-quality original or OEM parts",
-                    "Certified technicians",
-                    "Fast turnaround time",
-                    "Comprehensive warranty included"
+                    "Expert All Brand Repairs for all major devices",
+                    "High-quality original or OEM parts for lasting performance",
+                    "Certified technicians with extensive repair experience",
+                    "Fast turnaround time with professional service",
+                    "Comprehensive warranty included for complete peace of mind"
                   ],
                   "whyChooseUs": [
                     {
@@ -1146,8 +1260,8 @@
                       "To This"
                     ],
                     "tag": "All Brand Repairs",
-                    "title": "All Brand Repairs Services",
-                    "highlightTitle": "Screen Repair",
+                    "title": "All Brand Repairs ",
+                    "highlightTitle": "Services",
                     "description": "Get professional and reliable all brand repairs from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
                     "bottomBox": {
                       "icon": "smartphone",
@@ -1156,12 +1270,12 @@
                   },
                   "whyChooseUsHeader": {
                     "tag": "WHY CHOOSE US",
-                    "title": "Why Choose Us for All Brand Repairs",
+                    "title": "All Brand Repairs",
                     "highlightTitle": "Safe Hands",
                     "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
                   },
                   "repairProcessHeader": {
-                    "title": "Our All Brand Repairs Process",
+                    "title": "All Brand Repairs ",
                     "subtitle": "Simple, ",
                     "highlightSubtitle": "Fast & Reliable",
                     "description": "We make screen repair easy with a hassle-free process."
@@ -1170,18 +1284,18 @@
               },
               {
                 "id": "genuine-parts",
-                "image": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?w=600&auto=format&fit=crop&q=80",
+                "image": "https://i.pinimg.com/736x/da/11/53/da1153f52cf6f408110258e11b8f9674.jpg",
                 "icon": "tool",
                 "title": "Genuine Parts",
                 "description": "We use high-quality and genuine parts to ensure long-lasting performance and reliability.",
                 "href": "/services/genuine-parts",
                 "detailData": {
                   "bulletPoints": [
-                    "Expert Genuine Parts",
-                    "High-quality original or OEM parts",
-                    "Certified technicians",
-                    "Fast turnaround time",
-                    "Comprehensive warranty included"
+                    "Expert Genuine Parts for reliable device repair services",
+                    "High-quality original or OEM parts for lasting performance",
+                    "Certified technicians with extensive repair experience",
+                    "Fast turnaround time with professional service",
+                    "Comprehensive warranty included for complete peace of mind"
                   ],
                   "whyChooseUs": [
                     {
@@ -1240,8 +1354,8 @@
                       "To This"
                     ],
                     "tag": "Genuine Parts",
-                    "title": "Genuine Parts Services",
-                    "highlightTitle": "Screen Repair",
+                    "title": "Genuine Parts ",
+                    "highlightTitle": "Services",
                     "description": "Get professional and reliable genuine parts from our certified experts. We ensure high-quality parts and fast turnaround times to get your device back to perfect condition.",
                     "bottomBox": {
                       "icon": "smartphone",
@@ -1250,12 +1364,12 @@
                   },
                   "whyChooseUsHeader": {
                     "tag": "WHY CHOOSE US",
-                    "title": "Why Choose Us for Genuine Parts",
+                    "title": "Genuine Parts",
                     "highlightTitle": "Safe Hands",
                     "description": "We use only the best replacement parts and ensure every repair is done with precision and care."
                   },
                   "repairProcessHeader": {
-                    "title": "Our Genuine Parts Process",
+                    "title": "Genuine Parts ",
                     "subtitle": "Simple, ",
                     "highlightSubtitle": "Fast & Reliable",
                     "description": "We make screen repair easy with a hassle-free process."
@@ -3094,6 +3208,108 @@
               "showContact": true
             }
           ]
+        }
+      },
+      "bookARepair": {
+        "variants": {
+          "AutoWirxBookRepair1": {
+            "banner": {
+              "titleLine1": "Quick Repair in Just a",
+              "titleHighlight": "Few Clicks",
+              "description": "Fill in your details and let our experts take care of the rest. Fast. Easy. Reliable.",
+              "tagline": "Book A Repair",
+              "image": "https://i.pinimg.com/1200x/2b/2e/44/2b2e44338cb39ba66e9f55fd76a33497.jpg",
+              "imageAlt": "Repair Expert at Workbench",
+              "steps": [
+                {
+                  "title": "1. Fill Details",
+                  "description": "Tell us about your device and issue.",
+                  "icon": "FaMobileAlt"
+                },
+                {
+                  "title": "2. Schedule",
+                  "description": "Choose your preferred date & time.",
+                  "icon": "FaCalendarAlt"
+                },
+                {
+                  "title": "3. Get It Fixed",
+                  "description": "Our experts will handle the rest.",
+                  "icon": "FaShieldAlt"
+                }
+              ]
+            },
+            "formSection": {
+              "tagline": "Book A Repair",
+              "titleLine1": "Schedule Your",
+              "titleHighlight": "Repair Today",
+              "description": "Provide a few details and we'll take care of the rest. It's quick, simple and secure.",
+              "features": [
+                {
+                  "title": "Easy Booking",
+                  "description": "In just a few steps",
+                  "icon": "FaMobileAlt"
+                },
+                {
+                  "title": "Choose Date & Time",
+                  "description": "At your convenience",
+                  "icon": "FaCalendarAlt"
+                },
+                {
+                  "title": "Trusted Service",
+                  "description": "By certified technicians",
+                  "icon": "FaShieldAlt"
+                }
+              ],
+              "devices": [
+                {
+                  "value": "iphone",
+                  "label": "Apple iPhone"
+                },
+                {
+                  "value": "samsung",
+                  "label": "Samsung Galaxy"
+                },
+                {
+                  "value": "oneplus",
+                  "label": "OnePlus"
+                },
+                {
+                  "value": "xiaomi",
+                  "label": "Xiaomi / Redmi"
+                },
+                {
+                  "value": "other",
+                  "label": "Other Brand"
+                }
+              ],
+              "issues": [
+                {
+                  "value": "screen",
+                  "label": "Screen Replacement"
+                },
+                {
+                  "value": "battery",
+                  "label": "Battery Replacement"
+                },
+                {
+                  "value": "charging",
+                  "label": "Charging Port Repair"
+                },
+                {
+                  "value": "camera",
+                  "label": "Camera Repair"
+                },
+                {
+                  "value": "water",
+                  "label": "Water Damage Repair"
+                },
+                {
+                  "value": "other",
+                  "label": "Other Issue"
+                }
+              ]
+            }
+          }
         }
       }
     }

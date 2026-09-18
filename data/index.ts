@@ -39,6 +39,7 @@ export type AutoWirxBrandsWeRepairData = AutoWirxSections["brandsWeRepair"]["var
 export type AutoWirxGalleryData = AutoWirxSections["gallery"]["variants"]["AutoWirxGallery1"];
 export type AutoWirxPricingData = AutoWirxSections["pricing"]["variants"]["AutoWirxPricing1"];
 export type AutoWirxFaqsData = AutoWirxSections["faqs"]["variants"]["AutoWirxFaqs1"];
+export type AutoWirxBookRepairData = AutoWirxSections["bookARepair"]["variants"]["AutoWirxBookRepair1"];
 
 // ── Canonical Mapped Site Data Object ──
 const sec = siteData.AutoWirx.sections;
@@ -62,6 +63,7 @@ export const siteMap = {
   gallery: sec.gallery.variants.AutoWirxGallery1,
   pricing: sec.pricing.variants.AutoWirxPricing1,
   faqs: sec.faqs.variants.AutoWirxFaqs1,
+  bookARepair: sec.bookARepair.variants.AutoWirxBookRepair1,
 
   // Compatibility section shortcuts
   topbarData: sec.topbar.variants.AutoWirxTopbar1,
@@ -82,6 +84,7 @@ export const siteMap = {
   galleryData: sec.gallery.variants.AutoWirxGallery1,
   pricingData: sec.pricing.variants.AutoWirxPricing1,
   faqsData: sec.faqs.variants.AutoWirxFaqs1,
+  bookARepairData: sec.bookARepair.variants.AutoWirxBookRepair1,
 
   // Root Tree
   AutoWirx: siteData.AutoWirx,

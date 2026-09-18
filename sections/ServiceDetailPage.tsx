@@ -56,11 +56,11 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
                                 {/* Left Side: "From This To This" Text & Curving SVG Arrow */}
                                 <div className="absolute left-2 sm:-left-2 top-1/2 transform -translate-y-1/2 -rotate-15 z-30 flex flex-col items-start select-none">
                                     <div className={`${caveat.className} text-slate-800 text-2xl sm:text-3xl font-bold leading-tight tracking-wide drop-shadow-sm`}>
-                                        <span>{overview.fromText[0]}</span>
+                                        <span className="w-6 h-0.5 bg-blue-500">{overview.fromText[0]}</span>
                                         <br />
                                         <span className="ml-3">{overview.fromText[1]}</span>
                                         <br />
-                                        <span>{overview.fromText[2]}</span>
+                                        <span className="">{overview.fromText[2]}</span>
                                     </div>
 
                                     {/* Curving Arrow SVG pointing to the cracked phone */}

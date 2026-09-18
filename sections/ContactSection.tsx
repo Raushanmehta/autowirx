@@ -268,11 +268,11 @@ export default function ContactSection({ data }: ContactSectionProps) {
                     {/* Header */}
                     <motion.div variants={fadeUpVariants} className="text-center space-y-3 max-w-xl mx-auto">
                         <div className="flex items-center justify-center gap-3">
-                            <span className="h-[2.5px] w-12 bg-sky-500" />
+                            <span className="w-6 h-0.5 bg-blue-500" />
                             <span className="text-sm font-bold uppercase tracking-widest text-sky-600">
                                 {methodsSectionHeader.subtitle}
                             </span>
-                            <span className="h-[2.5px] w-12 bg-sky-500" />
+                            <span className="w-6 h-0.5 bg-blue-500" />
                         </div>
 
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">

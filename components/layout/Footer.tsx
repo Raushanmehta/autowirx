@@ -165,7 +165,7 @@ export default function Footer() {
           <motion.div
             variants={footerColumn}
             className="space-y-4 lg:col-span-1">
-            <h3 className="text-white font-bold text-lg tracking-wider uppercase relative after:absolute after:bottom-0 after:left-0 after:w-8 after:h-0.5 after:bg-blue-600">
+            <h3 className="text-white font-bold text-lg tracking-wider uppercase relative pb-3 after:absolute after:bottom-0 after:left-0 after:w-8 after:h-0.5 after:bg-blue-600">
               Contact Info
             </h3>
 
