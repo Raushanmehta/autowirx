@@ -20,7 +20,7 @@ export default function TopNavContainer({
         setTopbarHeight(topbarRef.current.offsetHeight);
       }
     };
-    
+
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -28,13 +28,13 @@ export default function TopNavContainer({
 
   // Translate up by scrollY, but clamp it at -topbarHeight so the Navbar sticks to the top
   const yRaw = useTransform(scrollY, [0, Math.max(topbarHeight, 1)], [0, -topbarHeight]);
-  
+
   // Use the exact same spring physics as SmoothScroll.tsx so they move in perfect sync
   const physics = { damping: 15, mass: 0.27, stiffness: 55 };
   const ySpring = useSpring(yRaw, physics);
 
   return (
-    <motion.div style={{ y: ySpring }} className="fixed top-0 left-0 w-full z-[100] flex flex-col shadow-sm">
+    <motion.div style={{ y: ySpring }} className="fixed top-0 left-0 w-full z-[100] flex flex-col">
       <div ref={topbarRef}>{topbar}</div>
       <div className="w-full bg-white">{navbar}</div>
     </motion.div>
