@@ -44,7 +44,7 @@ export default function BlogPageSection({ data }: { data: any }) {
                         <span>{data.header.subtitle}</span>
                         <span className="w-6 h-0.5 bg-blue-500"></span>
                     </div>
-                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight">
                         {data.header.titleLine1} <span className="text-blue-600">{data.header.titleHighlight}</span> {data.header.titleLine2}
                     </h2>
                     <p className="text-gray-600 text-sm sm:text-base leading-relaxed">

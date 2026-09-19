@@ -88,12 +88,12 @@ export default function AboutMissionSection() {
                             <div className="w-10 h-0.5 bg-[#0057ee]/40" />
                         </motion.div>
 
-                        <motion.h2 variants={fadeUpVariants} className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight mb-3">
+                        <motion.h2 variants={fadeUpVariants} className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight mb-3">
                             {data.header.titleLine1} <br className="hidden sm:block" />
                             {data.header.titlePrefix} <span className="text-[#0057ee]">{data.header.titleHighlight}</span>
                         </motion.h2>
 
-                        <motion.p variants={fadeUpVariants} className="text-slate-600 text-base sm:text-lg leading-relaxed mb-6 max-w-3xl">
+                        <motion.p variants={fadeUpVariants} className="text-slate-600 text-base sm:text-md leading-relaxed mb-6 max-w-3xl">
                             {data.header.description}
                         </motion.p>
 
@@ -119,7 +119,7 @@ export default function AboutMissionSection() {
                                 <h3 className="text-[#0057ee] font-bold text-sm tracking-widest uppercase">{data.mission.subtitle}</h3>
                                 <div className="w-10 h-0.5 bg-[#0057ee]/40" />
                             </div>
-                            <p className="text-xl sm:text-xl font-bold text-slate-900 leading-snug max-w-xl">
+                            <p className="text-xl sm:text-lg font-semibold text-slate-900 leading-snug max-w-xl">
                                 {data.mission.description}
                             </p>
 

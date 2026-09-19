@@ -36,7 +36,7 @@ export default function PricingSection({ data }: { data: AutoWirxPricingData }) 
                             <span>{data.header.tag}</span>
                             <span className="w-6 h-0.5 bg-blue-500"></span>
                         </div>
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight">
                             {data.header.titleLine1} <span className="text-sky-500">{data.header.titleHighlight}</span>
                         </h2>
                     </div>

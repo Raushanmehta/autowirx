@@ -48,7 +48,7 @@ export default function TeamDetailPage({ member }: { member: any }) {
                     <div className="lg:col-span-7 space-y-4">
 
                         <div className="space-y-1">
-                            <h1 className="text-3xl sm:text-5xl font-black text-gray-900 tracking-tight">
+                            <h1 className="text-3xl sm:text-5xl font-semibold text-gray-900 tracking-tight">
                                 {member.name}
                             </h1>
                             <p className="text-blue-600 font-bold text-sm sm:text-lg tracking-widest uppercase">

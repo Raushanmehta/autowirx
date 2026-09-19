@@ -43,7 +43,7 @@ export default function BlogDetailsSection({ data }: { data: any }) {
                                 {article.category}
                             </span>
 
-                            <h1 className=" text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight">
+                            <h1 className=" text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight leading-tight">
                                 {article.title}
                             </h1>
 
@@ -83,10 +83,10 @@ export default function BlogDetailsSection({ data }: { data: any }) {
                         <div className="space-y-6">
                             {article.contentBlocks.map((block: any, index: number) => (
                                 <div key={index} className="space-y-2">
-                                    <h3 className=" text-lg sm:text-xl font-bold text-gray-900">
+                                    <h3 className="text-md sm:text-lg font-semibold text-gray-900">
                                         {block.title}
                                     </h3>
-                                    <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                                    <p className="text-md sm:text-md text-gray-600 leading-relaxed">
                                         {block.content}
                                     </p>
                                 </div>

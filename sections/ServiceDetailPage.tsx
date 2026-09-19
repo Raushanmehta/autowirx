@@ -109,7 +109,7 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
                                     <span>{overview.tag}</span>
                                     <span className="w-6 h-0.5 bg-blue-500"></span>
                                 </div>
-                                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+                                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 tracking-tight leading-tight">
                                     {overview.title} <span className="text-blue-600">{overview.highlightTitle}</span>
                                 </h1>
                             </div>
@@ -149,9 +149,9 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
             </section>
 
             {/* 2. Why Choose Us Section */}
-            <section className="relative w-full py-10 sm:py-14 md:py-16 lg:py-16 font-sans overflow-hidden bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
+            <section className="relative w-full py-10 sm:py-14 md:py-16 lg:py-16 font-sans overflow-hidden bg-[#F3F6FA]">
                 {/* Decorative SVG Pattern */}
-                <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23000000\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")' }}></div>
+
 
                 <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-8">
 
@@ -162,7 +162,7 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
                             <span className="w-6 h-0.5 bg-blue-500"></span>
                         </div>
 
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight">
                             {whyChooseUsHeader.title} <span className="text-blue-600">{whyChooseUsHeader.highlightTitle}</span>
                         </h2>
 
@@ -211,10 +211,10 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
                 <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-2">
 
                     <div className="text-center max-w-2xl mx-auto space-y-3">
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight">
                             {repairProcessHeader.title}
                         </h2>
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight">
                             {repairProcessHeader.subtitle} <span className="text-blue-600">{repairProcessHeader.highlightSubtitle}</span>
                         </h2>
                         <p className="text-gray-600 text-sm sm:text-base leading-relaxed">

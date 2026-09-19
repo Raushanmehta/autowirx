@@ -93,7 +93,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
                     <motion.div variants={fadeUpVariants} className="lg:col-span-7 bg-white rounded-2xl border border-gray-100 shadow-[0_10px_40px_rgba(0,0,0,0.05)] p-4 sm:p-8 space-y-4">
 
                         <div className="space-y-2">
-                            <h2 className=" text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">
+                            <h2 className=" text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight">
                                 {formSection.title}
                             </h2>
                             <div className="h-[2px] w-12 bg-sky-500" />
@@ -213,7 +213,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
                     <motion.div variants={fadeUpVariants} className="lg:col-span-5 bg-white rounded-2xl border border-gray-100 shadow-[0_10px_40px_rgba(0,0,0,0.05)] p-4 sm:p-6 space-y-4">
 
                         <div className="space-y-2">
-                            <h3 className=" text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">
+                            <h3 className=" text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight">
                                 {locationSection.title}
                             </h3>
                             <div className="h-[2px] w-12 bg-sky-500" />
@@ -275,7 +275,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
                             <span className="w-6 h-0.5 bg-blue-500" />
                         </div>
 
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight">
                             {methodsSectionHeader.titleLine1} <span className="text-blue-600">{methodsSectionHeader.titleHighlight}</span>
                         </h2>
 
@@ -292,7 +292,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
                                 <motion.div
                                     key={method.id}
                                     variants={fadeUpVariants}
-                                    className="bg-white rounded-2xl border border-gray-100 p-6 shadow-[0_4px_25px_rgba(0,0,0,0.03)] flex flex-col justify-between space-y-6 hover:shadow-lg hover:-translate-y-1 transition-all"
+                                    className="bg-white rounded-2xl border border-gray-100 p-6 shadow-[0_4px_25px_rgba(0,0,0,0.03)] flex flex-col justify-between space-y-2 hover:shadow-lg hover:-translate-y-1 transition-all"
                                 >
                                     <div className="space-y-2">
                                         <div className={`h-16 w-16 rounded-full ${method.iconBgColor} border ${method.iconBorderColor} flex items-center justify-center ${method.iconColor}`}>

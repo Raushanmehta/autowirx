@@ -33,14 +33,14 @@ export default function CareersPage() {
                                 </span>
                                 <span className="h-[2.5px] w-12 bg-sky-500" />
                             </div>
-                            <h2 className=" text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
+                            <h2 className=" text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight">
                                 {header.titleLine1} <span className="text-blue-600">{header.titleHighlight}</span>
                             </h2>
                             <p className="text-sm sm:text-base text-gray-600 max-w-xl">
                                 {header.description}
                             </p>
                         </div>
-                        
+
                         <div className="hidden md:block absolute -top-8 right-0 select-none opacity-[0.03] z-0">
                             <span className="text-9xl font-black font-serif tracking-tighter whitespace-nowrap">
                                 {header.watermark}

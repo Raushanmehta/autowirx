@@ -175,7 +175,7 @@ export default function HeroSection() {
             {/* Main Heading */}
             <motion.h1
               variants={fadeUpVariants}
-              className="text-4xl sm:text-5xl lg:text-[66px] xl:text-[70px] font-black text-white lg:text-[#0f172a] tracking-tight leading-[1.12] sm:leading-[1.08]">
+              className="text-4xl sm:text-5xl lg:text-[66px] xl:text-[70px] font-semibold text-white lg:text-[#0f172a] tracking-tight leading-[1.12] sm:leading-[1.08]">
               {data.heading.line1} <br />
               {data.heading.line2}
               <motion.span

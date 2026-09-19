@@ -7,6 +7,8 @@ import { AiFillLike } from "react-icons/ai";
 import { site } from "../../data";
 import { motion, useMotionValue, useTransform, animate, useInView } from "framer-motion";
 import { containerVariants, fadeUpVariants } from "../../utils/animations";
+import { FaHeadset, FaMedal } from "react-icons/fa";
+import { ClockFading, ShieldCheck } from "lucide-react";
 
 function AnimatedCounter({ value }: { value: string }) {
     const numMatch = value.match(/[\d\.]+/);
@@ -32,10 +34,10 @@ function AnimatedCounter({ value }: { value: string }) {
 }
 
 const IconMap: Record<string, React.ElementType> = {
-    shield: FiShield,
-    award: FiAward,
-    clock: FiClock,
-    headphones: FiHeadphones,
+    shield: ShieldCheck,
+    award: FaMedal,
+    clock: ClockFading,
+    headphones: FaHeadset,
     briefcase: FiBriefcase,
     smile: FiSmile,
     users: FiUsers,
@@ -61,7 +63,7 @@ export default function WhyChooseUsSection() {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, margin: "-100px" }}
-                            className="relative w-full h-[500px] md:h-[640px] rounded-3xl overflow-hidden z-10">
+                            className="relative w-full h-[480px] md:h-[590px] rounded-3xl overflow-hidden z-10">
                             <Image
                                 src={data.images.main}
                                 alt="Main image"
@@ -100,11 +102,11 @@ export default function WhyChooseUsSection() {
                                 </text>
                             </svg>
                             <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center shadow-lg relative z-10">
-                                <FiShield size={20} />
+                                < ShieldCheck size={30} />
                             </div>
                         </div>
                     </div>
-                    <div className="lg:col-span-7 space-y-6 mt-12 md:mt-0">
+                    <div className="lg:col-span-7 space-y-6 mt-12 md:mt-16">
                         <motion.div
                             variants={fadeUpVariants}
                             initial="hidden"
@@ -128,8 +130,8 @@ export default function WhyChooseUsSection() {
                                 </div>
                             </div>
 
-                            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight leading-tight">
-                                {data.header.titleLine1} <br />
+                            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight leading-tight">
+                                {data.header.titleLine1}
                                 <span className="text-blue-600">{data.header.titleHighlight}</span>
                             </h2>
                             <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-2xl">

@@ -56,7 +56,7 @@ export default function CareerDetailSection({ job, detailSection }: { job?: any,
                                 </span>
                                 <span className="h-[2px] w-12 bg-sky-500" />
                             </div>
-                            <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">
+                            <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight">
                                 {job?.title || "Mobile Repair Technician"}
                             </h2>
                             <p className="text-md sm:text-md text-gray-600 leading-relaxed">

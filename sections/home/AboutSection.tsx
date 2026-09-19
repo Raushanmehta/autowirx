@@ -39,7 +39,7 @@ export default function AboutSection() {
                             <span className="w-6 h-0.5 bg-blue-600"></span>
                             <span>{data.header.subtitle}</span>
                         </div>
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 tracking-tight leading-tight">
                             {data.header.titleLine1}{" "}
                             <span className="text-blue-600">{data.header.titleHighlight}</span>
                         </h2>

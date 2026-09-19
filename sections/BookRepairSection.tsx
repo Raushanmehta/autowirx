@@ -66,7 +66,7 @@ export default function BookRepairSection({ data }: { data: any }) {
                                     </span>
                                     <span className="h-[2px] w-6 bg-sky-500" />
                                 </motion.div>
-                                <motion.h2 variants={fadeUpVariants} className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight">
+                                <motion.h2 variants={fadeUpVariants} className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight leading-tight">
                                     {banner.titleLine1} <span className="text-blue-600">{banner.titleHighlight}</span>
                                 </motion.h2>
                                 <motion.p variants={fadeUpVariants} className="text-sm sm:text-base text-gray-700 max-w-xl leading-relaxed">
@@ -107,7 +107,7 @@ export default function BookRepairSection({ data }: { data: any }) {
                                 </span>
                                 <span className="h-[2px] w-12 bg-sky-500" />
                             </motion.div>
-                            <motion.h2 variants={fadeUpVariants} className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight leading-tight">
+                            <motion.h2 variants={fadeUpVariants} className="text-3xl sm:text-4xl font-semibold text-gray-900 tracking-tight leading-tight">
                                 {formSection.titleLine1} <span className="text-blue-600">{formSection.titleHighlight}</span>
                             </motion.h2>
                             <motion.p variants={fadeUpVariants} className="text-sm sm:text-base text-gray-600 leading-relaxed">

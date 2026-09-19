@@ -29,7 +29,7 @@ export default function SitemapSection({ data }: { data?: any }) {
                         <span className="h-[2.5px] w-10 bg-sky-500" />
                     </div>
 
-                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
+                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight">
                         {data?.header?.title?.line1 || "Website"} <span className="text-blue-600">{data?.header?.title?.highlight || "Sitemap"}</span>
                     </h1>
 

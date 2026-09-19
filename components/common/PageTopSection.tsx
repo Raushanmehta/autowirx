@@ -75,7 +75,7 @@ export default function PageTopSection({
                 {/* Main Dynamic Title */}
                 <motion.h1
                     variants={fadeUpVariants}
-                    className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight drop-shadow-md">
+                    className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white tracking-tight drop-shadow-md">
                     {title}
                 </motion.h1>
 

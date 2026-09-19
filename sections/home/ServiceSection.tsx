@@ -42,7 +42,7 @@ export default function ServiceSection() {
                         <span>{data.header.subtitle}</span>
                         <span className="w-6 h-0.5 bg-blue-500"></span>
                     </div>
-                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight">
                         {data.header.titleLine1} <br />
                         {data.header.titleLine2} <span className="text-blue-500">{data.header.titleHighlight}</span>
                     </h2>

@@ -30,7 +30,7 @@ export default function RelatedBlogCard({ article }: { article: RelatedArticle }
                 </div>
             </div>
 
-            <div className="p-4 sm:p-4 flex-1 flex flex-col justify-between space-y-4">
+            <div className="p-4 sm:px-6 py-4 flex-1 flex flex-col justify-between space-y-4">
                 <div className="space-y-3">
                     <div className="flex items-center justify-between text-sm text-gray-500 font-medium">
                         <div className="flex items-center gap-1.5">
@@ -43,7 +43,7 @@ export default function RelatedBlogCard({ article }: { article: RelatedArticle }
                         </div>
                     </div>
 
-                    <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors leading-snug">
+                    <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors leading-snug">
                         {article.title}
                     </h3>
                 </div>

@@ -38,7 +38,7 @@ export default function TeamSection({ data }: { data: any }) {
                         <span className="w-6 h-0.5 bg-blue-500"></span>
                     </div>
 
-                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight">
                         {data?.header?.titleLine1 || "Meet Our"} <span className="text-blue-600">{data?.header?.titleHighlight || "Expert Team"}</span>
                     </h2>
 

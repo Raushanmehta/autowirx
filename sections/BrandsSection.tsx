@@ -30,7 +30,7 @@ export default function BrandsSection({ data }: { data: AutoWirxBrandsWeRepairDa
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight"
+                        className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight"
                     >
                         {header.title} <span className="text-blue-600">{header.highlightTitle}</span>
                     </motion.h2>

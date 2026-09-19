@@ -18,9 +18,6 @@ export default function ProcessCard({
 }: ProcessStepCardProps) {
   return (
     <motion.div
-      whileHover={{ y: -6 }}
-      whileTap={{ scale: 0.98 }}
-      transition={{ type: "spring", stiffness: 400, damping: 25 }}
       className="relative bg-white border border-gray-100 rounded-3xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.03)] flex flex-col items-center text-center transition-all duration-300 hover:border-blue-200 hover:shadow-[0_8px_30px_rgba(0,87,238,0.08)] h-full group z-10">
 
       {/* Decorative Graphic Elements (Handled inner overflow) */}
@@ -29,7 +26,7 @@ export default function ProcessCard({
         <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
       </div>
 
-      <div className="absolute -top-7 w-14 h-14 rounded-full bg-blue-600 text-white font-bold text-md flex items-center justify-center shadow-md border-2 border-white z-20">
+      <div className="absolute -top-7 w-12 h-12 rounded-full bg-blue-600 text-white font-bold text-md flex items-center justify-center shadow-md border-2 border-white z-20">
         {stepNumber}
       </div>
       <motion.div
@@ -44,7 +41,7 @@ export default function ProcessCard({
         </h3>
         <div className="w-8 h-0.5 bg-blue-600 mx-auto rounded"></div>
       </div>
-      <p className="text-gray-500 text-sm  sm:text-md leading-relaxed">
+      <p className="text-gray-500 text-sm  sm:text-base leading-relaxed">
         {description}
       </p>
     </motion.div>
