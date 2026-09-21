@@ -9,6 +9,8 @@ import { FiSmartphone, FiShield, FiAward, FiClock, FiCheckCircle, } from "react-
 import { Roboto } from "next/font/google";
 import { containerVariants, fadeUpVariants, badgeVariants } from "../../utils/animations";
 import { site } from "../../data";
+import { FaMedal } from "react-icons/fa";
+import { ClockFading } from "lucide-react";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -17,8 +19,8 @@ const roboto = Roboto({
 
 const IconMap: Record<string, React.ElementType> = {
   shield: FiShield,
-  award: FiAward,
-  clock: FiClock,
+  award: FaMedal,
+  clock: ClockFading,
   checkCircle: FiCheckCircle,
   workspaceTrusted: VscWorkspaceTrusted,
 };

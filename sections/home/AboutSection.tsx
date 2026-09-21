@@ -1,18 +1,19 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { ShieldCheck, Settings, Award, Clock, Wrench, ArrowRight } from "lucide-react";
+import { ShieldCheck, Settings, Award, Clock, Wrench, ArrowRight, ClockFading } from "lucide-react";
 import { site } from "../../data";
 import { motion } from "framer-motion";
 import { fadeUpVariants, containerVariants } from "../../utils/animations";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { SlWrench } from "react-icons/sl";
+import { FaMedal } from "react-icons/fa";
 
 const IconMap: Record<string, React.ElementType> = {
     shield: ShieldCheck,
     settings: Settings,
-    award: Award,
-    clock: Clock,
+    award: FaMedal,
+    clock: ClockFading,
 };
 
 export default function AboutSection() {
