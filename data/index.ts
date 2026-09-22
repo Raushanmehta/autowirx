@@ -18,13 +18,11 @@ export interface SectionProps<T = unknown> {
   isEditable?: boolean;
   onUpdate?: (newData: Partial<T>) => void;
 }
-
 // ── Strongly Typed Section Variant Data Models ──
 export type AutoWirxTopbarData = AutoWirxSections["topbar"]["variants"]["AutoWirxTopbar1"];
 export type AutoWirxNavbarData = AutoWirxSections["navbar"]["variants"]["AutoWirxNavbar1"];
 export type AutoWirxFooterData = AutoWirxSections["footer"]["variants"]["AutoWirxFooter1"];
 export type AutoWirxHeroData = AutoWirxSections["hero"]["variants"]["AutoWirxHero1"];
-
 export type AutoWirxProcessData = AutoWirxSections["process"]["variants"]["AutoWirxProcess1"];
 export type AutoWirxWhyChooseUsData = AutoWirxSections["whyChooseUs"]["variants"]["AutoWirxWhyChooseUs1"];
 export type AutoWirxCtaData = AutoWirxSections["cta"]["variants"]["AutoWirxCta1"];
@@ -44,6 +42,7 @@ export type AutoWirxBookRepairData = AutoWirxSections["bookARepair"]["variants"]
 // ── Canonical Mapped Site Data Object ──
 const sec = siteData.AutoWirx.sections;
 export const siteMap = {
+
   // Compatibility section shortcuts
   topbar: sec.topbar.variants.AutoWirxTopbar1,
   navbar: sec.navbar.variants.AutoWirxNavbar1,

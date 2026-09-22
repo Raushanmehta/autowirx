@@ -1,11 +1,12 @@
 import PageTopSection from "@/components/common/PageTopSection";
-import TeamDetailPage from "@/sections/TeamDetailPage";
+import TeamDetailPage from "@/page-views/TeamDetailPage";
 import { site } from "@/data";
 
-export default function TeamDetail({ params }: { params: { slug: string } }) {
+export default async function TeamDetail({ params }: { params: Promise<{ slug: string }> }) {
+    const resolvedParams = await params;
     const data = site.teamData;
     const members = data?.members || [];
-    const member = members.find((m: any) => m.slug === params.slug) || members[0];
+    const member = members.find((m: any) => m.slug === resolvedParams.slug) || members[0];
 
     return (
         <main>

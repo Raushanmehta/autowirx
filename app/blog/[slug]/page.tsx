@@ -1,5 +1,5 @@
 import PageTopSection from "@/components/common/PageTopSection";
-import BlogDetailsSection from "@/sections/BlogDetailsSection";
+import BlogDetailsSection from "@/page-views/BlogDetailsSection";
 import { site } from "@/data";
 
 export default async function BlogDetail({ params }: { params: Promise<{ slug: string }> }) {
@@ -32,7 +32,6 @@ export default async function BlogDetail({ params }: { params: Promise<{ slug: s
         );
     }
 
-    // We take related articles as the first 3 items (excluding the current one)
     const relatedArticles = postsList
         .filter((item: any) => item.href && item.href.split('/').pop() !== targetSlug)
         .slice(0, 3);

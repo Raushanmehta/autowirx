@@ -387,7 +387,7 @@
             "description": "From cracked screens to battery issues – we provide fast, reliable and affordable mobile repair services you can trust.",
             "primaryCta": {
               "label": "Repair Now",
-              "href": "/repair"
+              "href": "/book-a-repair"
             },
             "secondaryCta": {
               "label": "Our Services",
@@ -1487,7 +1487,7 @@
             },
             "button": {
               "text": "CONTACT US",
-              "href": "/contact"
+              "href": "/contact-us"
             }
           }
         }

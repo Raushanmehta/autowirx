@@ -2,11 +2,12 @@ import React from "react";
 import Image from "next/image";
 import { Caveat } from "next/font/google";
 import { FiCheckCircle, FiSmartphone, FiShield, FiUsers, FiClock, FiDollarSign, FiSearch, FiFileText, FiTool, FiChevronRight } from "react-icons/fi";
+import { ShieldCheck } from "lucide-react";
 
 const caveat = Caveat({ subsets: ["latin"], weight: ["400", "700"] });
 
 const IconMap: Record<string, React.ElementType> = {
-    "shield": FiShield,
+    "shield": ShieldCheck,
     "users": FiUsers,
     "clock": FiClock,
     "dollar-sign": FiDollarSign,
@@ -133,9 +134,9 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
                             </div>
 
                             {/* Bottom Info Box */}
-                            <div className="bg-slate-50 border border-gray-100 rounded-2xl p-4 flex items-center gap-4 mt-4">
-                                <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-md">
-                                    {BottomBoxIcon ? <BottomBoxIcon size={20} /> : <FiSmartphone size={20} />}
+                            <div className="bg-slate-50 border border-gray-100 rounded-xl p-4 flex items-center gap-4 mt-4">
+                                <div className="w-10 h-10 rounded-md bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-md">
+                                    {BottomBoxIcon ? <BottomBoxIcon size={24} /> : <FiSmartphone size={20} />}
                                 </div>
                                 <p className="text-xs sm:text-sm text-gray-600 font-medium leading-snug">
                                     {overview.bottomBox.text}
@@ -232,8 +233,8 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
 
                                     {/* Connecting Arrow */}
                                     {index < repairSteps.length - 1 && (
-                                        <div className="hidden lg:block absolute top-10 -right-4 transform translate-x-1/2 text-gray-300">
-                                            <FiChevronRight size={32} />
+                                        <div className="hidden lg:block absolute  top-10 -right-4 transform translate-x-1/2 text-gray-300">
+                                            <FiChevronRight size={32} className="text-blue-500" />
                                         </div>
                                     )}
 
