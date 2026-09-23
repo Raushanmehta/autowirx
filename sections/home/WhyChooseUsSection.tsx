@@ -47,12 +47,12 @@ export default function WhyChooseUsSection() {
     const data = site.whyChooseUsData;
 
     return (
-        <section className="relative w-full bg-white py-10 sm:py-14 md:py-16 lg:py-16 font-sans overflow-hidden">
+        <section className="relative w-full  bg-white pt-8 pb-14 font-sans overflow-hidden">
             <div className="absolute -bottom-32 left-1/2 transform -translate-x-1/2 w-[40rem] h-[20rem] bg-blue-100/40 rounded-full blur-[100px] pointer-events-none z-0"></div>
             <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
                     <div className="lg:col-span-5 relative flex flex-col items-center">
-                        <div className="absolute -top-10 -left-10 grid grid-cols-6 gap-3 z-0 pointer-events-none">
+                        <div className="absolute -top-10 -left-10 grid grid-cols-6 gap-3 z-20 pointer-events-none">
                             {Array.from({ length: 42 }).map((_, i) => (
                                 <div key={i} className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
                             ))}
@@ -62,7 +62,7 @@ export default function WhyChooseUsSection() {
                             variants={fadeUpVariants}
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: true, margin: "-100px" }}
+                            // viewport={{ once: true, margin: "-100px" }}
                             className="relative w-full h-[480px] md:h-[590px] rounded-3xl overflow-hidden z-10">
                             <Image
                                 src={data.images.main}
@@ -88,7 +88,8 @@ export default function WhyChooseUsSection() {
                             />
                         </motion.div>
 
-                        <div className="absolute -bottom-10 left-2 sm:-left-10 w-36 h-36 rounded-full bg-white shadow-xl border border-gray-100 flex items-center justify-center p-2 z-30">
+                        {/* TRUSTED PARTNERS */}
+                        <div className="absolute -bottom-10 left-10 sm:left-0 md:-left-7 w-36 h-36 rounded-full bg-white shadow-xl border border-gray-100 flex items-center justify-center p-2 z-30">
                             <svg className="w-full h-full absolute animate-[spin_12s_linear_infinite]" viewBox="0 0 100 100">
                                 <path
                                     id="textPath"
@@ -131,7 +132,7 @@ export default function WhyChooseUsSection() {
                             </div>
 
                             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight leading-tight">
-                                {data.header.titleLine1}
+                                {data.header.titleLine1} <br />
                                 <span className="text-blue-600">{data.header.titleHighlight}</span>
                             </h2>
                             <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-2xl">
@@ -151,7 +152,7 @@ export default function WhyChooseUsSection() {
                                     <motion.div
                                         key={index}
                                         variants={fadeUpVariants}
-                                        className="relative bg-slate-50/80 border border-gray-100 rounded-2xl p-6 flex flex-col justify-between items-center text-center transition-all duration-300 hover:bg-white hover:shadow-xl hover:border-blue-100 group z-10">
+                                        className="relative h-full bg-slate-50/80 border border-gray-100 rounded-2xl p-4 flex flex-col justify-between items-center text-center transition-all duration-300 hover:bg-white hover:shadow-xl hover:border-blue-100 group z-10">
                                         <div className="absolute inset-0 overflow-hidden rounded-2xl pointer-events-none -z-10">
                                             <div className="absolute -top-16 -right-16 w-40 h-40 bg-gradient-to-br from-blue-100/60 to-transparent rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700 ease-in-out"></div>
                                             <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
@@ -165,13 +166,15 @@ export default function WhyChooseUsSection() {
                                                 {item.title}
                                             </h3>
                                         </div>
-                                        <p className="text-gray-500 text-xs sm:text-sm leading-relaxed mt-2 relative z-10">
+                                        <p className="text-gray-500 text-xs sm:text-sm  mt-1 relative z-10">
                                             {item.description}
                                         </p>
                                     </motion.div>
                                 );
                             })}
                         </motion.div>
+
+
                         <motion.div
                             variants={containerVariants}
                             initial="hidden"

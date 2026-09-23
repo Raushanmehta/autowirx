@@ -21,7 +21,7 @@ export default function TestimonialCard({
 }: TestimonialCardProps) {
     return (
         <div
-            className={`relative rounded-3xl p-8 flex flex-col justify-between transition-all duration-500 shadow-xl h-full group hover:-translate-y-2 hover:shadow-2xl ${isDark
+            className={`relative rounded-3xl p-8 flex flex-col justify-between transition-all duration-500 shadow-md h-full group hover:-translate-y-2 ${isDark
                 ? "bg-[#0b101c] text-white border border-gray-800 hover:border-blue-500/50"
                 : "bg-white text-gray-900 border border-gray-100 hover:border-blue-200"
                 }`}>
@@ -63,7 +63,7 @@ export default function TestimonialCard({
                     "{quote}"
                 </p>
             </div>
-            <div className="pt-8 flex items-center justify-between relative z-10">
+            <div className="pt-4 flex items-center justify-between relative z-10">
                 <div className="flex items-center gap-3">
                     <div className="relative w-12 h-12 rounded-full overflow-hidden shrink-0 border-2 border-blue-500/30">
                         <Image

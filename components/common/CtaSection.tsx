@@ -16,9 +16,9 @@ export default function CtaSection() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-50px" }}
-                    className="relative bg-[#212529] rounded-3xl overflow-hidden px-8 sm:px-12 lg:px-16 py-12 lg:py-16 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-10">
+                    className="relative bg-[#212529] rounded-3xl overflow-hidden px-8 sm:px-12 lg:px-16 py-8 lg:py-10 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-10">
                     <div className="absolute right-0 top-0 bottom-0 w-1/2 overflow-hidden pointer-events-none hidden lg:block">
-                        <motion.div 
+                        <motion.div
                             animate={{ scale: [1, 1.1, 1], opacity: [0.6, 1, 0.6] }}
                             transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
                             className="absolute right-[-10%] top-[-20%] w-96 h-96 bg-blue-600/20 rounded-full blur-[80px]">
@@ -45,14 +45,14 @@ export default function CtaSection() {
                         </motion.svg>
                     </div>
                     <div className="flex flex-col sm:flex-row items-center gap-8 z-10 text-center sm:text-left">
-                        <motion.div variants={fadeUpVariants} className="relative w-32 h-32 sm:w-36 sm:h-36 shrink-0 drop-shadow-xl hover:scale-105 transition-transform duration-500">
-                                <Image
-                                    src={data.image.src}
-                                    alt={data.image.alt}
-                                    fill
-                                    sizes="(max-width: 768px) 100vw, 50vw"
-                                    className="object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-90"
-                                />
+                        <motion.div variants={fadeUpVariants} className="relative w-48 h-48 sm:w-52 sm:h-52 shrink-0 drop-shadow-xl hover:scale-105 transition-transform duration-500">
+                            <Image
+                                src={data.image.src}
+                                alt={data.image.alt}
+                                fill
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                className="object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-90"
+                            />
                         </motion.div>
                         <motion.div variants={fadeUpVariants} className="space-y-3">
                             <div className="flex items-center justify-center sm:justify-start gap-2 text-blue-500 font-bold text-sm tracking-widest uppercase">
@@ -71,7 +71,7 @@ export default function CtaSection() {
                             href={data.button.href}
                             className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-100 text-gray-900 font-semibold px-8 py-4 rounded-full shadow-lg transition-all hover:scale-105 group">
                             <span>{data.button.text}</span>
-                            <FiArrowRight className="text-blue-600 transition-transform group-hover:translate-x-1" />
+                            <FiArrowRight className="text-black transition-transform group-hover:translate-x-1" />
                         </Link>
                     </motion.div>
                 </motion.div>

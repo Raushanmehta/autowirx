@@ -37,9 +37,11 @@ export default function AboutSection() {
                         viewport={{ once: true, margin: "-100px" }}
                         className="space-y-2">
                         <div className="flex items-center gap-2 text-blue-600 font-bold text-sm tracking-widest uppercase">
-                            <span className="w-6 h-0.5 bg-blue-600"></span>
                             <span>{data.header.subtitle}</span>
+
                         </div>
+                        <div className="w-10 h-0.5 bg-blue-600" />
+
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 tracking-tight leading-tight">
                             {data.header.titleLine1}{" "}
                             <span className="text-blue-600">{data.header.titleHighlight}</span>
@@ -52,33 +54,39 @@ export default function AboutSection() {
                         </p>
 
                         {/* Feature grid */}
-                        <div className="grid grid-cols-2 gap-x-2 gap-y-8 sm:grid-cols-4 sm:gap-x-0">
+                        <div className="grid grid-cols-2 gap-x-2 gap-y-8 sm:grid-cols-4 sm:gap-x-0 mt-8">
                             {data.features.map((feature, index) => {
                                 const IconComp = IconMap[feature.icon] || ShieldCheck;
                                 return (
-                                    <div key={feature.title} className={`w-full space-y-1 px-2 sm:px-4 flex flex-col items-center ${index !== data.features.length - 1 ? 'sm:border-r sm:border-gray-200' : ''}`}>
-                                        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-blue-50 text-blue-600 mx-auto">
-                                            <IconComp size={40} strokeWidth={1.75} />
+                                    <motion.div 
+                                        key={feature.title} 
+                                        whileHover={{ y: -5 }}
+                                        className={`group w-full space-y-3 px-2 sm:px-4 flex flex-col items-center cursor-pointer transition-all duration-300 ${index !== data.features.length - 1 ? 'sm:border-r sm:border-gray-200' : ''}`}
+                                    >
+                                        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-blue-50 text-blue-600 mx-auto transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white shadow-sm group-hover:shadow-blue-600/30 group-hover:shadow-lg">
+                                            <IconComp size={40} strokeWidth={1.75} className="transform transition-transform duration-300 group-hover:scale-110" />
                                         </div>
-                                        <h3 className="text-base sm:text-lg font-bold text-slate-900 text-center">
+                                        <h3 className="text-base sm:text-lg font-bold text-slate-900 text-center transition-colors duration-300 group-hover:text-blue-600">
                                             {feature.title}
                                         </h3>
                                         <p className="text-sm leading-relaxed text-slate-500 text-center">
                                             {feature.description}
                                         </p>
-                                    </div>
+                                    </motion.div>
                                 );
                             })}
                         </div>
 
                         <div className="pt-2">
-                            <Link
-                                href={data.button.href}
-                                className="inline-flex items-center gap-2 rounded-xl border-2 border-blue-600 px-6 py-3.5 text-sm font-semibold text-blue-600 transition-all hover:bg-blue-600 hover:text-white shadow-sm">
-                                <SlWrench className="h-6 w-6" strokeWidth={2} />
-                                <span>{data.button.text}</span>
-                                <FaArrowRightLong className="h-6 w-6" strokeWidth={1} />
-                            </Link>
+                            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="inline-block">
+                                <Link
+                                    href={data.button.href}
+                                    className="group inline-flex items-center gap-2 rounded-xl border-2 border-blue-600 px-6 py-3.5 text-sm font-semibold text-white transition-all duration-300 bg-blue-600 hover:bg-blue-700 hover:border-blue-700 shadow-sm hover:shadow-lg hover:shadow-blue-600/30">
+                                    <SlWrench className="h-6 w-6 transform transition-transform duration-300 group-hover:rotate-12" strokeWidth={2} />
+                                    <span>{data.button.text}</span>
+                                    <FaArrowRightLong className="h-6 w-6 transform transition-transform duration-300 group-hover:translate-x-1.5" strokeWidth={1} />
+                                </Link>
+                            </motion.div>
                         </div>
                     </motion.div>
 
@@ -90,7 +98,7 @@ export default function AboutSection() {
                         viewport={{ once: true, margin: "-100px" }}
                         className="relative w-full flex justify-center lg:justify-end"  >
                         <div className="relative w-full max-w-lg lg:max-w-[580px] xl:max-w-[420px] mr-4 sm:mr-6">
-                            <div className="pointer-events-none absolute -left-5 top-8 grid grid-cols-6 gap-1.5 opacity-70 z-0">
+                            <div className="pointer-events-none absolute -left-16 top-8 grid grid-cols-6 gap-1.5 opacity-70 z-0">
                                 {Array.from({ length: 24 }).map((_, i) => (
                                     <span
                                         key={i}
@@ -98,7 +106,7 @@ export default function AboutSection() {
                                     />
                                 ))}
                             </div>
-                            <div className="pointer-events-none absolute -left-5 bottom-10 grid grid-cols-6 gap-1.5 opacity-70 z-0">
+                            <div className="pointer-events-none absolute -left-14 bottom-10 grid grid-cols-6 gap-1.5 opacity-70 z-0">
                                 {Array.from({ length: 24 }).map((_, i) => (
                                     <span
                                         key={i}

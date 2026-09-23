@@ -334,7 +334,7 @@
               "websiteUrl": "https://www.autowirx.com"
             },
             "bottomBar": {
-              "copyright": "© 2026 Auto Wirx. All Rights Reserved. Powerd by Lestow",
+              "copyright": "© 2026 Auto Wirx. All Rights Reserved. Powered by Lestow",
               "policyLinks": [
                 {
                   "name": "Privacy Policy",
@@ -1435,22 +1435,22 @@
               {
                 "icon": "shield",
                 "title": "Technicians",
-                "description": "Certified professionals with years of experience in mobile repairs."
+                "description": "Expert mobile repair professionals."
               },
               {
                 "icon": "award",
-                "title": "Genuine Parts",
-                "description": "We use only high-quality and genuine parts for long-lasting performance."
+                "title": "Genuine",
+                "description": "Only premium, genuine parts guaranteed."
               },
               {
                 "icon": "clock",
-                "title": "Fast Turnaround",
-                "description": "Quick diagnosis and efficient repairs to get you back on track clock."
+                "title": "Turnaround",
+                "description": "Diagnosis, efficient mobile repairs."
               },
               {
                 "icon": "headphones",
-                "title": "Customer ",
-                "description": "Our priority is your satisfaction and we always deliver the best product Customer."
+                "title": "Customer",
+                "description": "Your satisfaction is our priority."
               }
             ],
             "stats": [
@@ -1482,7 +1482,7 @@
             },
             "header": {
               "subtitle": "CONTACT US",
-              "titleLine1": "24/7 Expert Support Our",
+              "titleLine1": "24/7  Expert Support Our",
               "titleLine2": "Customers Love"
             },
             "button": {

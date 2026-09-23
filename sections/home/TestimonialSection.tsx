@@ -38,7 +38,7 @@ export default function TestimonialSection() {
 
     return (
         <section className="w-full bg-slate-50 py-10 sm:py-14 md:py-16 lg:py-16 font-sans overflow-hidden">
-            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-8">
+            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-5">
                 <motion.div
                     variants={fadeUpVariants}
                     initial="hidden"
@@ -63,7 +63,7 @@ export default function TestimonialSection() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-100px" }}
-                    className="relative px-2 sm:px-4">
+                    className="relative">
                     <Carousel
                         setApi={setApi}
                         plugins={[autoplayPlugin.current]}
@@ -72,11 +72,11 @@ export default function TestimonialSection() {
                             loop: true,
                         }}
                         className="w-full">
-                        <CarouselContent className="-ml-4 sm:-ml-6 lg:-ml-8 items-stretch py-2">
+                        <CarouselContent className=" items-stretch py-2">
                             {data.items.map((item, index) => (
                                 <CarouselItem
                                     key={index}
-                                    className="pl-4 sm:pl-6 lg:pl-8 basis-full sm:basis-1/2 lg:basis-1/3 flex">
+                                    className=" basis-full sm:basis-1/2 lg:basis-1/3 flex">
                                     <div className="w-full h-full">
                                         <TestimonialCard
                                             quote={item.quote}
@@ -95,7 +95,7 @@ export default function TestimonialSection() {
                             <CarouselNext className="-right-4 lg:-right-6 bg-white/90 hover:bg-blue-600 hover:text-white border-gray-200 text-gray-800 shadow-md transition-colors" />
                         </div>
                     </Carousel>
-                    <div className="flex justify-center items-center gap-2 pt-8">
+                    <div className="flex justify-center items-center gap-2 pt-6">
                         {Array.from({ length: count }).map((_, i) => (
                             <button
                                 key={i}
