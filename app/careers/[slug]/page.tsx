@@ -1,5 +1,5 @@
 import PageTopSection from "@/components/common/PageTopSection";
-import CareerDetailSection from "@/page-views/CareerDetailSection";
+import CareerDetailSection from "@/page/CareerDetailSection";
 import siteData from "@/data/site.json";
 import { notFound } from "next/navigation";
 

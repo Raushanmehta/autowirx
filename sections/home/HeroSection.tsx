@@ -232,7 +232,7 @@ export default function HeroSection() {
 
             <motion.div
               variants={containerVariants}
-              className="pt-2 sm:pt-10 grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-4 sm:gap-6 lg:gap-6">
+              className="pt-2 sm:pt-10 grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-4 sm:gap-2 lg:gap-2">
               {data.trustBadges.map((item, index) => {
                 const Icon = IconMap[item.icon];
 
@@ -249,7 +249,7 @@ export default function HeroSection() {
                       stiffness: 300,
                       damping: 20,
                     }}
-                    className="flex items-center gap-2.5 sm:gap-3"
+                    className="flex items-center gap-0.5 sm:gap-1"
                   >
                     {/* Icon */}
                     <motion.div

@@ -1,5 +1,5 @@
 import PageTopSection from "@/components/common/PageTopSection";
-import TeamDetailPage from "@/page-views/TeamDetailPage";
+import TeamDetailPage from "@/page/TeamDetailPage";
 import { site } from "@/data";
 
 export default async function TeamDetail({ params }: { params: Promise<{ slug: string }> }) {

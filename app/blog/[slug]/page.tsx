@@ -1,5 +1,5 @@
 import PageTopSection from "@/components/common/PageTopSection";
-import BlogDetailsSection from "@/page-views/BlogDetailsSection";
+import BlogDetailsSection from "@/page/BlogDetailsSection";
 import { site } from "@/data";
 
 export default async function BlogDetail({ params }: { params: Promise<{ slug: string }> }) {

@@ -1,5 +1,5 @@
 import PageTopSection from "@/components/common/PageTopSection";
-import ServiceDetailPage from "@/page-views/ServiceDetailPage";
+import ServiceDetailPage from "@/page/ServiceDetailPage";
 import { site } from "@/data";
 import { notFound } from "next/navigation";
 
