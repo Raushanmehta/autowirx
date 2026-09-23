@@ -33,10 +33,10 @@ export default function ProcessCard({
       <motion.div
         whileHover={{ rotate: 10, scale: 1.1 }}
         transition={{ type: "spring", stiffness: 300 }}
-        className="w-20 h-20 rounded-full bg-[#ECF3FD] group-hover:bg-blue-600 group-hover:text-white text-[#21314E] flex items-center justify-center mt-4 mb-6 border border-blue-100/60 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-blue-600/30 relative z-10">
+        className="w-20 h-20  rounded-full bg-[#ECF3FD] group-hover:bg-blue-600 group-hover:text-white text-[#21314E] flex items-center justify-center mt-4 mb-2 border border-blue-100/60 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-blue-600/30 relative z-10">
         {icon}
       </motion.div>
-      <div className="space-y-3 mb-4">
+      <div className="space-y-3 mb-2">
         <h3 className="text-gray-900 group-hover:text-blue-600 transition-colors duration-300 font-bold text-lg tracking-tight">
           {title}
         </h3>

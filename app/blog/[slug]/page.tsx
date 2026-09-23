@@ -33,8 +33,7 @@ export default async function BlogDetail({ params }: { params: Promise<{ slug: s
     }
 
     const relatedArticles = postsList
-        .filter((item: any) => item.href && item.href.split('/').pop() !== targetSlug)
-        .slice(0, 3);
+        .filter((item: any) => item.href && item.href.split('/').pop() !== targetSlug);
 
     const data = { article, sidebar: blogData.sidebar, relatedArticles };
 

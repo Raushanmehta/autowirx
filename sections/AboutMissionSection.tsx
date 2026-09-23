@@ -59,7 +59,7 @@ export default function AboutMissionSection() {
                         {/* Floating Card */}
                         <motion.div
                             variants={fadeUpVariants}
-                            className="absolute -bottom-6 sm:-bottom-8 left-2 sm:left-8 z-20 bg-gradient-to-br from-white to-blue-50 p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)] border border-white w-[85%] sm:w-auto sm:max-w-[280px]">
+                            className="absolute -bottom-6 sm:-bottom-8 left-2 sm:left-2 z-20 bg-gradient-to-br from-white to-blue-50 p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)] border border-white w-[85%] sm:w-auto sm:max-w-[280px]">
                             <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-5">
                                 <div className="w-10 h-10 sm:w-14 sm:h-14 shrink-0 rounded-full bg-blue-100 flex items-center justify-center text-[#0057ee]">
                                     {React.createElement(IconMap[data.trustCard.icon] || ShieldCheck, { size: 22, className: "sm:w-6 sm:h-6", strokeWidth: 2.2 })}
@@ -93,17 +93,17 @@ export default function AboutMissionSection() {
                             {data.header.titlePrefix} <span className="text-[#0057ee]">{data.header.titleHighlight}</span>
                         </motion.h2>
 
-                        <motion.p variants={fadeUpVariants} className="text-slate-600 text-sm sm:text-base leading-relaxed mb-8 sm:mb-10 max-w-3xl">
+                        <motion.p variants={fadeUpVariants} className="text-slate-600 text-sm sm:text-base leading-relaxed mb-2 sm:mb-4 max-w-3xl">
                             {data.header.description}
                         </motion.p>
 
                         {/* Features Grid */}
-                        <motion.div variants={fadeUpVariants} className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-y-8 sm:gap-y-10 gap-x-4 sm:gap-x-6 mb-8 sm:mb-10">
+                        <motion.div variants={fadeUpVariants} className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 space-y-4">
                             {data.features.map((item, idx) => {
                                 const IconComp = IconMap[item.icon] || ShieldCheck;
                                 return (
                                     <div key={idx} className="flex flex-col items-center text-center px-1 sm:px-2">
-                                        <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full bg-gradient-to-br from-blue-50 to-white text-blue-600 flex items-center justify-center mb-4 sm:mb-6 border border-blue-100/60 shadow-[0_4px_15px_rgba(0,87,238,0.1)] transition-transform duration-300 hover:scale-110">
+                                        <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full bg-gradient-to-br from-blue-50 to-white text-blue-600 flex items-center justify-center mb-4 border border-blue-100/60 shadow-[0_4px_15px_rgba(0,87,238,0.1)] transition-transform duration-300 hover:scale-110">
                                             <IconComp size={24} strokeWidth={1.5} className="sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
                                         </div>
                                         <h4 className="text-sm sm:text-base lg:text-lg font-bold text-gray-900 mb-1.5 sm:mb-2">{item.title}</h4>

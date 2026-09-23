@@ -59,10 +59,10 @@ export default function BrandsSection({ data }: { data: AutoWirxBrandsWeRepairDa
                             variants={fadeUpVariants}
                             key={index}
                             whileHover={{ y: -5, boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)" }}
-                            className="bg-white border border-gray-100 rounded-2xl p-6 flex flex-col items-center justify-center text-center h-36 transition-colors duration-300 hover:border-blue-100 group cursor-pointer"
+                            className="bg-white border border-gray-100 rounded-2xl p-4 sm:p-6 flex flex-col items-center justify-center text-center h-40 sm:h-48 transition-colors duration-300 hover:border-blue-100 group cursor-pointer"
                         >
                             {/* Brand Logo / Visual Representation */}
-                            <div className="relative w-24 h-24 flex items-center justify-center mb-3 group-hover:scale-105 transition-transform">
+                            <div className="relative w-28 h-28 sm:w-32 sm:h-32 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
                                 <Image
                                     src={brand.imagePath}
                                     alt={`${brand.name} logo`}

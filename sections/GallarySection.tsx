@@ -32,14 +32,14 @@ export default function GallarySection({ data }: GallarySectionProps) {
 
     return (
         <section className="w-full bg-white py-10 sm:py-14 md:py-16 lg:py-16 font-sans">
-            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
                 {/* Section Header */}
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.3 }}
                     variants={fadeUpVariants}
-                    className="text-center max-w-4xl mx-auto space-y-4"
+                    className="text-center max-w-4xl mx-auto space-y-3"
                 >
                     <div className="flex items-center justify-center gap-2 text-blue-500 font-bold text-sm tracking-widest uppercase">
                         <span className="w-6 h-0.5 bg-blue-500"></span>

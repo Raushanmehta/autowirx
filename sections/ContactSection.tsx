@@ -262,7 +262,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-50px" }}
-                    className="pt-10 border-gray-100 space-y-10"
+                    className="pt-10 border-gray-100 space-y-8"
                 >
 
                     {/* Header */}
@@ -285,18 +285,18 @@ export default function ContactSection({ data }: ContactSectionProps) {
                     </motion.div>
 
                     {/* 4 Cards Grid */}
-                    <motion.div variants={containerVariants} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <motion.div variants={containerVariants} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                         {contactMethods.map((method, index) => {
                             const Icon = iconMap[method.icon] || FaHeadset;
                             return (
                                 <motion.div
                                     key={method.id}
                                     variants={fadeUpVariants}
-                                    className="bg-white rounded-2xl border border-gray-100 p-6 shadow-[0_4px_25px_rgba(0,0,0,0.03)] flex flex-col justify-between space-y-2 hover:shadow-lg hover:-translate-y-1 transition-all"
+                                    className="bg-white rounded-2xl border border-gray-100 p-6 shadow-[0_4px_25px_rgba(0,0,0,0.03)] flex flex-col justify-between space-y-2 hover:shadow-lg hover:-translate-y-1 transition-all group cursor-pointer"
                                 >
                                     <div className="space-y-2">
-                                        <div className={`h-16 w-16 rounded-full ${method.iconBgColor} border ${method.iconBorderColor} flex items-center justify-center ${method.iconColor}`}>
-                                            <Icon className="text-3xl" />
+                                        <div className={`h-16 w-16 rounded-full ${method.iconBgColor} border ${method.iconBorderColor} flex items-center justify-center ${method.iconColor} transition-all duration-300 group-hover:scale-110 group-hover:rotate-[10deg] group-hover:shadow-lg`}>
+                                            <Icon className="text-3xl transition-transform duration-300 group-hover:scale-110" />
                                         </div>
                                         <div className="space-y-1">
                                             <h3 className="text-lg font-bold text-gray-900">{method.title}</h3>

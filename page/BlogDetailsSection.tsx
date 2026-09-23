@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaCalendarAlt, FaClock, FaUser, FaFire, FaFolderOpen } from "react-icons/fa";
-import RelatedBlogCard from "@/components/cards/RelatedBlogCard";
 import { motion } from "framer-motion";
 import { fadeUpVariants, containerVariants } from "@/utils/animations";
 
@@ -14,7 +13,7 @@ export default function BlogDetailsSection({ data }: { data: any }) {
     if (!article) return null;
 
     return (
-        <section className="relative bg-white py-10 sm:py-14 md:py-16 lg:py-16 overflow-hidden">
+        <section className="relative bg-white py-10 sm:py-14 md:py-16 lg:py-16">
 
             <motion.div variants={fadeUpVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} className="absolute top-12 left-6 grid grid-cols-4 gap-2 opacity-60 pointer-events-none">
                 {Array.from({ length: 16 }).map((_, i) => (
@@ -43,7 +42,7 @@ export default function BlogDetailsSection({ data }: { data: any }) {
                                 {article.category}
                             </span>
 
-                            <h1 className=" text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight leading-tight">
+                            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight leading-tight max-w-[80%] lg:max-w-2xl">
                                 {article.title}
                             </h1>
 
@@ -94,13 +93,14 @@ export default function BlogDetailsSection({ data }: { data: any }) {
                         </div>
                     </motion.div>
 
-                    <motion.div className="lg:col-span-4 space-y-4 lg:sticky lg:top-0" variants={fadeUpVariants}>
+                    {/* Blog Categories Box */}
+                    <motion.div className="lg:col-span-4 space-y-4 lg:sticky lg:top-32" variants={fadeUpVariants}>
 
-                        {/* Blog Categories Box */}
-                        <div className="bg-gray-50/80 rounded-2xl border border-gray-100 p-6 sm:p-8 space-y-6 shadow-sm">
-                            <h3 className="flex items-center gap-2 text-xl font-bold text-gray-900 border-b border-gray-200/60 pb-4">
+                        <div className="rounded-lg border border-gray-100 p-6 sm:p-6 space-y-4 shadow-sm">
+                            <h3 className="flex items-center gap-2 text-xl font-bold text-gray-900">
                                 Blog Categories
                             </h3>
+                            <div className="w-10 h-0.5 bg-blue-600" />
 
                             <div className="space-y-2.5">
                                 {sidebar.categories.map((cat: any, index: number) => (
@@ -121,14 +121,15 @@ export default function BlogDetailsSection({ data }: { data: any }) {
                             </div>
                         </div>
 
-                        {/* Popular Posts Box */}
-                        <div className="bg-gray-50/80 rounded-3xl border border-gray-100 p-6 sm:p-8 space-y-6 shadow-sm">
-                            <h3 className="flex items-center gap-2 text-xl font-bold text-gray-900 border-b border-gray-200/60 pb-4">
-                                Popular Posts
+                        {/*  Related Articles Box */}
+                        <div className="rounded-lg border border-gray-100 p-6 sm:p-6 space-y-4 shadow-sm">
+                            <h3 className="flex items-center gap-2 text-xl font-bold text-gray-900">
+                                Related Articles
                             </h3>
+                            <div className="w-10 h-0.5 bg-blue-600" />
 
                             <div className="space-y-5">
-                                {sidebar.popularPosts.map((post: any, index: number) => (
+                                {relatedArticles.map((post: any, index: number) => (
                                     <div key={index} className="flex items-center gap-4 group">
                                         <div className="relative h-16 w-16 rounded-xl overflow-hidden bg-gray-900 shrink-0 shadow-sm">
                                             <Image
@@ -157,20 +158,6 @@ export default function BlogDetailsSection({ data }: { data: any }) {
                         </div>
                     </motion.div>
                 </div>
-
-                <motion.div className=" border-gray-100 space-y-8" variants={fadeUpVariants}>
-                    <div className="flex items-center gap-3">
-                        <span className="text-xs font-bold uppercase tracking-widest text-sky-600">
-                            Related Articles
-                        </span>
-                        <span className="h-[2px] w-12 bg-sky-500" />
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {relatedArticles.map((article: any, index: number) => (
-                            <RelatedBlogCard key={index} article={article} />
-                        ))}
-                    </div>
-                </motion.div>
             </motion.div>
         </section>
     );

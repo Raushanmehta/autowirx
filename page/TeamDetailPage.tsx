@@ -45,7 +45,7 @@ export default function TeamDetailPage({ member }: { member: any }) {
                     </div>
 
                     {/* Right: Info & Meta Details */}
-                    <div className="lg:col-span-7 space-y-4">
+                    <div className="lg:col-span-7 space-y-2">
 
                         <div className="space-y-1">
                             <h1 className="text-3xl sm:text-5xl font-semibold text-gray-900 tracking-tight">
@@ -62,44 +62,44 @@ export default function TeamDetailPage({ member }: { member: any }) {
                         </p>
 
                         {/* 2x2 Meta Info Grid */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4 border-y border-gray-100">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4">
 
-                            <div className="flex items-center gap-3">
-                                <div className="w-14 h-14 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 border border-blue-100">
+                            <div className="flex items-center gap-3 group">
+                                <div className="w-14 h-14 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 border border-blue-100 transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-blue-600/30">
                                     <FiGitCommit size={28} />
                                 </div>
                                 <div>
-                                    <p className="text-[11px] text-gray-400 font-semibold uppercase">Experience</p>
+                                    <p className="text-[11px] text-gray-400 font-semibold uppercase group-hover:text-blue-500 transition-colors">Experience</p>
                                     <p className="text-sm font-bold text-gray-900">{member.experience}</p>
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-3">
-                                <div className="w-14 h-14 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 border border-blue-100">
+                            <div className="flex items-center gap-3 group">
+                                <div className="w-14 h-14 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 border border-blue-100 transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-blue-600/30">
                                     <FiClock size={28} />
                                 </div>
                                 <div>
-                                    <p className="text-[11px] text-gray-400 font-semibold uppercase">Availability</p>
+                                    <p className="text-[11px] text-gray-400 font-semibold uppercase group-hover:text-blue-500 transition-colors">Availability</p>
                                     <p className="text-sm font-bold text-gray-900">{member.availability}</p>
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-3">
-                                <div className="w-14 h-14 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 border border-blue-100">
+                            <div className="flex items-center gap-3 group">
+                                <div className="w-14 h-14 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 border border-blue-100 transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-blue-600/30">
                                     <FiShield size={28} />
                                 </div>
                                 <div>
-                                    <p className="text-[11px] text-gray-400 font-semibold uppercase">Specialization</p>
+                                    <p className="text-[11px] text-gray-400 font-semibold uppercase group-hover:text-blue-500 transition-colors">Specialization</p>
                                     <p className="text-sm font-bold text-gray-900">{member.specialization}</p>
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-3">
-                                <div className="w-14 h-14 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 border border-blue-100">
+                            <div className="flex items-center gap-3 group">
+                                <div className="w-14 h-14 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 border border-blue-100 transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-blue-600/30">
                                     <FiMapPin size={28} />
                                 </div>
                                 <div>
-                                    <p className="text-[11px] text-gray-400 font-semibold uppercase">Location</p>
+                                    <p className="text-[11px] text-gray-400 font-semibold uppercase group-hover:text-blue-500 transition-colors">Location</p>
                                     <p className="text-sm font-bold text-gray-900">{member.location}</p>
                                 </div>
                             </div>
@@ -139,9 +139,9 @@ export default function TeamDetailPage({ member }: { member: any }) {
                         variants={fadeUpVariants}
                         className="lg:col-span-5 bg-white border border-gray-100 rounded-3xl p-6 shadow-xl shadow-gray-100 flex flex-col justify-between space-y-6">
                         <div className="space-y-4">
-                            <h2 className="text-2xl font-black text-gray-900 tracking-tight">
+                            <h2 className="text-2xl font-semibold text-gray-900 tracking-tight">
                                 About {member.name.split(' ')[0]}
-                                <motion.div initial={{ width: 0 }} animate={{ width: 40 }} transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} className="h-1 bg-blue-600 mt-3"></motion.div>
+                                <motion.div initial={{ width: 0 }} animate={{ width: 40 }} transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} className="h-1 bg-blue-600 mt-2"></motion.div>
                             </h2>
                             {member.about?.paragraphs.map((p: string, i: number) => (
                                 <p key={i} className="text-gray-600 text-md md:text-sm lg:text-base leading-relaxed">
@@ -151,11 +151,11 @@ export default function TeamDetailPage({ member }: { member: any }) {
                         </div>
 
                         {/* Stats Row */}
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 ">
+                        <div className="grid grid-cols-1 sm:grid-cols-3  ">
                             {member.about?.stats.map((stat: any, i: number) => {
                                 const StatIcon = i === 0 ? FiSmartphone : i === 1 ? FiStar : FiSmile;
                                 return (
-                                    <div key={i} className="flex items-center gap-3  p-3">
+                                    <div key={i} className="flex items-center gap-1 ">
                                         <div className="w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shadow-sm shrink-0">
                                             <StatIcon size={20} />
                                         </div>
@@ -174,7 +174,7 @@ export default function TeamDetailPage({ member }: { member: any }) {
                         variants={fadeUpVariants}
                         className="lg:col-span-7 bg-white border border-gray-100 rounded-3xl p-6 shadow-xl shadow-gray-100 space-y-2">
                         <div>
-                            <h2 className="text-2xl font-black text-gray-900 tracking-tight">
+                            <h2 className="text-2xl font-semibold text-gray-900 tracking-tight">
                                 Professional Expertise
                             </h2>
                             <motion.div initial={{ width: 0 }} animate={{ width: 40 }} transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }} className="h-1 bg-blue-600 mt-3 mb-6"></motion.div>
@@ -206,7 +206,7 @@ export default function TeamDetailPage({ member }: { member: any }) {
                     variants={fadeUpVariants}
                     className="bg-white border border-gray-100 rounded-3xl p-6 sm:p-6 shadow-xl shadow-gray-100 space-y-8">
                     <div>
-                        <h2 className="text-2xl font-black text-gray-900">
+                        <h2 className="text-2xl font-semibold text-gray-900">
                             Experience Highlights
                         </h2>
                         <motion.div initial={{ width: 0 }} animate={{ width: 40 }} transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }} className="h-1 bg-blue-600 mt-3 mb-6"></motion.div>

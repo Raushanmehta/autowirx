@@ -60,7 +60,7 @@ export default function ProcessSection() {
                                 />
                                 {index < data.steps.length - 1 && (
                                     <div className="hidden lg:flex items-center absolute top-1/2 -right-16 w-16 transform -translate-y-1/2 z-10">
-                                        <div className="flex-1 border-t-2 border-dashed border-blue-300/70"></div>
+                                        <div className="flex-1 flow-bg"></div>
                                         <FiArrowRight size={24} className="text-blue-400 -ml-2" />
                                     </div>
                                 )}

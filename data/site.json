@@ -1700,7 +1700,7 @@
               {
                 "category": "Water Damage",
                 "title": "What to Do If Your Phone Gets Water Damaged",
-                "description": "Act fast! Follow these essential steps to minimize damage and improve the chances of recovery.",
+                "description": "Act fast! Follow these Water Damaged essential  steps to minimize damage and improve the chances of recovery.",
                 "date": "Aug 10, 2026",
                 "readTime": "6 min read",
                 "image": "https://i.pinimg.com/1200x/13/f2/74/13f274fedeed93f4636a4a151d800976.jpg",
@@ -1732,7 +1732,7 @@
               },
               {
                 "category": "Repair Tips",
-                "title": "Why Professional Repair Matters",
+                "title": "Why Professional Repair Matters For Everyone",
                 "description": "DIY fixes can be risky. Here's why choosing certified professionals ensures long-lasting results and device safety.",
                 "date": "Aug 08, 2026",
                 "readTime": "4 min read",
@@ -1903,7 +1903,7 @@
                   "count": 14
                 }
               ],
-              "popularPosts": [
+              "relatedArticles": [
                 {
                   "title": "How to Extend Your Smartphone Battery Life",
                   "date": "Aug 18, 2026",
@@ -3343,8 +3343,8 @@
         "variants": {
           "AutoWirxBookRepair1": {
             "banner": {
-              "titleLine1": "Quick Repair in Just a",
-              "titleHighlight": "Few Clicks",
+              "titleLine1": "Quick Repair",
+              "titleHighlight": " in Just a Few Clicks",
               "description": "Fill in your details and let our experts take care of the rest. Fast. Easy. Reliable.",
               "tagline": "Book A Repair",
               "image": "https://i.pinimg.com/1200x/2b/2e/44/2b2e44338cb39ba66e9f55fd76a33497.jpg",

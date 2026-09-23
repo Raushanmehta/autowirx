@@ -27,7 +27,7 @@ export default function BookRepairSection({ data }: { data: any }) {
 
     const renderIcon = (iconName: string) => {
         const IconComponent = (Icons as any)[iconName] || Icons.FaWrench;
-        return <IconComponent className="text-xl" />;
+        return <IconComponent className="text-3xl transition-transform duration-300 group-hover:scale-110" />;
     };
 
     if (!data) return null;
@@ -67,7 +67,7 @@ export default function BookRepairSection({ data }: { data: any }) {
                                     <span className="h-[2px] w-6 bg-sky-500" />
                                 </motion.div>
                                 <motion.h2 variants={fadeUpVariants} className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight leading-tight">
-                                    {banner.titleLine1} <span className="text-blue-600">{banner.titleHighlight}</span>
+                                    {banner.titleLine1} <br /><span className="text-blue-600">{banner.titleHighlight}</span>
                                 </motion.h2>
                                 <motion.p variants={fadeUpVariants} className="text-sm sm:text-base text-gray-700 max-w-xl leading-relaxed">
                                     {banner.description}
@@ -77,11 +77,11 @@ export default function BookRepairSection({ data }: { data: any }) {
                             {/* 3 Step Icons */}
                             <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                                 {banner.steps.map((step: any, idx: number) => (
-                                    <motion.div key={idx} variants={fadeUpVariants} className="space-y-2">
-                                        <div className="h-14 w-14 rounded-full bg-white shadow-md border border-sky-100 flex items-center justify-center text-blue-600">
+                                    <motion.div key={idx} variants={fadeUpVariants} className="space-y-2 group cursor-pointer">
+                                        <div className="h-16 w-16 rounded-full bg-white shadow-md border border-sky-100 flex items-center justify-center text-blue-600 transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-blue-500/40">
                                             {renderIcon(step.icon)}
                                         </div>
-                                        <h4 className="font-bold text-gray-900 text-md">{step.title}</h4>
+                                        <h4 className="font-bold text-gray-900 text-md transition-colors duration-300 group-hover:text-blue-600">{step.title}</h4>
                                         <p className="text-sm text-gray-600">{step.description}</p>
                                     </motion.div>
                                 ))}
@@ -98,7 +98,7 @@ export default function BookRepairSection({ data }: { data: any }) {
                         whileInView="visible"
                         viewport={{ once: true, margin: "-100px" }}
                         variants={containerVariants}
-                        className="lg:col-span-5 space-y-8"
+                        className="lg:col-span-5 space-y-2"
                     >
                         <div className="space-y-3">
                             <motion.div variants={fadeUpVariants} className="flex items-center gap-3">
@@ -108,22 +108,22 @@ export default function BookRepairSection({ data }: { data: any }) {
                                 <span className="h-[2px] w-12 bg-sky-500" />
                             </motion.div>
                             <motion.h2 variants={fadeUpVariants} className="text-3xl sm:text-4xl font-semibold text-gray-900 tracking-tight leading-tight">
-                                {formSection.titleLine1} <span className="text-blue-600">{formSection.titleHighlight}</span>
+                                {formSection.titleLine1}  <br /><span className="text-blue-600">{formSection.titleHighlight}</span>
                             </motion.h2>
                             <motion.p variants={fadeUpVariants} className="text-sm sm:text-base text-gray-600 leading-relaxed">
                                 {formSection.description}
                             </motion.p>
                         </div>
 
-                        <div className="space-y-4">
+                        <div className="space-y-4 pt-4">
                             {formSection.features.map((feature: any, idx: number) => (
-                                <motion.div key={idx} variants={fadeUpVariants} className="flex items-center gap-4">
-                                    <div className="h-14 w-14 rounded-full bg-sky-50 border border-sky-100 flex items-center justify-center text-blue-600 shrink-0">
+                                <motion.div key={idx} variants={fadeUpVariants} className="flex items-center gap-4 group cursor-pointer">
+                                    <div className="h-16 w-16 rounded-full bg-sky-50 border border-sky-100 flex items-center justify-center text-blue-600 shrink-0 transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-blue-500/40">
                                         {renderIcon(feature.icon)}
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-gray-900 text-sm">{feature.title}</h4>
-                                        <p className="text-sm text-gray-500">{feature.description}</p>
+                                        <h4 className="font-bold text-gray-900 text-md transition-colors duration-300 group-hover:text-blue-600">{feature.title}</h4>
+                                        <p className="text-sm font-medium text-gray-500">{feature.description}</p>
                                     </div>
                                 </motion.div>
                             ))}

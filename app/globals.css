@@ -121,11 +121,32 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-sans;
     scroll-behavior: smooth;
+  }
+}
+
+
+/* doted line flow */
+.flow-bg {
+  height: 2px;
+  background: linear-gradient(to right, rgb(147 197 253 / 0.7) 50%, transparent 50%);
+  background-size: 16px 2px;
+  background-repeat: repeat-x;
+  animation: flow-bg 1s linear infinite;
+}
+
+@keyframes flow-bg {
+  0% {
+    background-position: 0px 0;
+  }
+  100% {
+    background-position: 16px 0;
   }
 }

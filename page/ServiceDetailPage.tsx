@@ -122,11 +122,11 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
                             {/* Checklist */}
                             <div className="space-y-3 pt-2">
                                 {bulletPoints.map((point: string, index: number) => (
-                                    <div key={index} className="flex items-center gap-3">
-                                        <div className="text-blue-600 shrink-0">
+                                    <div key={index} className="flex items-center gap-3 group">
+                                        <div className="text-blue-600 shrink-0 transition-transform duration-300 group-hover:scale-125 group-hover:text-blue-700">
                                             <FiCheckCircle size={24} />
                                         </div>
-                                        <p className="text-gray-700 text-xs sm:text-sm font-medium">
+                                        <p className="text-gray-700 text-xs sm:text-sm font-medium transition-colors duration-300 group-hover:text-blue-600">
                                             {point}
                                         </p>
                                     </div>
@@ -134,11 +134,11 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
                             </div>
 
                             {/* Bottom Info Box */}
-                            <div className="bg-slate-50 border border-gray-100 rounded-xl p-4 flex items-center gap-4 mt-4">
-                                <div className="w-10 h-10 rounded-md bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-md">
+                            <div className="bg-slate-50 border border-gray-100 rounded-xl p-4 flex items-center gap-4 mt-4 group cursor-pointer transition-all duration-300 hover:bg-white hover:shadow-lg hover:border-blue-100">
+                                <div className="w-10 h-10 rounded-md bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-md transition-all duration-300 group-hover:scale-110 group-hover:bg-blue-700 group-hover:shadow-blue-600/30">
                                     {BottomBoxIcon ? <BottomBoxIcon size={24} /> : <FiSmartphone size={20} />}
                                 </div>
-                                <p className="text-xs sm:text-sm text-gray-600 font-medium leading-snug">
+                                <p className="text-xs sm:text-sm text-gray-600 font-medium leading-snug transition-colors duration-300 group-hover:text-gray-900">
                                     {overview.bottomBox.text}
                                 </p>
                             </div>
@@ -178,14 +178,14 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
                             return (
                                 <div
                                     key={index}
-                                    className="bg-white border border-gray-100 rounded-3xl p-8 shadow-xl shadow-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                                    className="bg-white border border-gray-100 rounded-3xl p-8 shadow-xl shadow-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-100 group"
                                 >
-                                    <div className="w-18 h-18 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center border border-blue-100 shadow-inner mb-6">
+                                    <div className="w-18 h-18 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center border border-blue-100 shadow-inner mb-6 transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-blue-600/30">
                                         {IconComponent ? <IconComponent size={34} /> : <FiCheckCircle size={34} />}
                                     </div>
 
                                     <div className="space-y-3">
-                                        <h3 className="text-gray-900 font-bold text-base tracking-tight">
+                                        <h3 className="text-gray-900 font-bold text-base tracking-tight transition-colors duration-300 group-hover:text-blue-600">
                                             {item.title}
                                         </h3>
                                         <p className="text-gray-500 text-md sm:text-md leading-relaxed">
@@ -229,21 +229,21 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
                             return (
                                 <div
                                     key={index}
-                                    className=" p-4 flex flex-col items-center text-center relative">
+                                    className=" p-4 flex flex-col items-center text-center relative group cursor-pointer">
 
                                     {/* Connecting Arrow */}
                                     {index < repairSteps.length - 1 && (
                                         <div className="hidden lg:block absolute  top-10 -right-4 transform translate-x-1/2 text-gray-300">
-                                            <FiChevronRight size={32} className="text-blue-500" />
+                                            <FiChevronRight size={32} className="text-blue-500 transition-transform duration-300 group-hover:translate-x-2" />
                                         </div>
                                     )}
 
-                                    <div className="w-18 h-18 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center border border-blue-100 shadow-inner mt-2 mb-4">
+                                    <div className="w-18 h-18 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center border border-blue-100 shadow-inner mt-2 mb-4 transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-blue-600/30">
                                         {IconComponent ? <IconComponent size={34} /> : <FiCheckCircle size={34} />}
                                     </div>
 
                                     <div className="space-y-2">
-                                        <h3 className="text-gray-900 font-bold text-base tracking-tight">
+                                        <h3 className="text-gray-900 font-bold text-base tracking-tight transition-colors duration-300 group-hover:text-blue-600">
                                             {item.title}
                                         </h3>
                                         <p className="text-gray-500 text-md sm:text-md leading-relaxed">
