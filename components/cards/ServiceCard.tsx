@@ -46,7 +46,7 @@ export default function ServiceCard({
                 </div>
 
                 {/* Learn More Link */}
-                <div className="pt-6 text-center relative z-10">
+                <div className="pt-2 text-center relative z-10">
                     <div
                         className="inline-flex items-center gap-1.5 text-blue-500 hover:text-blue-400 font-semibold text-xs tracking-wider uppercase transition-colors group-hover:underline">
                         <span>Learn More</span>
