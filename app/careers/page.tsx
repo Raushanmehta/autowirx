@@ -13,7 +13,7 @@ export default function CareersPage() {
     return (
         <main>
             <PageTopSection title="Careers" />
-            <section className="relative bg-gradient-to-b from-sky-50/40 via-white to-white py-10 sm:py-14 md:py-16 lg:py-16 overflow-hidden">
+            <section className="relative bg-gradient-to-b from-sky-50/40 via-white to-white py-10 sm:py-14 md:py-14 lg:py-14 overflow-hidden">
                 <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
                     <div className="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] rounded-full bg-blue-400/10 blur-[120px]" />
                     <div className="absolute top-[30%] -right-[10%] w-[35%] h-[35%] rounded-full bg-sky-400/10 blur-[100px]" />

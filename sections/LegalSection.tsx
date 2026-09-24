@@ -5,7 +5,7 @@ export default function LegalSection({ data }: { data?: any }) {
     if (!data || !data.sections) return null;
 
     return (
-        <section className="relative bg-white py-10 sm:py-14 md:py-16 lg:py-16 overflow-hidden">
+        <section className="relative bg-white py-10 sm:py-14 md:py-14 lg:py-14 overflow-hidden">
             <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
                 <div className="space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed">
                     {data.sections.map((section: any, index: number) => (

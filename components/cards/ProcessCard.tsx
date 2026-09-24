@@ -27,7 +27,7 @@ export default function ProcessCard({
         <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
       </div>
 
-      <div className="absolute -top-7 w-12 h-12 rounded-full bg-blue-600 text-white font-bold text-md flex items-center justify-center shadow-md border-2 border-white z-20 transition-transform duration-300 group-hover:scale-110">
+      <div className="absolute -top-4 w-10 h-10 rounded-full bg-blue-600 text-white font-bold text-md flex items-center justify-center shadow-md border-2 border-white z-20 transition-transform duration-300 group-hover:scale-110">
         {stepNumber}
       </div>
       <motion.div

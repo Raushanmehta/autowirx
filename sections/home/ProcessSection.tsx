@@ -17,7 +17,7 @@ export default function ProcessSection() {
     const data = site.processData;
 
     return (
-        <section className="relative w-full bg-gradient-to-b from-blue-50/40 via-white to-white py-10 sm:py-14 md:py-16 lg:py-16 font-sans overflow-hidden">
+        <section className="relative w-full bg-gray-50 py-10 sm:py-14 md:py-14 lg:py-14 font-sans overflow-hidden">
             {/* Subtle Background Graphics */}
 
 

@@ -8,7 +8,7 @@ export default function TeamSection({ data }: { data: any }) {
     const teamMembers = data?.members || [];
 
     return (
-        <section className="relative w-full bg-white  py-10 sm:py-14 md:py-16 lg:py-16 font-sans overflow-hidden">
+        <section className="relative w-full bg-white  py-10 sm:py-14 md:py-14 lg:py-14 font-sans overflow-hidden">
 
             {/* Background Decorative Dot Grids */}
             <motion.div variants={fadeUpVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} className="absolute top-12 left-6 grid grid-cols-4 gap-2 opacity-60 pointer-events-none">
@@ -53,7 +53,7 @@ export default function TeamSection({ data }: { data: any }) {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-100px" }}
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative">
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 relative">
                     {teamMembers.map((member: any, index: number) => (
                         <motion.div key={index} variants={fadeUpVariants} className="relative">
                             <TeamCard

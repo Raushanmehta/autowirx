@@ -40,19 +40,19 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
                 <circle cx="70" cy="80" r="5" />
             </svg>
 
-            <section className="relative w-full py-10 sm:py-14 md:py-16 lg:py-16 font-sans overflow-hidden">
-                <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            <section className="relative w-full py-10 sm:py-14 md:py-14 lg:py-14 font-sans overflow-hidden">
+                <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full ">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 items-center">
 
                         {/* Left Column: Custom Before/After Phone Showcase Graphic with Skyblue Grids */}
-                        <div className="lg:col-span-5 relative flex items-center justify-center py-6">
+                        <div className="lg:col-span-5 relative flex items-center justify-center ">
 
                             {/* Background Skyblue Grids / Cards */}
                             <div className="absolute w-[82%] h-[82%] bg-slate-100/70 rounded-[36px] -left-2 -top-2 transform -rotate-3 z-0"></div>
                             <div className="absolute w-[82%] h-[88%] bg-slate-50 rounded-[36px] right-2 -bottom-2 transform rotate-2 z-0 border border-sky-100"></div>
 
                             {/* Graphic Container */}
-                            <div className="relative z-10 flex items-center justify-center w-full py-8 px-2">
+                            <div className="relative z-10 flex items-center justify-center w-full ">
 
                                 {/* Left Side: "From This To This" Text & Curving SVG Arrow */}
                                 <div className="absolute left-2 sm:-left-2 top-1/2 transform -translate-y-1/2 -rotate-15 z-30 flex flex-col items-start select-none">
@@ -105,7 +105,7 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
                         {/* Right Column: Text Content */}
                         <div className="lg:col-span-7 space-y-2 sm:space-y-2">
 
-                            <div className="space-y-4">
+                            <div className="space-y-1">
                                 <div className="flex items-center justify-start gap-2 text-blue-500 font-bold text-sm tracking-widest uppercase">
                                     <span>{overview.tag}</span>
                                     <span className="w-6 h-0.5 bg-blue-500"></span>
@@ -150,7 +150,7 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
             </section>
 
             {/* 2. Why Choose Us Section */}
-            <section className="relative w-full py-10 sm:py-14 md:py-16 lg:py-16 font-sans overflow-hidden bg-[#F3F6FA]">
+            <section className="relative w-full py-10 sm:py-14 md:py-14 lg:py-14 font-sans overflow-hidden bg-[#F3F6FA]">
                 {/* Decorative SVG Pattern */}
 
 
@@ -201,7 +201,7 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
             </section>
 
             {/* 3. Repair Process Section */}
-            <section className="relative w-full bg-white py-10 sm:py-14 md:py-16 lg:py-16 font-sans overflow-hidden">
+            <section className="relative w-full bg-white py-10 sm:py-14 md:py-14 lg:py-14 font-sans overflow-hidden">
                 <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-purple-100/30 rounded-full blur-[100px] z-0 pointer-events-none"></div>
                 <div className="absolute right-10 top-20 text-sky-100/60 z-0 animate-bounce" style={{ animationDuration: '3s' }}>
                     <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

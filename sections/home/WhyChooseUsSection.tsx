@@ -47,7 +47,7 @@ export default function WhyChooseUsSection() {
     const data = site.whyChooseUsData;
 
     return (
-        <section className="relative w-full  bg-white pt-8 pb-14 font-sans overflow-hidden">
+        <section className="relative w-full  bg-white pt-16 pb-24 font-sans overflow-hidden">
             <div className="absolute -bottom-32 left-1/2 transform -translate-x-1/2 w-[40rem] h-[20rem] bg-blue-100/40 rounded-full blur-[100px] pointer-events-none z-0"></div>
             <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -107,20 +107,30 @@ export default function WhyChooseUsSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="lg:col-span-7 space-y-6 mt-12 md:mt-16">
+                    <div className="lg:col-span-7 space-y-6 ">
+
                         <motion.div
                             variants={fadeUpVariants}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, margin: "-100px" }}
                             className="">
-                            <div className="flex items-center gap-2 text-blue-600 font-bold text-sm tracking-widest uppercase">
-                                <div className="flex items-center justify-center gap-2 text-blue-500 font-bold text-sm tracking-widest uppercase">
-                                    <span className="w-6 h-0.5 bg-blue-500"></span>
-                                    <span>{data.header.subtitle}</span>
-                                    <span className="w-6 h-0.5 bg-blue-500"></span>
+                            <div className="flex justify-between items-start gap-4 ">
+                                <div>
+                                    <div className="flex items-center gap-2 text-blue-600 font-bold text-sm tracking-widest uppercase">
+                                        <div className="flex items-center justify-center gap-2 text-blue-500 font-bold text-sm tracking-widest uppercase">
+                                            <span className="w-6 h-0.5 bg-blue-500"></span>
+                                            <span>{data.header.subtitle}</span>
+                                            <span className="w-6 h-0.5 bg-blue-500"></span>
+                                        </div>
+                                    </div>
+                                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight leading-tight mt-2">
+                                        {data.header.titleLine1} <br />
+                                        <span className="text-blue-600">{data.header.titleHighlight}</span>
+                                    </h2>
                                 </div>
-                                <div className="hidden sm:flex ml-auto relative items-center justify-center w-20 h-20 mr-6">
+
+                                <div className="hidden sm:flex ml-auto relative items-center justify-center w-20 h-20 mr-6 shrink-0 mt-4">
                                     <div className="absolute inset-0 rounded-full border-2 border-blue-400/40 animate-ping" style={{ animationDuration: '3s' }}></div>
                                     <div className="absolute inset-[-8px] rounded-full border border-blue-300/30 animate-ping" style={{ animationDuration: '3s', animationDelay: '0.6s' }}></div>
                                     <div className="absolute inset-[-16px] rounded-full border border-blue-200/20 animate-ping" style={{ animationDuration: '3s', animationDelay: '1.2s' }}></div>
@@ -130,12 +140,7 @@ export default function WhyChooseUsSection() {
                                     </div>
                                 </div>
                             </div>
-
-                            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight leading-tight">
-                                {data.header.titleLine1} <br />
-                                <span className="text-blue-600">{data.header.titleHighlight}</span>
-                            </h2>
-                            <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-2xl">
+                            <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-2xl mt-4">
                                 {data.header.description}
                             </p>
                         </motion.div>

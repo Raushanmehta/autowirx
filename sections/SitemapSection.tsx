@@ -12,7 +12,7 @@ interface SitemapColumn {
 export default function SitemapSection({ data }: { data?: any }) {
 
     return (
-        <section className="relative bg-white py-10 sm:py-14 md:py-16 lg:py-16 overflow-hidden">
+        <section className="relative bg-white py-10 sm:py-14 md:py-14 lg:py-14 overflow-hidden">
             <motion.div
                 variants={containerVariants}
                 initial="hidden"

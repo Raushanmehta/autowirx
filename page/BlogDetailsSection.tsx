@@ -13,7 +13,7 @@ export default function BlogDetailsSection({ data }: { data: any }) {
     if (!article) return null;
 
     return (
-        <section className="relative bg-white py-10 sm:py-14 md:py-16 lg:py-16">
+        <section className="relative bg-white py-10 sm:py-14 md:py-14 lg:py-14">
 
             <motion.div variants={fadeUpVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} className="absolute top-12 left-6 grid grid-cols-4 gap-2 opacity-60 pointer-events-none">
                 {Array.from({ length: 16 }).map((_, i) => (

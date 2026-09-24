@@ -19,17 +19,17 @@ export default function TeamDetailPage({ member }: { member: any }) {
         }
     };
     return (
-        <section className="w-full bg-slate-50 py-10 sm:py-14 md:py-16 lg:py-16 font-sans">
+        <section className="w-full bg-slate-50 py-10 sm:py-14 md:py-14 lg:py-14 font-sans">
             <motion.div
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
-                className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
 
                 {/* Top Profile Main Card */}
                 <motion.div
                     variants={fadeUpVariants}
-                    className="bg-white border border-gray-100 rounded-3xl p-4 sm:p-4 shadow-xl shadow-gray-100 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                    className="bg-white border border-gray-100 rounded-3xl p-4 sm:p-4 shadow-xl shadow-gray-100 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
 
                     {/* Left: Image */}
                     <div className="lg:col-span-5 relative w-full h-[380px] sm:h-[440px] rounded-2xl overflow-hidden bg-slate-900 shadow-lg">
@@ -132,7 +132,7 @@ export default function TeamDetailPage({ member }: { member: any }) {
                 </motion.div>
 
                 {/* Middle Row: About & Professional Expertise */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
 
                     {/* About Box */}
                     <motion.div

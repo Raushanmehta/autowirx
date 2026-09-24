@@ -23,7 +23,7 @@ export default function ServicePage() {
         <main>
             <PageTopSection title="Services" />
 
-            <section className="relative w-full bg-slate-50 py-10 sm:py-14 md:py-16 lg:py-16 font-sans overflow-hidden">
+            <section className="relative w-full bg-slate-50 py-10 sm:py-14 md:py-14 lg:py-14 font-sans overflow-hidden">
                 {/* Background Decoration Elements */}
                 <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-100/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 z-0"></div>
                 <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-sky-100/40 rounded-full blur-[80px] translate-y-1/3 -translate-x-1/4 z-0"></div>
@@ -36,7 +36,7 @@ export default function ServicePage() {
                             <span>{data?.header?.subtitle || "OUR TEAM"}</span>
                             <span className="w-6 h-0.5 bg-blue-500"></span>
                         </div>
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight">
                             {(data.header as any).title ? (
                                 <>{(data.header as any).title}</>
                             ) : (
@@ -47,7 +47,7 @@ export default function ServicePage() {
                                 </>
                             )} <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">{(data.header as any).highlightTitle || (data.header as any).titleHighlight}</span>
                         </h2>
-                        <p className="text-slate-500 text-sm sm:text-base lg:text-lg leading-relaxed">
+                        <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
                             {data.header.description}
                         </p>
                     </div>

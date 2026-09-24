@@ -45,7 +45,7 @@ export default function Navbar() {
             variants={navContainerVariants}
             initial="hidden"
             animate="visible"
-            className="hidden md:flex items-center space-x-8">
+            className="hidden lg:flex items-center space-x-8">
             {data.navLinks.map((link, idx) => {
               if (link.subLinks) {
                 return (
@@ -136,7 +136,7 @@ export default function Navbar() {
 
           {/* Desktop CTA */}
           <motion.div
-            className="hidden md:flex items-center"
+            className="hidden lg:flex items-center"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.55, ease: "easeOut", }}>
@@ -158,7 +158,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <motion.div
-            className="flex md:hidden items-center"
+            className="flex lg:hidden items-center"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.2, }}>
@@ -195,7 +195,7 @@ export default function Navbar() {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="md:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 overflow-hidden absolute top-full left-0 w-full shadow-2xl z-50">
+            className="lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 overflow-hidden absolute top-full left-0 w-full shadow-2xl z-50">
             <motion.div
               variants={{
                 hidden: {},

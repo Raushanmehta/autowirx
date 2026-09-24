@@ -18,9 +18,9 @@ export default function AboutMissionSection() {
     const data = site.aboutMissionData;
 
     return (
-        <section className="relative w-full bg-white py-10 sm:py-14 md:py-16 lg:py-20 overflow-hidden">
+        <section className="relative w-full bg-white py-10 sm:py-14 md:py-14 lg:py-14 overflow-hidden">
             <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12 items-center">
 
                     {/* Left Column: Images and Graphics */}
                     <motion.div
@@ -81,9 +81,9 @@ export default function AboutMissionSection() {
                         whileInView="visible"
                         viewport={{ once: true, margin: "-100px" }}
                         variants={containerVariants}
-                        className="lg:pl-8 relative mt-8 sm:mt-0">
+                        className="lg:pl-8 relative mt- sm:mt-0">
                         {/* Section Header */}
-                        <motion.div variants={fadeUpVariants} className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                        <motion.div variants={fadeUpVariants} className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-4">
                             <h3 className="text-[#0057ee] font-bold text-xs sm:text-sm tracking-widest uppercase">{data.header.subtitle}</h3>
                             <div className="w-8 sm:w-10 h-0.5 bg-[#0057ee]/40" />
                         </motion.div>
@@ -103,7 +103,7 @@ export default function AboutMissionSection() {
                                 const IconComp = IconMap[item.icon] || ShieldCheck;
                                 return (
                                     <div key={idx} className="flex flex-col items-center text-center px-1 sm:px-2">
-                                        <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full bg-gradient-to-br from-blue-50 to-white text-blue-600 flex items-center justify-center mb-4 border border-blue-100/60 shadow-[0_4px_15px_rgba(0,87,238,0.1)] transition-transform duration-300 hover:scale-110">
+                                        <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full bg-gradient-to-br from-blue-50 to-white text-blue-600 flex items-center justify-center mb-4 border border-blue-100/60 shadow-[0_4px_15px_rgba(0,87,238,0.1)] transition-all duration-300 hover:scale-110 hover:from-blue-600 hover:to-blue-500 hover:text-white">
                                             <IconComp size={24} strokeWidth={1.5} className="sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
                                         </div>
                                         <h4 className="text-sm sm:text-base lg:text-lg font-bold text-gray-900 mb-1.5 sm:mb-2">{item.title}</h4>

@@ -10,7 +10,7 @@ export default function BlogPage() {
     return (
         <main>
             <PageTopSection title="Blogs" />
-            <Suspense fallback={<div className="flex justify-center py-20 text-blue-600">Loading blogs...</div>}>
+            <Suspense fallback={<div className="flex justify-center py-14 text-blue-600">Loading blogs...</div>}>
                 <BlogPageSection data={data as any} />
             </Suspense>
         </main>

@@ -35,7 +35,7 @@ export default function BookRepairSection({ data }: { data: any }) {
     const { banner, formSection } = data;
 
     return (
-        <section className="w-full bg-white py-10 sm:py-14 md:py-16 lg:py-16 font-sans overflow-hidden">
+        <section className="w-full bg-white py-10 sm:py-14 md:py-14 lg:py-14 font-sans overflow-hidden">
             <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
                 {/* Left side banner */}
                 <motion.div
