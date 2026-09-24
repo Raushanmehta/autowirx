@@ -53,7 +53,7 @@ export default function ServicePage() {
                     </div>
 
                     {/* Services Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-4">
                         {data.servicesList.map((service: any, index: number) => {
                             const IconComponent = IconMap[service.icon];
                             return (

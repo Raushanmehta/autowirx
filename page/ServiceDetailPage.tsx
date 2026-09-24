@@ -154,7 +154,7 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
                 {/* Decorative SVG Pattern */}
 
 
-                <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-8">
+                <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-4 lg:space-y-8">
 
                     <div className="text-center max-w-2xl mx-auto space-y-3">
                         <div className="flex items-center justify-center gap-2 text-blue-500 font-bold text-sm tracking-widest uppercase">
@@ -172,23 +172,23 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 lg:gap-8">
                         {whyChooseUs.map((item: any, index: number) => {
                             const IconComponent = IconMap[item.icon];
                             return (
                                 <div
                                     key={index}
-                                    className="bg-white border border-gray-100 rounded-3xl p-8 shadow-xl shadow-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-100 group"
+                                    className="bg-white border border-gray-100 rounded-3xl p-6 lg:p-8 shadow-xl shadow-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-100 group"
                                 >
-                                    <div className="w-18 h-18 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center border border-blue-100 shadow-inner mb-6 transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-blue-600/30">
+                                    <div className="w-18 h-18 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center border border-blue-100 shadow-inner lg:mb-6 transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-blue-600/30">
                                         {IconComponent ? <IconComponent size={34} /> : <FiCheckCircle size={34} />}
                                     </div>
 
-                                    <div className="space-y-3">
-                                        <h3 className="text-gray-900 font-bold text-base tracking-tight transition-colors duration-300 group-hover:text-blue-600">
+                                    <div className="space-y-1 lg:space-y-3">
+                                        <h3 className="text-gray-900 font-bold text-base tracking-tight transition-colors duration-300 group-hover:text-blue-600 mt-3 lg:mt-0">
                                             {item.title}
                                         </h3>
-                                        <p className="text-gray-500 text-md sm:text-md leading-relaxed">
+                                        <p className="text-gray-500 text-sm sm:text-md leading-relaxed">
                                             {item.description}
                                         </p>
                                     </div>
@@ -223,7 +223,7 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8  relative">
                         {repairSteps.map((item: any, index: number) => {
                             const IconComponent = IconMap[item.icon];
                             return (
@@ -238,11 +238,11 @@ export default function ServiceDetailPage({ data }: ServiceDetailPageProps) {
                                         </div>
                                     )}
 
-                                    <div className="w-18 h-18 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center border border-blue-100 shadow-inner mt-2 mb-4 transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-blue-600/30">
+                                    <div className="w-18 h-18 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center border border-blue-100 shadow-inner lg:mt-2 mb-4 transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-blue-600/30">
                                         {IconComponent ? <IconComponent size={34} /> : <FiCheckCircle size={34} />}
                                     </div>
 
-                                    <div className="space-y-2">
+                                    <div className="lg:space-y-2">
                                         <h3 className="text-gray-900 font-bold text-base tracking-tight transition-colors duration-300 group-hover:text-blue-600">
                                             {item.title}
                                         </h3>

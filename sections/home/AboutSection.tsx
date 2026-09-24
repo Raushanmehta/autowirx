@@ -58,8 +58,8 @@ export default function AboutSection() {
                             {data.features.map((feature, index) => {
                                 const IconComp = IconMap[feature.icon] || ShieldCheck;
                                 return (
-                                    <motion.div 
-                                        key={feature.title} 
+                                    <motion.div
+                                        key={feature.title}
                                         whileHover={{ y: -5 }}
                                         className={`group w-full space-y-3 px-2 sm:px-4 flex flex-col items-center cursor-pointer transition-all duration-300 ${index !== data.features.length - 1 ? 'sm:border-r sm:border-gray-200' : ''}`}
                                     >
@@ -97,8 +97,8 @@ export default function AboutSection() {
                         whileInView="visible"
                         viewport={{ once: true, margin: "-100px" }}
                         className="relative w-full flex justify-center lg:justify-end"  >
-                        <div className="relative w-full max-w-lg lg:max-w-[580px] xl:max-w-[420px] mr-4 sm:mr-6">
-                            <div className="pointer-events-none absolute -left-16 top-8 grid grid-cols-6 gap-1.5 opacity-70 z-0">
+                        <div className="relative w-[80%] sm:w-full max-w-md sm:max-w-lg lg:max-w-[580px] xl:max-w-[420px] ml-auto sm:ml-0 mr-4 sm:mr-6">
+                            <div className="pointer-events-none absolute -left-16 sm:-left-16 top-8 grid grid-cols-6 gap-1.5 opacity-70 z-0">
                                 {Array.from({ length: 24 }).map((_, i) => (
                                     <span
                                         key={i}
@@ -106,7 +106,7 @@ export default function AboutSection() {
                                     />
                                 ))}
                             </div>
-                            <div className="pointer-events-none absolute -left-14 bottom-10 grid grid-cols-6 gap-1.5 opacity-70 z-0">
+                            <div className="pointer-events-none absolute -left-16 sm:-left-14 bottom-10 grid grid-cols-6 gap-1.5 opacity-70 z-0">
                                 {Array.from({ length: 24 }).map((_, i) => (
                                     <span
                                         key={i}
@@ -116,15 +116,15 @@ export default function AboutSection() {
                             </div>
 
                             {/* blue offset panel */}
-                            <div className="absolute top-4 -right-4 left-4 sm:left-6 h-[480px] sm:h-[540px] lg:h-[580px] rounded-tl-[200px] rounded-bl-[200px] rounded-tr-3xl rounded-br-3xl bg-blue-600" />
+                            <div className="absolute top-4 -right-4 left-4 sm:left-6 h-[400px] sm:h-[540px] lg:h-[580px] rounded-tl-[150px] sm:rounded-tl-[200px] rounded-bl-[150px] sm:rounded-bl-[200px] rounded-tr-3xl rounded-br-3xl bg-blue-600" />
 
                             {/* image card */}
-                            <div className="relative h-[480px] sm:h-[540px] lg:h-[580px] w-full overflow-hidden rounded-tl-[200px] rounded-bl-[200px] rounded-tr-3xl rounded-br-3xl border-l-[12px] border-white shadow-2xl z-10 -translate-x-4 sm:-translate-x-6">
+                            <div className="relative h-[400px] sm:h-[540px] lg:h-[580px] w-full overflow-hidden rounded-tl-[150px] sm:rounded-tl-[200px] rounded-bl-[150px] sm:rounded-bl-[200px] rounded-tr-3xl rounded-br-3xl border-l-[8px] sm:border-l-[12px] border-white shadow-2xl z-10 -translate-x-3 sm:-translate-x-6">
                                 <Image
                                     src={data.image.src}
                                     alt={data.image.alt}
                                     fill
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 650px"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 650px"
                                     className="h-full w-full object-cover"
                                     priority
                                 />

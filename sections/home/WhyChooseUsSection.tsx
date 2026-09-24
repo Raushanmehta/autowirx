@@ -47,7 +47,7 @@ export default function WhyChooseUsSection() {
     const data = site.whyChooseUsData;
 
     return (
-        <section className="relative w-full  bg-white pt-16 pb-24 font-sans overflow-hidden">
+        <section className="relative w-full  bg-white pt-14 pb-6 lg:pb-24 font-sans overflow-hidden">
             <div className="absolute -bottom-32 left-1/2 transform -translate-x-1/2 w-[40rem] h-[20rem] bg-blue-100/40 rounded-full blur-[100px] pointer-events-none z-0"></div>
             <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -107,7 +107,7 @@ export default function WhyChooseUsSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="lg:col-span-7 space-y-6 ">
+                    <div className="lg:col-span-7 space-y-6 mt-14 sm:mt-4">
 
                         <motion.div
                             variants={fadeUpVariants}
@@ -130,13 +130,13 @@ export default function WhyChooseUsSection() {
                                     </h2>
                                 </div>
 
-                                <div className="hidden sm:flex ml-auto relative items-center justify-center w-20 h-20 mr-6 shrink-0 mt-4">
+                                <div className="hidden sm:flex ml-auto relative items-center justify-center w-16 h-16 lg:w-20 lg:h-20 mr-6 md:mr-12 lg:mr-6 shrink-0 mt-4 md:mt-12 lg:mt-4">
                                     <div className="absolute inset-0 rounded-full border-2 border-blue-400/40 animate-ping" style={{ animationDuration: '3s' }}></div>
                                     <div className="absolute inset-[-8px] rounded-full border border-blue-300/30 animate-ping" style={{ animationDuration: '3s', animationDelay: '0.6s' }}></div>
                                     <div className="absolute inset-[-16px] rounded-full border border-blue-200/20 animate-ping" style={{ animationDuration: '3s', animationDelay: '1.2s' }}></div>
                                     <div className="absolute inset-[-24px] rounded-full border border-blue-100/10 animate-ping" style={{ animationDuration: '3s', animationDelay: '1.8s' }}></div>
-                                    <div className="relative z-10 flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-500 text-white shadow-[0_0_20px_rgba(37,99,235,0.4)]">
-                                        <AiFillLike size={30} className="animate-pulse" />
+                                    <div className="relative z-10 flex items-center justify-center w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-500 text-white shadow-[0_0_20px_rgba(37,99,235,0.4)]">
+                                        <AiFillLike className="animate-pulse text-2xl lg:text-3xl" />
                                     </div>
                                 </div>
                             </div>
@@ -150,7 +150,7 @@ export default function WhyChooseUsSection() {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, margin: "-100px" }}
-                            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                            className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-5">
                             {data.features.map((item, index) => {
                                 const Icon = IconMap[item.icon];
                                 return (
@@ -185,7 +185,7 @@ export default function WhyChooseUsSection() {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, margin: "-100px" }}
-                            className=" grid grid-cols-1 sm:grid-cols-3 gap-6">
+                            className=" grid grid-cols-1 sm:grid-cols-3  md:gap-6">
                             {data.stats.map((stat, index) => {
                                 const Icon = IconMap[stat.icon];
                                 return (

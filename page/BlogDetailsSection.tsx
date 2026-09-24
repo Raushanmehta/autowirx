@@ -15,7 +15,7 @@ export default function BlogDetailsSection({ data }: { data: any }) {
     return (
         <section className="relative bg-white py-10 sm:py-14 md:py-14 lg:py-14">
 
-            <motion.div variants={fadeUpVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} className="absolute top-12 left-6 grid grid-cols-4 gap-2 opacity-60 pointer-events-none">
+            <motion.div variants={fadeUpVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} className="absolute top-12 left-6 hidden lg:grid grid-cols-4 gap-2 opacity-60 pointer-events-none">
                 {Array.from({ length: 16 }).map((_, i) => (
                     <div key={i} className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
                 ))}
@@ -32,12 +32,12 @@ export default function BlogDetailsSection({ data }: { data: any }) {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: "-100px" }}
-                className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-8">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-                    <motion.div className="lg:col-span-8 space-y-6" variants={fadeUpVariants}>
+                className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full lg:space-y-8">
+                <div className="grid grid-cols-1 lg:grid-cols-12  gap-y-6 lg:gap-12 items-start">
+                    <motion.div className="lg:col-span-8 space-y-4 lg:space-y-6" variants={fadeUpVariants}>
 
                         {/* Article Header */}
-                        <div className="space-y-4">
+                        <div className="space-y-2 lg:space-y-4">
                             <span className="inline-block px-4 py-2 rounded-sm bg-blue-600 text-white font-semibold text-xs tracking-wide shadow-sm">
                                 {article.category}
                             </span>
@@ -46,7 +46,7 @@ export default function BlogDetailsSection({ data }: { data: any }) {
                                 {article.title}
                             </h1>
 
-                            <div className="flex flex-wrap items-center gap-6 text-md sm:text-md text-gray-500 font-medium ">
+                            <div className="flex flex-wrap items-center gap-6 text-sm sm:text-md text-gray-500 font-medium ">
                                 <div className="flex items-center gap-2">
                                     <FaCalendarAlt className="text-blue-600" />
                                     <span>{article.date}</span>
@@ -94,7 +94,7 @@ export default function BlogDetailsSection({ data }: { data: any }) {
                     </motion.div>
 
                     {/* Blog Categories Box */}
-                    <motion.div className="lg:col-span-4 space-y-4 lg:sticky lg:top-32" variants={fadeUpVariants}>
+                    <motion.div className="lg:col-span-4 space-y-4 lg:sticky  top-8 lg:top-32" variants={fadeUpVariants}>
 
                         <div className="rounded-lg border border-gray-100 p-6 sm:p-6 space-y-4 shadow-sm">
                             <h3 className="flex items-center gap-2 text-xl font-bold text-gray-900">

@@ -47,7 +47,7 @@ export default function ProcessSection() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-100px" }}
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 relative">
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-20 gap-6 md:gap-4 relative">
                     {data.steps.map((step, index) => {
                         const Icon = IconMap[step.icon];
                         return (

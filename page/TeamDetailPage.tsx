@@ -151,11 +151,11 @@ export default function TeamDetailPage({ member }: { member: any }) {
                         </div>
 
                         {/* Stats Row */}
-                        <div className="grid grid-cols-1 sm:grid-cols-3  ">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                             {member.about?.stats.map((stat: any, i: number) => {
                                 const StatIcon = i === 0 ? FiSmartphone : i === 1 ? FiStar : FiSmile;
                                 return (
-                                    <div key={i} className="flex items-center gap-1 ">
+                                    <div key={i} className="flex items-center gap-3">
                                         <div className="w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shadow-sm shrink-0">
                                             <StatIcon size={20} />
                                         </div>

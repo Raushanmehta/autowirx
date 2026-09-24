@@ -38,7 +38,7 @@ export default function SitemapSection({ data }: { data?: any }) {
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16 items-start">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10 items-start">
                     {(data?.columns || []).map((column: SitemapColumn, colIndex: number) => (
                         <motion.div variants={fadeUpVariants} key={colIndex} className="space-y-4">
                             <div className="space-y-2">

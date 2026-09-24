@@ -11,7 +11,7 @@ export default function TeamSection({ data }: { data: any }) {
         <section className="relative w-full bg-white  py-10 sm:py-14 md:py-14 lg:py-14 font-sans overflow-hidden">
 
             {/* Background Decorative Dot Grids */}
-            <motion.div variants={fadeUpVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} className="absolute top-12 left-6 grid grid-cols-4 gap-2 opacity-60 pointer-events-none">
+            <motion.div variants={fadeUpVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} className="absolute top-4 lg:top-12 left-6 grid grid-cols-4 gap-2 opacity-60 pointer-events-none">
                 {Array.from({ length: 16 }).map((_, i) => (
                     <div key={i} className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
                 ))}
@@ -23,7 +23,7 @@ export default function TeamSection({ data }: { data: any }) {
                 ))}
             </motion.div>
 
-            <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-12">
+            <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-6 lg:space-y-12">
 
                 {/* Section Header */}
                 <motion.div
@@ -31,7 +31,7 @@ export default function TeamSection({ data }: { data: any }) {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-100px" }}
-                    className="text-center max-w-2xl mx-auto space-y-3 mb-8">
+                    className="text-center max-w-2xl mx-auto space-y-3 lg:mb-6">
                     <div className="flex items-center justify-center gap-2 text-blue-500 font-bold text-sm tracking-widest uppercase">
                         <span className="w-6 h-0.5 bg-blue-500"></span>
                         <span>{data?.header?.subtitle || "OUR TEAM"}</span>

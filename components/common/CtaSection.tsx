@@ -16,7 +16,7 @@ export default function CtaSection() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-50px" }}
-                    className="relative bg-[#212529] rounded-3xl overflow-hidden px-8 sm:px-12 lg:px-16 py-8 lg:py-10 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-10">
+                    className="relative bg-[#212529] rounded-3xl overflow-hidden px-8 sm:px-8 lg:px-16 py-8 lg:py-10 shadow-xl flex flex-col md:flex-row items-center justify-between gap-4">
                     <div className="absolute right-0 top-0 bottom-0 w-1/2 overflow-hidden pointer-events-none hidden lg:block">
                         <motion.div
                             animate={{ scale: [1, 1.1, 1], opacity: [0.6, 1, 0.6] }}
@@ -45,7 +45,7 @@ export default function CtaSection() {
                         </motion.svg>
                     </div>
                     <div className="flex flex-col sm:flex-row items-center gap-8 z-10 text-center sm:text-left">
-                        <motion.div variants={fadeUpVariants} className="relative w-48 h-48 sm:w-52 sm:h-52 shrink-0 drop-shadow-xl hover:scale-105 transition-transform duration-500">
+                        <motion.div variants={fadeUpVariants} className="relative w-48 h-48 sm:w-38 sm:h-38 shrink-0 drop-shadow-xl hover:scale-105 transition-transform duration-500">
                             <Image
                                 src={data.image.src}
                                 alt={data.image.alt}

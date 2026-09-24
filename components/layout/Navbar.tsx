@@ -165,7 +165,7 @@ export default function Navbar() {
             <motion.button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               whileTap={{ scale: 0.85 }}
-              className="text-gray-800 hover:text-blue-600 focus:outline-none p-2"
+              className="text-gray-800 hover:text-blue-600 focus:outline-none "
               aria-label="Toggle mobile menu">
               <AnimatePresence mode="wait" initial={false}>
                 <motion.span
@@ -176,9 +176,9 @@ export default function Navbar() {
                   transition={{ duration: 0.2 }}
                   className="block">
                   {isMobileMenuOpen ? (
-                    <FiX size={26} />
+                    <FiX size={30} />
                   ) : (
-                    <FiMenu size={26} />
+                    <FiMenu size={30} />
                   )}
                 </motion.span>
               </AnimatePresence>

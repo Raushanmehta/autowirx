@@ -59,7 +59,7 @@ export default function AboutMissionSection() {
                         {/* Floating Card */}
                         <motion.div
                             variants={fadeUpVariants}
-                            className="absolute -bottom-6 sm:-bottom-8 left-2 sm:left-2 z-20 bg-gradient-to-br from-white to-blue-50 p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)] border border-white w-[85%] sm:w-auto sm:max-w-[280px]">
+                            className="absolute -bottom-6 sm:-bottom-8 left-2 sm:left-2 z-20 bg-gradient-to-br from-white to-blue-50 p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)] border border-white w-40%] sm:w-auto sm:max-w-[280px]">
                             <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-5">
                                 <div className="w-10 h-10 sm:w-14 sm:h-14 shrink-0 rounded-full bg-blue-100 flex items-center justify-center text-[#0057ee]">
                                     {React.createElement(IconMap[data.trustCard.icon] || ShieldCheck, { size: 22, className: "sm:w-6 sm:h-6", strokeWidth: 2.2 })}
@@ -98,7 +98,7 @@ export default function AboutMissionSection() {
                         </motion.p>
 
                         {/* Features Grid */}
-                        <motion.div variants={fadeUpVariants} className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 space-y-4">
+                        <motion.div variants={fadeUpVariants} className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-4 space-y-4">
                             {data.features.map((item, idx) => {
                                 const IconComp = IconMap[item.icon] || ShieldCheck;
                                 return (
